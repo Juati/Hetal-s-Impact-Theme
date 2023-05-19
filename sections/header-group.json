@@ -153,6 +153,30 @@
             "stretch_promo": false,
             "drawer_link_image": "hide"
           }
+        },
+        "b2acb441-c1e9-4098-8504-49ef9fa05b50": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Sherbat & Mocktail Mix",
+            "layout": "horizontal_center",
+            "submenu_style": "bold_text",
+            "image_1": "shopify:\/\/shop_images\/pojo_placeholder_3_1024x768_Iconisol.png",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
         }
       },
       "block_order": [
@@ -160,7 +184,8 @@
         "72c43fdd-e915-4149-b20a-757573f192a1",
         "f6ca7e90-7029-4327-b01f-cc6692c7880b",
         "4e485e39-03b8-4ee9-bc2d-4fa8d62e43ae",
-        "a40de856-28ed-4631-a120-2dc04f5cda6f"
+        "a40de856-28ed-4631-a120-2dc04f5cda6f",
+        "b2acb441-c1e9-4098-8504-49ef9fa05b50"
       ],
       "settings": {
         "enable_sticky": true,
