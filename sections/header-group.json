@@ -36,7 +36,7 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "birthday",
-            "layout": "horizontal",
+            "layout": "horizontal_center",
             "submenu_style": "bold_heading",
             "image_1": "shopify:\/\/shop_images\/500_box_blur.jpg",
             "image_heading_1": "",
