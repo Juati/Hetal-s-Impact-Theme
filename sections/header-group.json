@@ -110,7 +110,7 @@
           "settings": {
             "menu_item": "Instant Flavoured Coffee",
             "layout": "horizontal_center",
-            "submenu_style": "bold_heading",
+            "submenu_style": "bold_text",
             "image_1": "shopify:\/\/shop_images\/coffeehamper.jpg",
             "image_heading_1": "",
             "image_link_1": "",
