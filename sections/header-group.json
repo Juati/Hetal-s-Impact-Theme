@@ -37,7 +37,7 @@
           "settings": {
             "menu_item": "birthday",
             "layout": "horizontal_center",
-            "submenu_style": "bold_heading",
+            "submenu_style": "bold_text",
             "image_1": "shopify:\/\/shop_images\/500_box_blur.jpg",
             "image_heading_1": "",
             "image_link_1": "",
