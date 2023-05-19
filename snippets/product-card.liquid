@@ -46,7 +46,8 @@ Supported variables
   {%- assign card_class = card_class | append: 'product-card--show-secondary-media' -%}
 {%- endif -%}
 
-<product-card handle="{{ product.handle | escape }}"
+<product-card
+  handle="{{ product.handle | escape }}"
   {% if reveal %}reveal-js{% endif %}
   {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
   {%- comment -%}
@@ -129,7 +130,8 @@ Supported variables
               {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
             </div>
 
-            <quick-buy-drawer id="{{ quick_buy_id }}"
+            <quick-buy-drawer
+              id="{{ quick_buy_id }}"
               header-bordered
               open-from="bottom"
               handle="{{ product.handle }}"
@@ -174,6 +176,8 @@ Supported variables
               class="bold"
               data-instant>{{ product.title }}</a>
           </span>
+
+          {%- render 'price-list', product: product, text_alignment: text_alignment -%}
 
           {%- if text_alignment != 'center' -%}
             {%- capture rating_class -%}
