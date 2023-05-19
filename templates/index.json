@@ -48,6 +48,9 @@
         "slide-1",
         "slide-2"
       ],
+      "custom_css": [
+        "element.style {padding-block: 5px;}"
+      ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
