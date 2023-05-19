@@ -16,6 +16,9 @@
       "block_order": [
         "message"
       ],
+      "custom_css": [
+        ".announcement-bar.bg-custom.text-custom {padding-block: 6px;}"
+      ],
       "settings": {
         "enable_sticky": false,
         "text_size": "text-xs",
