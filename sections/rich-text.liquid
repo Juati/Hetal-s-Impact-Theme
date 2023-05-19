@@ -110,19 +110,19 @@
 
     {%- if blocks_before_divider != blank and blocks_after_divider != blank -%}
       <div class="split-rich-text">
-        <div class="prose {% if text_position == 'center' %}justify-items-center text-center{% else %}justify-items-start{% endif %}">
+        <div class="prose justify-items-{{ text_position }} text-{{ text_position }}">
           {{- blocks_before_divider -}}
         </div>
 
-        <div class="prose {% if text_position == 'center' %}justify-items-center text-center{% else %}justify-items-start{% endif %}">
+        <div class="prose justify-items-{{ text_position }} text-{{ text_position }}">
           {{- blocks_after_divider -}}
         </div>
       </div>
     {%- endif -%}
 
-    <div class="rich-text {% if text_position == 'center' %}justify-center{% endif %} {% if blocks_before_divider != blank and blocks_after_divider != blank %}md:hidden{% endif %}">
+    <div class="rich-text justify-{{ text_position }} {% if blocks_before_divider != blank and blocks_after_divider != blank %}md:hidden{% endif %}">
       <div class="rich-text__wrapper">
-        <div class="prose {% if text_position == 'center' %}justify-items-center text-center{% else %}justify-items-start{% endif %}">
+        <div class="prose justify-items-{{ text_position }} text-{{ text_position }}">
           {{- blocks_before_divider -}}
           {{- blocks_after_divider -}}
         </div>
@@ -136,6 +136,9 @@
   "name": "Rich text",
   "class": "shopify-section--rich-text",
   "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
   "settings": [
     {
       "type": "checkbox",
@@ -175,6 +178,10 @@
         {
           "value": "center",
           "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
         }
       ],
       "default": "center"

@@ -57,12 +57,34 @@ LIQUID
               {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
             {%- endif -%}
           {%- else -%}
+            {%- capture poster -%}
+              {%- assign poster_image = block.settings.poster_image | default: block.settings.video.preview_image -%}
+
+              {%- if poster_image -%}
+                {{- poster_image | image_url: width: poster_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 400px, 800px', widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'rounded' -}}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'rounded' }}
+              {%- endif -%}
+            {%- endcapture -%}
+
             {%- if block.settings.video -%}
-              <video-media autoplay>
-                {{- block.settings.video | video_tag: playslinline: true, muted: true, loop: true, preload: 'metadata' -}}
+              <video-media {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %}>
+                {%- unless block.settings.autoplay -%}
+                  {{- poster -}}
+                {%- endunless -%}
+
+                {%- if block.settings.autoplay -%}
+                  {{- block.settings.video | video_tag: playslinline: true, muted: true, loop: true, preload: 'metadata' -}}
+                {%- else -%}
+                  {{- block.settings.video | video_tag: playslinline: true, controls: true, muted: false, loop: false, preload: 'metadata' -}}
+                {%- endif -%}
               </video-media>
             {%- else -%}
-              <video-media host="{{ block.settings.external_video_url.type }}" autoplay>
+              <video-media host="{{ block.settings.external_video_url.type }}" {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %}>
+                {%- unless block.settings.autoplay -%}
+                  {{- poster -}}
+                {%- endunless -%}
+
                 <template>
                   {%- if block.settings.external_video_url.type == 'youtube' -%}
                     <iframe src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute=1&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
@@ -113,6 +135,10 @@ LIQUID
   "name": "Media with text",
   "class": "shopify-section--media-with-text",
   "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
   "settings": [
     {
       "type": "checkbox",
@@ -120,12 +146,6 @@ LIQUID
       "label": "Full width",
       "info": "Only has effect when spacing is set to none.",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_parallax",
-      "label": "Enable parallax effect",
-      "default": true
     },
     {
       "type": "select",
@@ -587,14 +607,10 @@ LIQUID
       "name": "Video",
       "settings": [
         {
-          "type": "paragraph",
-          "content": "Video are muted to allow autoplay. For best visual results and avoid platform branding, we recommend uploading a MP4 file."
-        },
-        {
           "type": "video",
           "id": "video",
           "label": "Video",
-          "info": "Replaces external video if both are set."
+          "info": "Replaces external video if both are set. For best visual results and avoid platform branding, we recommend uploading a MP4 file."
         },
         {
           "type": "video_url",
@@ -602,6 +618,19 @@ LIQUID
           "accept": ["vimeo", "youtube"],
           "label": "Video URL",
           "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "type": "image_picker",
+          "id": "poster_image",
+          "label": "Poster image",
+          "info": "Only used when autoplay is disabled."
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Autoplay",
+          "info": "Video are muted to allow autoplay.",
+          "default": true
         },
         {
           "type": "range",

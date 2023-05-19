@@ -25,6 +25,6 @@ Supported variables
   {%- when 'pinterest' -%}
     https://pinterest.com/pin/create/button/?url={{ share_url }}{% if page_image != blank %}&media={{ page_image | image_url: width: 800 | prepend: 'https:' }}{% endif %}&description={{ description | strip_html | truncate: 200 | url_param_escape }}
 
-  {%- when 'mail' -%}
+  {%- when 'email' -%}
     mailto:?&subject={{ title | escape }}&body={{ share_url }}
 {%- endcase -%}

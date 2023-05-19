@@ -51,7 +51,7 @@ LIQUID
           {%- capture sizes -%}(max-width: 999px) 100vw, {% if text_position == 'center' and section.settings.expand_image %}min({{ settings.page_width }}px, 100vw){% else %}1000px{% endif %}{%- endcapture -%}
 
           {%- if section.settings.before_image != blank -%}
-            {{- section.settings.before_image | image_url: width: section.settings.before_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', draggable: false, class: 'rounded' -}}
+            {{- section.settings.before_image | image_url: width: section.settings.before_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000', draggable: false, class: 'rounded w-full' -}}
           {%- else -%}
             {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder rounded' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
           {%- endif -%}
@@ -97,6 +97,9 @@ LIQUID
   "name": "Before/after image",
   "class": "shopify-section--before-after-image",
   "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
   "settings": [
     {
       "type": "checkbox",

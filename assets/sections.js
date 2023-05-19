@@ -22,8 +22,8 @@ var __privateMethod = (obj, member, method) => {
 };
 
 // js/sections/announcement-bar.js
-import { timeline } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { EffectCarousel } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { timeline } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { EffectCarousel } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var AnnouncementBar = class extends EffectCarousel {
   _transitionTo(fromSlide, toSlide) {
     timeline([
@@ -79,7 +79,7 @@ if (!window.customElements.get("split-cursor")) {
 }
 
 // js/sections/collection-list.js
-import { timeline as timeline2, inView } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { timeline as timeline2, inView } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var CollectionList = class extends HTMLElement {
   connectedCallback() {
     if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -100,7 +100,7 @@ if (!window.customElements.get("collection-list")) {
 }
 
 // js/sections/customer-login.js
-import { Delegate } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { Delegate } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var AccountLogin = class extends HTMLElement {
   connectedCallback() {
     this.recoverForm = this.querySelector("#recover");
@@ -123,8 +123,8 @@ if (!window.customElements.get("account-login")) {
 }
 
 // js/sections/header.js
-import { animate, timeline as timeline3, stagger, Delegate as Delegate2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { AnimatedDetails, EffectCarousel as EffectCarousel2, Drawer, throttle } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { animate, timeline as timeline3, stagger, Delegate as Delegate2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { AnimatedDetails, EffectCarousel as EffectCarousel2, Drawer, throttle } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var reduceMenuAnimation = JSON.parse("false");
 var StoreHeader = class extends HTMLElement {
   connectedCallback() {
@@ -136,8 +136,8 @@ var StoreHeader = class extends HTMLElement {
       window.addEventListener("scroll", throttle(this._onScroll.bind(this)));
     }
     this.addEventListener("toggle", this._checkTransparency.bind(this), { capture: true });
+    this._setupTransparentHeader();
     if (this.hasAttribute("sticky")) {
-      this._setupTransparentHeader();
       if (Shopify.designMode) {
         document.addEventListener("shopify:section:load", this._setupTransparentHeader.bind(this));
         document.addEventListener("shopify:section:unload", this._setupTransparentHeader.bind(this));
@@ -199,9 +199,11 @@ var StoreHeader = class extends HTMLElement {
   _setupTransparentHeader() {
     if (document.querySelector(".shopify-section:first-child [allow-transparent-header]")) {
       this.setAttribute("allow-transparency", "");
-      window.addEventListener("scroll", throttle(this._checkTransparency.bind(this)));
       this.addEventListener("mouseenter", this._checkTransparency.bind(this));
       this.addEventListener("mouseleave", this._checkTransparency.bind(this));
+      if (this.hasAttribute("sticky")) {
+        window.addEventListener("scroll", throttle(this._checkTransparency.bind(this)));
+      }
       this._checkTransparency();
     } else {
       this.removeAttribute("allow-transparency");
@@ -225,11 +227,15 @@ var DropdownDisclosure = class extends AnimatedDetails {
   get mouseOverDelayTolerance() {
     return 250;
   }
+  /**
+   * When the summary is clicked and that the mode is hover, we follow the link (if set) that may have been specified
+   * on the parent. If the mode is click, then we deferred to the default behavior of the "AnimatedDetails" parent
+   */
   _onSummaryClicked(event) {
     if (this.trigger === "hover") {
       event.preventDefault();
-      if (event.target.hasAttribute("data-url")) {
-        window.location.href = event.target.getAttribute("data-url");
+      if (event.currentTarget.hasAttribute("data-url")) {
+        window.location.href = event.currentTarget.getAttribute("data-url");
       }
     } else {
       super._onSummaryClicked(event);
@@ -262,6 +268,10 @@ var DropdownDisclosure = class extends AnimatedDetails {
   _transitionOut() {
     return timeline3([[this.contentElement, { opacity: 0 }, { duration: 0.2 }]]).finished;
   }
+  /**
+   * When dropdown menu is configured to open on click, we add a listener to detect click outside and automatically
+   * close the navigation.
+   */
   _detectClickOutside(event) {
     if (this.trigger !== "click") {
       return;
@@ -270,6 +280,9 @@ var DropdownDisclosure = class extends AnimatedDetails {
       this.open = false;
     }
   }
+  /**
+   * On desktop device, if the mode is set to hover, we open/close the dropdown on hover
+   */
   _detectHover(event) {
     if (this.trigger !== "hover") {
       return;
@@ -281,6 +294,9 @@ var DropdownDisclosure = class extends AnimatedDetails {
       this._hoverTimer = setTimeout(() => this.open = false, this.mouseOverDelayTolerance);
     }
   }
+  /**
+   * Detect if we hit the "Escape" key to automatically close the dropdown
+   */
   _detectEscKeyboard(event) {
     if (event.code === "Escape") {
       const targetMenu = event.target.closest("details[open]");
@@ -289,6 +305,9 @@ var DropdownDisclosure = class extends AnimatedDetails {
       }
     }
   }
+  /**
+   * Close the dropdown automatically when the dropdown is focused out
+   */
   _detectFocusOut(event) {
     if (event.relatedTarget && !this.contains(event.relatedTarget)) {
       this.open = false;
@@ -315,6 +334,9 @@ var MegaMenuDisclosure = class extends DropdownDisclosure {
     }
     return timeline3(timelineSequence).finished;
   }
+  /**
+   * When the toggle is hovered we preload the mega-menu images to improve perceived performance
+   */
   _preloadImages() {
     Array.from(this.querySelectorAll('img[loading="lazy"]')).forEach((image) => image.setAttribute("loading", "eager"));
   }
@@ -337,6 +359,7 @@ var NavigationDrawer = class extends Drawer {
     super();
     const delegate = new Delegate2(this);
     delegate.on("click", "button[data-panel]", this._onPanelButtonClick.bind(this));
+    this._isTransitioning = false;
     this.addEventListener("dialog:after-hide", () => {
       this.reinitializeDrawer();
     });
@@ -344,6 +367,7 @@ var NavigationDrawer = class extends Drawer {
   get openFrom() {
     return window.matchMedia("(max-width: 699px)").matches ? this.getAttribute("mobile-opening") : super.openFrom;
   }
+  // Used for navigation mobile and navigation desktop set to drawer
   switchToPanel(panelIndex, linkListIndex = null) {
     const panels = this.querySelectorAll(".panel");
     let panelToHideTransform, panelToShowTransform, panelToHide = linkListIndex !== null ? panels[parseInt(panelIndex) - 1] : panels[parseInt(panelIndex) + 1], panelToShow = panels[panelIndex], linkLists = panelToShow.querySelectorAll(".panel__wrapper"), timelineSequence = [];
@@ -364,10 +388,12 @@ var NavigationDrawer = class extends Drawer {
     }
     timeline3(timelineSequence);
   }
+  // Used when mega menu is set to drawer
   showPanel(panelIndex, linkListIndex = null) {
     const panels = this.querySelectorAll(".panel");
     let timelineSequence = [], panelToShow = panels[panelIndex], linkLists = panelToShow.querySelectorAll(".panel__wrapper");
-    if (!panelToShow.hasAttribute("open")) {
+    if (!panelToShow.hasAttribute("open") && !this._isTransitioning) {
+      this._isTransitioning = true;
       timelineSequence.push(
         [this, { width: [this.offsetWidth + "px", (this.offsetWidth - parseInt(window.getComputedStyle(this).getPropertyValue("padding"))) * 2 + "px"] }, { duration: 0.2 }],
         [panelToShow, { opacity: [0, 1], visibility: ["hidden", "visible"] }, { at: "<" }]
@@ -386,6 +412,7 @@ var NavigationDrawer = class extends Drawer {
       }
       this.previousLinkIndex = linkListIndex;
       panelToShow.setAttribute("open", "");
+      this._isTransitioning = false;
     });
   }
   switchLinkList(linkLists, linkListIndex) {
@@ -395,6 +422,7 @@ var NavigationDrawer = class extends Drawer {
     linkLists[linkListIndex].removeAttribute("hidden");
     return [linkLists[linkListIndex].querySelectorAll("li"), { opacity: [0, 1], visibility: ["hidden", "visible"], transform: ["translateY(-10px)", "translateY(0)"] }, { easing: "ease", duration: 0.2, at: "-0.15", delay: stagger(0.025, { start: 0.1 }) }];
   }
+  // Set navigation drawer to initial state when drawer closed
   reinitializeDrawer() {
     if (this.hasAttribute("mega-menu") && window.matchMedia("(min-width:1150px)").matches) {
       this.style.removeProperty("width");
@@ -448,7 +476,7 @@ if (!window.customElements.get("navigation-drawer")) {
 }
 
 // js/sections/feature-chart.js
-import { animate as motionAnimate, scroll } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { animate as motionAnimate, scroll } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var FeatureChart = class extends HTMLElement {
   connectedCallback() {
     this.viewButtonElement = this.querySelector('[data-action="toggle-rows"]');
@@ -514,8 +542,8 @@ if (!window.customElements.get("feature-chart")) {
 }
 
 // js/sections/image-banner.js
-import { scroll as scroll2, timeline as timeline4, animate as animate2, inView as inView2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { imageLoaded, getHeadingKeyframe } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { scroll as scroll2, timeline as timeline4, animate as animate2, inView as inView2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { imageLoaded, getHeadingKeyframe } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var ImageBanner = class extends HTMLElement {
   connectedCallback() {
     if (this.parallax && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -523,10 +551,10 @@ var ImageBanner = class extends HTMLElement {
     }
     inView2(this, async () => {
       await imageLoaded(Array.from(this.querySelectorAll(":scope > :is(img, video, iframe, svg, video-media)")));
-      const heading = this.querySelector('[reveal-on-scroll="true"]');
+      const headings = Array.from(this.querySelectorAll('[reveal-on-scroll="true"]'));
       timeline4([
         [this, { opacity: [0, 1] }, { duration: 0.25 }],
-        [...getHeadingKeyframe(heading)]
+        ...headings.map((heading) => [...getHeadingKeyframe(heading)])
       ]);
     });
   }
@@ -549,7 +577,7 @@ if (!window.customElements.get("image-banner")) {
 }
 
 // js/sections/image-link-blocks.js
-import { ScrollArea } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { ScrollArea } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var ImageLinkBlocks = class extends HTMLElement {
   connectedCallback() {
     this.items = Array.from(this.children);
@@ -569,8 +597,8 @@ if (!window.customElements.get("image-link-blocks")) {
 }
 
 // js/sections/images-with-text-scrolling.js
-import { animate as animate3, timeline as timeline5, inView as inView3 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { getHeadingKeyframe as getHeadingKeyframe2, throttle as throttle2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { animate as animate3, timeline as timeline5, inView as inView3 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { getHeadingKeyframe as getHeadingKeyframe2, throttle as throttle2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var ImagesWithTextScrolling = class extends HTMLElement {
   connectedCallback() {
     inView3(this, this._reveal.bind(this));
@@ -634,7 +662,7 @@ if (!window.customElements.get("images-with-text-scrolling")) {
 }
 
 // js/sections/impact-text.js
-import { animate as animate4, inView as inView4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { animate as animate4, inView as inView4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var ImpactText = class extends HTMLElement {
   connectedCallback() {
     if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
@@ -675,7 +703,7 @@ if (!window.customElements.get("impact-text")) {
 }
 
 // js/sections/media-grid.js
-import { timeline as timeline6, inView as inView5 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { timeline as timeline6, inView as inView5 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var MediaGrid = class extends HTMLElement {
   connectedCallback() {
     this.items = Array.from(this.children);
@@ -696,8 +724,8 @@ if (!window.customElements.get("media-grid")) {
 }
 
 // js/sections/media-with-text.js
-import { animate as animate5, timeline as timeline7, inView as inView6 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { imageLoaded as imageLoaded2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { animate as animate5, timeline as timeline7, inView as inView6 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { imageLoaded as imageLoaded2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var reduceMotion = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 var MediaWithText = class extends HTMLElement {
   connectedCallback() {
@@ -723,8 +751,8 @@ if (!window.customElements.get("media-with-text")) {
 }
 
 // js/sections/multiple-images-with-text.js
-import { timeline as timeline8, animate as animate6, stagger as stagger2, inView as inView7 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { EffectCarousel as EffectCarousel3, imageLoaded as imageLoaded3, getHeadingKeyframe as getHeadingKeyframe3 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { timeline as timeline8, animate as animate6, stagger as stagger2, inView as inView7 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { EffectCarousel as EffectCarousel3, imageLoaded as imageLoaded3, getHeadingKeyframe as getHeadingKeyframe3 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var MultipleImagesWithText = class extends HTMLElement {
   constructor() {
     super();
@@ -825,7 +853,7 @@ if (!window.customElements.get("multiple-images-with-text-content-list")) {
 }
 
 // js/sections/newsletter-popup.js
-import { Drawer as Drawer2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { Drawer as Drawer2 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var NewsletterPopup = class extends Drawer2 {
   connectedCallback() {
     super.connectedCallback();
@@ -863,8 +891,8 @@ if (!window.customElements.get("newsletter-popup")) {
 }
 
 // js/sections/press.js
-import { timeline as timeline9, animate as animate7, inView as inView8 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { EffectCarousel as EffectCarousel4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { timeline as timeline9, animate as animate7, inView as inView8 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { EffectCarousel as EffectCarousel4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var reduceMotion2 = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
 var PressCarousel = class extends EffectCarousel4 {
   constructor() {
@@ -925,7 +953,7 @@ if (!window.customElements.get("product-recommendations")) {
 }
 
 // js/sections/recently-viewed-products.js
-import { extractSectionId } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { extractSectionId } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var _isLoaded, _searchQueryString, searchQueryString_get, _loadProducts, loadProducts_fn;
 var RecentlyViewedProducts = class extends HTMLElement {
   constructor() {
@@ -970,7 +998,7 @@ if (!window.customElements.get("recently-viewed-products")) {
 }
 
 // js/sections/revealed-image-on-scroll.js
-import { scroll as scroll3, timeline as timeline10, ScrollOffset, inView as inView9 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import { scroll as scroll3, timeline as timeline10, ScrollOffset, inView as inView9 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 var RevealedImage = class extends HTMLElement {
   connectedCallback() {
     const scrollTracker = this.querySelector(".revealed-image__scroll-tracker"), scroller = this.querySelector(".revealed-image__scroller");
@@ -1016,8 +1044,8 @@ if (!window.customElements.get("shop-the-look-dots")) {
 }
 
 // js/sections/slideshow.js
-import { animate as motionAnimate2, timeline as timeline11, inView as inView10 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
-import { EffectCarousel as EffectCarousel5, imageLoaded as imageLoaded4, getHeadingKeyframe as getHeadingKeyframe4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/theme.js?53626";
+import { animate as motionAnimate2, timeline as timeline11, inView as inView10 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
+import { EffectCarousel as EffectCarousel5, imageLoaded as imageLoaded4, getHeadingKeyframe as getHeadingKeyframe4 } from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/theme.js?55245";
 var Slideshow = class extends HTMLElement {
   constructor() {
     super();
@@ -1097,6 +1125,11 @@ var SlideshowCarousel = class extends EffectCarousel5 {
     }
     event.detail.originalEvent.clientX > window.innerWidth / 2 ? this.next() : this.previous();
   }
+  /**
+   * Perform a simple fade animation. For more complex animations, you should implement your own custom elements
+   * that extends the EffectCarousel, and implement your own transition. You should make sure to return a promise
+   * that resolves when the animation is finished
+   */
   async _transitionTo(fromSlide, toSlide, { direction, animate: animate8 = true } = {}) {
     fromSlide.classList.remove("is-selected");
     toSlide.classList.add("is-selected");
@@ -1114,12 +1147,18 @@ var SlideshowCarousel = class extends EffectCarousel5 {
     }
     return timelineControls.finished;
   }
+  /**
+   * Perform a simple fade transition
+   */
   _fade(fromSlide, toSlide) {
     return timeline11([
       [fromSlide, { opacity: [1, 0], visibility: ["visible", "hidden"], zIndex: 0 }, { duration: 0.3, easing: "ease-in", zIndex: { easing: "step-end" } }],
       [toSlide, { opacity: [0, 1], visibility: ["hidden", "visible"], zIndex: 1 }, { duration: 0.3, at: "<", easing: "ease-out", zIndex: { easing: "step-end" } }]
     ]);
   }
+  /**
+   * Perform a transition with fade images and image transition
+   */
   async _fadeWithText(fromSlide, toSlide) {
     motionAnimate2(fromSlide, { opacity: [1, 0], visibility: ["visible", "hidden"], zIndex: 0 }, { duration: 0.3, easing: "ease-in", zIndex: { easing: "step-end" } });
     await imageLoaded4(toSlide.querySelectorAll("img"));

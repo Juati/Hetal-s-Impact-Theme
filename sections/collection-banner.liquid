@@ -11,7 +11,7 @@
     </h1>
   {%- endif -%}
 
-  {%- if section.settings.show_collection_description -%}
+  {%- if section.settings.show_collection_description and collection.description != blank -%}
     <div class="prose">
       {{- collection.description -}}
     </div>
@@ -33,6 +33,12 @@
         margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
       {%- endif -%}
     }
+
+    {%- unless section.settings.full_width -%}
+      .shopify-section:first-child .section[allow-transparent-header] {
+        padding-block-start: max(var(--section-inner-max-spacing-block), var(--header-height));
+      }
+    {%- endunless -%}
   </style>
 
   <div {% render 'section-properties' %} {%- if section.settings.allow_transparent_header -%}allow-transparent-header{% endif %}>

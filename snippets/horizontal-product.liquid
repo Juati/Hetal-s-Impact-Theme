@@ -27,7 +27,7 @@ Supported variables
       {%- if output_link == false -%}
         <span class="text-sm bold">{{ product.title }}</span>
       {%- else -%}
-        <a href="{{ product.url }}" class="text-sm bold">
+        <a href="{{ product.url }}" data-instant class="text-sm bold">
           <span class="reversed-link hover:show">{{ product.title }}</span>
         </a>
       {%- endif -%}
@@ -56,7 +56,7 @@ Supported variables
               {%- render 'button', content: button_content, type: 'submit', size: 'sm', subdued: true -%}
             {%- endform -%}
           {%- else -%}
-            {%- capture quick_buy_id -%}quick-buy-{{ 'now' | date: '%N' }}{%- endcapture -%}
+            {%- capture quick_buy_id -%}quick-buy-horizontal-{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
             {%- render 'button', content: button_content, size: 'sm', subdued: true, aria_controls: quick_buy_id -%}
 

@@ -107,6 +107,9 @@
   "name": "Contact",
   "class": "shopify-section--contact",
   "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
   "settings": [
     {
       "type": "checkbox",
@@ -238,6 +241,12 @@
           "type": "checkbox",
           "id": "use_long_text",
           "label": "Use long text",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
           "default": false
         }
       ]

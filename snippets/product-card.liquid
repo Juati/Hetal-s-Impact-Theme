@@ -65,10 +65,10 @@ Supported variables
 
   {%- if product.media.size > 0 -%}
     <div class="product-card__figure">
-      <a href="{{ product.url }}">
+      <a href="{{ product.url }}" data-instant>
         {%- capture sizes -%}
           {%- if stacked -%}
-            (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
+            (max-width: 699px) calc(100vw / {{ section.settings.products_per_row_mobile }} - 40px), (max-width: 1200px) calc(100vw / {{ 3 | at_most: section.settings.products_per_row_desktop }} - 64px), calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
           {%- else -%}
             (max-width: 699px) 74vw, (max-width: 999px) 38vw, calc(min(100vw - 96px, {{ settings.page_width }}px) / {{ section.settings.products_per_row_desktop }} - (24px / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}))
           {%- endif -%}
@@ -102,7 +102,7 @@ Supported variables
               </div>
             {%- endform -%}
           {%- else -%}
-            {%- capture quick_buy_id -%}quick-buy-{{ 'now' | date: '%N' }}{%- endcapture -%}
+            {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
             <div class="pointer-fine:hidden">
               <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
@@ -146,7 +146,7 @@ Supported variables
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
-          <span class="product-card__title"><a href="{{ product.url }}" class="bold">{{ product.title }}</a></span>
+          <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
 
           {%- if text_alignment != 'center' -%}
             {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
@@ -154,7 +154,7 @@ Supported variables
           {%- endif -%}
         </div>
       {%- else -%}
-        <span class="product-card__title"><a href="{{ product.url }}" class="bold">{{ product.title }}</a></span>
+        <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
       {%- endif -%}
 
       {%- render 'price-list', product: product, text_alignment: text_alignment -%}
@@ -171,7 +171,7 @@ Supported variables
       {%- for color_label in color_label_list -%}
         {%- if product.options_by_name[color_label] != blank -%}
           {%- assign product_option = product.options_by_name[color_label] -%}
-          {%- capture name -%}swatch-{{ 'now' | date: '%N' }}{%- endcapture -%}
+          {%- capture name -%}swatch-{{ section.id }}-{{ product.id }}-{{ product_option.position }}{%- endcapture -%}
 
           <div class="product-card__aside">
             {%- case settings.product_color_display -%}
@@ -191,7 +191,7 @@ Supported variables
                   {%- endfor -%}
 
                   {% if product_option.values.size > 4 %}
-                    <a href="{{ product.url }}" class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                    <a href="{{ product.url }}" data-instant class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
                   {% endif %}
                 </fieldset>
 
@@ -211,7 +211,7 @@ Supported variables
                   {%- endfor -%}
 
                   {%- if product_option.values.size > 4 -%}
-                    <a href="{{ product.url }}" class="media-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                    <a href="{{ product.url }}" data-instant class="media-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
                   {%- endif -%}
                 </fieldset>
               {%- endcase -%}

@@ -40,7 +40,7 @@ LIQUID
   <div class="section-stack">
     {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content -%}
 
-    <div class="scrollable-with-controls">
+    <div class="{% if section.settings.show_progress_bar %}scrollable-with-controls{% else %}floating-controls-container{% endif %}">
       {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
 
       {%- if section.settings.products.count > 0 -%}
@@ -54,9 +54,21 @@ LIQUID
           </reveal-items>
         </scroll-carousel>
 
-        {%- if section.settings.stack_products == false and section.settings.show_progress_bar -%}
-          {%- assign default_progress = section.settings.products_per_row_desktop | times: 1.0 | divided_by: section.settings.products.count -%}
-          {%- render 'scrollbar', observes: scroll_area_id, default_progress: default_progress, show_buttons: true -%}
+        {%- if section.settings.stack_products == false -%}
+          {%- if section.settings.show_progress_bar -%}
+            {%- assign default_progress = section.settings.products_per_row_desktop | times: 1.0 | divided_by: section.settings.products.count -%}
+            {%- render 'scrollbar', observes: scroll_area_id, default_progress: default_progress, show_buttons: true -%}
+          {%- else -%}
+            <button is="prev-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
+              <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+              <span class="animated-arrow animated-arrow--reverse"></span>
+            </button>
+
+            <button is="next-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
+              <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+              <span class="animated-arrow"></span>
+            </button>
+          {%- endif -%}
         {%- endif -%}
       {%- else -%}
         <product-recommendations product="{{ product.id }}" limit="{{ section.settings.recommendations_count }}" intent="related" class="contents">
@@ -71,9 +83,21 @@ LIQUID
               </reveal-items>
             </scroll-carousel>
 
-            {%- if section.settings.stack_products == false and section.settings.show_progress_bar -%}
-              {%- assign default_progress = section.settings.products_per_row_desktop | times: 1.0 | divided_by: section.settings.recommendations_count -%}
-              {%- render 'scrollbar', observes: scroll_area_id, default_progress: default_progress, show_buttons: true -%}
+            {%- if section.settings.stack_products == false -%}
+              {%- if section.settings.show_progress_bar -%}
+                {%- assign default_progress = section.settings.products_per_row_desktop | times: 1.0 | divided_by: section.settings.recommendations_count -%}
+                {%- render 'scrollbar', observes: scroll_area_id, default_progress: default_progress, show_buttons: true -%}
+              {%- else -%}
+                <button is="prev-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
+                  <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+                  <span class="animated-arrow animated-arrow--reverse"></span>
+                </button>
+
+                <button is="next-button" class="circle-button circle-button--lg circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
+                  <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+                  <span class="animated-arrow"></span>
+                </button>
+              {%- endif -%}
             {%- endif -%}
           {%- endif -%}
         </product-recommendations>
@@ -85,9 +109,11 @@ LIQUID
 {% schema %}
 {
   "name": "Related products",
-  "templates": ["product"],
   "class": "shopify-section--product-recommendations",
   "tag": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
   "settings": [
     {
       "type": "paragraph",

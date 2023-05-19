@@ -3,6 +3,8 @@ This file defines all the CSS variables used throughout the theme. Feel free to 
 note that this may have impact on different places.
 {%- endcomment -%}
 
+{%- capture direction -%}{% render 'direction' %}{%- endcapture -%}
+
 <style>
   {%- assign heading_font_italic = settings.heading_font | font_modify: 'style', 'italic' -%}
   {%- assign text_font_italic = settings.text_font | font_modify: 'style', 'italic' -%}
@@ -120,11 +122,11 @@ note that this may have impact on different places.
     --heading-font-weight: {{ settings.heading_font.weight }};
     --heading-font-style: {{ settings.heading_font.style }};
     --heading-text-transform: {{ settings.heading_text_transform }};
-    --heading-letter-spacing: {{ settings.heading_letter_spacing | divided_by: 100.0 }}em;
+    --heading-letter-spacing: {% if direction == 'rtl' %}0{% else %}{{ settings.heading_letter_spacing | divided_by: 100.0 }}em{% endif %};
     --text-font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
     --text-font-weight: {{ settings.text_font.weight }};
     --text-font-style: {{ settings.text_font.style }};
-    --text-letter-spacing: {{ settings.text_font_letter_spacing | divided_by: 100.0 }}em;
+    --text-letter-spacing: {% if direction == 'rtl' %}0{% else %}{{ settings.text_font_letter_spacing | divided_by: 100.0 }}em{% endif %};
 
     /* Font sizes */
     --text-h0: {% if settings.heading_font_size == 'small' %}2.5rem{% elsif settings.heading_font_size == 'medium' %}2.75rem{% else %}3rem{% endif %};

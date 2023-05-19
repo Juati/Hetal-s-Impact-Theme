@@ -153,7 +153,7 @@ Supported variables
                                             {%- assign sub_sub_link_image = sub_sub_link.object.image -%}
                                         {%- endcase -%}
 
-                                        {%- if sub_sub_link_image != '' -%}
+                                        {%- if sub_sub_link_image != blank -%}
                                           {{- sub_sub_link_image | image_url: width: 104 | image_tag: loading: 'lazy', sizes: '52px', widths: '52,104', class: 'panel-link__image rounded' -}}
                                         {%- endif -%}
                                       {%- endif -%}

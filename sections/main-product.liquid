@@ -358,7 +358,7 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "type": "select",
           "id": "color_mode",
           "label": "Selector type",
-          "info": "Variant image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
+          "info": "Product image mode requires that all variant have an associated image. [Learn more](https://help.shopify.com/en/manual/products/product-media/add-images-variants#add-images-to-existing-variants)",
           "options": [
             {
               "value": "block",
@@ -412,15 +412,16 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "default": "text"
         },
         {
-          "type": "header",
-          "content": "Text",
-          "info": "Only applicable for line item property of type Text."
-        },
-        {
           "type": "checkbox",
           "id": "required",
           "label": "Required",
+          "info": "For text property, the customer must write a text ; for checkbox, the customer must check it to add to cart.",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "Text",
+          "info": "Only applicable for line item property of type Text."
         },
         {
           "type": "checkbox",
@@ -432,11 +433,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "type": "number",
           "id": "max_length",
           "label": "Maximum number of characters"
-        },
-        {
-          "type": "header",
-          "content": "Checkbox",
-          "info": "Only applicable for line item property of type Checkbox."
         }
       ]
     },
@@ -479,6 +475,13 @@ quick buy information in a template, that will be extracted in JS, but ensure it
           "label": "Show dynamic checkout button",
           "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
           "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "label": "Show recipient information form for gift card products",
+          "info": "Gift card products can optionally be sent directly to a recipient along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)",
+          "default": false
         },
         {
           "type": "color",

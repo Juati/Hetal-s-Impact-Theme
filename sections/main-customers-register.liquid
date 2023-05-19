@@ -28,8 +28,6 @@
                 {%- when 'fields' -%}
                   <div {{ block.shopify_attributes }}>
                     {%- form 'create_customer', class: 'form' -%}
-                      <input type="hidden" name="return_to" value="{{ block.settings.return_to | default: routes.account_url }}">
-
                       <div class="fieldset">
                         {%- if form.errors -%}
                           {%- assign form_errors = form.errors | default_errors -%}
@@ -54,7 +52,7 @@
                         {%- render 'input', type: 'email', name: 'customer[email]', label: email_label, autocomplete: 'email', required: true -%}
 
                         {%- assign password_label = 'customer.register.password' | t -%}
-                        {%- render 'input', type: 'password', name: 'customer[password]', label: password_label, autocomplete: 'new-password', required: true -%}
+                        {%- render 'input', type: 'password', name: 'customer[password]', label: password_label, minlength: 5, autocomplete: 'new-password', required: true -%}
 
                         {%- if block.settings.show_email_consent -%}
                           {%- assign consent_label = 'customer.register.accepts_marketing' | t -%}
@@ -141,12 +139,6 @@
           "id": "show_email_consent",
           "label": "Show email consent",
           "default": false
-        },
-        {
-          "type": "url",
-          "id": "return_to",
-          "label": "Redirect upon registration",
-          "info": "Default to customer account page."
         }
       ]
     },

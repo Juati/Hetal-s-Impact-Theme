@@ -24,10 +24,6 @@ body {
   position: relative;
 }
 
-[dir="rtl"] :is(body) {
-  letter-spacing: 0;
-}
-
 hr {
   height: 0;
   color: inherit;
@@ -41,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: inherit;
+  -webkit-text-decoration: inherit;
   text-decoration: inherit;
 }
 
@@ -788,7 +785,7 @@ scroll-carousel {
 }
 
 .content-over-media {
-  grid-template: 0 1fr 0 / 1fr minmax(0, min(var(--container-max-width), 100% - var(--content-over-media-gap, var(--content-over-media-column-gap, var(--container-gutter))) * 2)) 1fr;
+  grid-template: 0 minmax(0, 1fr) 0 / minmax(0, 1fr) minmax(0, min(var(--container-max-width), 100% - var(--content-over-media-gap, var(--content-over-media-column-gap, var(--container-gutter))) * 2)) minmax(0, 1fr);
   gap: var(--content-over-media-row-gap, var(--content-over-media-gap, var(--container-gutter))) var(--content-over-media-column-gap, var(--content-over-media-gap, var(--container-gutter)));
   place-items: center;
   display: grid;
@@ -888,20 +885,6 @@ scroll-carousel {
 }
 
 @media screen and (min-width: 700px) {
-  .content-over-media--sm {
-    --content-over-media-height: 700px;
-  }
-
-  .content-over-media--md {
-    --content-over-media-height: 800px;
-  }
-
-  .content-over-media--lg {
-    --content-over-media-height: 860px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
   .content-over-media--sm {
     --content-over-media-height: 400px;
   }
@@ -2281,7 +2264,7 @@ video-media:not([playing]) {
   cursor: pointer;
 }
 
-video-media > :is(video, iframe, img) {
+video-media > :is(video, iframe, img, svg) {
   width: 100%;
   height: 100%;
   border-radius: inherit;
@@ -2292,12 +2275,17 @@ video-media > video[controls] {
   pointer-events: auto;
 }
 
-video-media > video, video-media > img {
+video-media > video:not(:-webkit-full-screen), video-media > img, video-media > svg {
   object-fit: cover;
   object-position: center;
 }
 
-video-media > :is(iframe, img) {
+video-media > video:not(:fullscreen), video-media > img, video-media > svg {
+  object-fit: cover;
+  object-position: center;
+}
+
+video-media > :is(iframe, img, svg) {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2305,9 +2293,13 @@ video-media > :is(iframe, img) {
   right: 0;
 }
 
-video-media:not([loaded]) > :is(video, iframe), video-media[loaded] > img, video-media[loaded]::part(play-button) {
+video-media:not([loaded]) > :is(video, iframe), video-media[loaded] > img, video-media[loaded] > svg, video-media[loaded]::part(play-button) {
   opacity: 0;
   visibility: hidden;
+}
+
+video-media[suspended] ~ * {
+  pointer-events: none;
 }
 
 video-media::part(play-button) {
@@ -3208,7 +3200,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
   margin-block-end: 0 !important;
 }
 
-.prose * + :is(p, div) {
+.prose * + :is(p, div, ul, ol) {
   margin-block-start: var(--spacing-3);
 }
 
@@ -3248,7 +3240,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 }
 
 .prose ul, .prose ol {
-  row-gap: 1em;
+  row-gap: .6em;
   display: grid;
 }
 
@@ -3259,7 +3251,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 }
 
 @media screen and (min-width: 700px) {
-  .prose * + :is(p, div) {
+  .prose * + :is(p, div, ul, ol) {
     margin-block-start: var(--spacing-4);
   }
 
@@ -3891,7 +3883,7 @@ tfoot td {
   position: relative;
 }
 
-.floating-controls-container > .circle-button {
+.floating-controls-container .circle-button {
   opacity: 0;
   visibility: hidden;
   z-index: 1;
@@ -3901,24 +3893,24 @@ tfoot td {
   transform: scale(.8);
 }
 
-.floating-controls-container > .circle-button:first-of-type:not(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.floating-controls-container .circle-button:first-of-type:not(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
   left: var(--spacing-5);
 }
 
-.floating-controls-container > .circle-button:first-of-type:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.floating-controls-container .circle-button:first-of-type:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
   right: var(--spacing-5);
 }
 
-.floating-controls-container > .circle-button:last-of-type:not(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.floating-controls-container .circle-button:last-of-type:not(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
   right: var(--spacing-5);
 }
 
-.floating-controls-container > .circle-button:last-of-type:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.floating-controls-container .circle-button:last-of-type:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
   left: var(--spacing-5);
 }
 
 @media screen and (pointer: fine) {
-  .floating-controls-container:hover > .is-scrollable ~ .circle-button:not([disabled]) {
+  .floating-controls-container:hover .is-scrollable ~ .circle-button:not([disabled]) {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
@@ -4400,6 +4392,7 @@ split-lines {
 
 .article-content {
   max-width: var(--article-max-width);
+  grid-template-columns: minmax(0, 1fr);
   margin-inline-start: auto;
   margin-inline-end: auto;
   padding-block-start: var(--spacing-10);
@@ -5615,6 +5608,11 @@ split-lines {
   }
 }
 
+.shopify-section--privacy-banner {
+  z-index: 2;
+  position: relative;
+}
+
 .privacy-bar {
   margin: var(--spacing-2);
   z-index: 1;
@@ -5951,9 +5949,9 @@ split-lines {
     --text-color: var(--header-transparent-text-color);
   }
 
-  .js :has(.shopify-section:first-child [allow-transparent-header]) #shopify-section-header:not(:has(.header.is-filled)) {
-    position: relative;
-    top: 0;
+  .js :has(.shopify-section:first-child [allow-transparent-header]) .shopify-section--header:not(:has(.header.is-filled)) {
+    position: relative !important;
+    top: 0 !important;
   }
 
   .header:has([open]) {
@@ -5990,6 +5988,11 @@ split-lines {
 
 .dropdown-menu:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
   right: calc(-1 * var(--spacing-4));
+}
+
+.dropdown-menu--restrictable {
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .js .dropdown-menu {
@@ -6402,8 +6405,8 @@ split-lines {
   --hot-spot-dot-shadow-size: var(--spacing-2-5);
   top: var(--hot-spot-vertical-position);
   left: var(--hot-spot-horizontal-position);
-  z-index: unset;
   grid-area: unset !important;
+  z-index: unset !important;
   position: absolute !important;
 }
 
@@ -6938,6 +6941,7 @@ split-lines {
   text-align: var(--multiple-images-with-text-alignment, center);
   justify-items: var(--multiple-images-with-text-alignment, center);
   max-width: 600px;
+  width: 100%;
   justify-self: start;
   display: grid;
 }
@@ -7138,7 +7142,7 @@ split-lines {
 
 .page {
   gap: var(--spacing-12);
-  max-width: 80ch;
+  max-width: var(--page-max-width, 80ch);
   grid-auto-columns: minmax(0, 1fr);
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -7447,6 +7451,7 @@ split-lines {
 @media screen and (min-width: 1000px) {
   .product-info {
     top: calc(var(--sticky-area-height)  + 20px);
+    z-index: 1;
     position: sticky;
   }
 }
@@ -7691,6 +7696,11 @@ split-lines {
   .product-gallery--desktop-carousel .product-gallery__zoom {
     opacity: 1;
     visibility: visible;
+  }
+
+  .product-gallery--desktop-carousel:has([data-media-type*="video"].is-selected) .product-gallery__zoom {
+    opacity: 0;
+    visibility: hidden;
   }
 
   [data-shopify-xr-hidden] {
@@ -8047,7 +8057,7 @@ split-lines {
   }
 
   .search-drawer--full .predictive-search__tabs::part(tab-list), .search-drawer--full .predictive-search__tabs::part(tab-panels), .search-drawer--full .predictive-search__skeleton-full-width {
-    grid-template-columns: repeat(4, minmax(var(--predictive-search-column-width, 0px), 1fr));
+    grid-template-columns: repeat(var(--predictive-search-column-count, 4), minmax(var(--predictive-search-column-width, 0px), 1fr));
     gap: 0 var(--search-full-gap);
     display: grid;
   }
@@ -8804,7 +8814,7 @@ split-lines {
   position: absolute;
 }
 
-.no-js .no-js\:hidden {
+.js .js\:hidden, .no-js .no-js\:hidden {
   display: none;
 }
 
@@ -9731,10 +9741,6 @@ split-lines {
   letter-spacing: var(--heading-letter-spacing);
   text-transform: var(--heading-text-transform);
   overflow-wrap: anywhere;
-}
-
-[dir="rtl"] :is(.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1, h2, h3, h4, h5, h6)) {
-  letter-spacing: 0;
 }
 
 .h0 {

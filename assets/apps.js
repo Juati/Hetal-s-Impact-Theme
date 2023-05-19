@@ -2,7 +2,7 @@
  * This file contains some integration with the native Shopify Reviews app to style it in the context of the theme.
  */
 
-import {Delegate} from "//cdn.shopify.com/s/files/1/2283/7011/t/150/assets/vendor.min.js?v=56430842210900357591675181868";
+import {Delegate} from "//cdn.shopify.com/s/files/1/2283/7011/t/164/assets/vendor.min.js?v=19330323356122838161684456065";
 
 const _transformForm = (spr) => {
   const labels = Array.from(spr.querySelectorAll('.spr-form-label')),

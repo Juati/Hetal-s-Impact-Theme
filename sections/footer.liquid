@@ -28,7 +28,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'text' -%}
-                {%- if block.settings.title != blank or block.settings.content != blank -%}
+                {%- if block.settings.title != blank or block.settings.content != blank or shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
                   <div class="footer__block footer__block--text" {{ block.shopify_attributes }}>
                     {%- if block.settings.title != blank -%}
                       <p class="bold">{{ block.settings.title | escape }}</p>
@@ -37,6 +37,12 @@
                     {%- if block.settings.content != blank -%}
                       <div class="prose text-subdued">
                         {{- block.settings.content -}}
+                      </div>
+                    {%- endif -%}
+
+                    {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+                      <div class="follow-on-shop">
+                        {{- shop | login_button: action: 'follow' -}}
                       </div>
                     {%- endif -%}
                   </div>
@@ -173,36 +179,6 @@
   </div>
 </div>
 
-{%- if section.settings.show_privacy_bar -%}
-  <privacy-bar class="privacy-bar" hidden>
-    <div class="privacy-bar__inner">
-      <button type="button" class="privacy-bar__close" data-action="close">
-        <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
-        {%- render 'icon' with 'delete' -%}
-      </button>
-
-      <div class="v-stack gap-4">
-        <div class="v-stack gap-2">
-          {%- if section.settings.privacy_bar_title != blank -%}
-            <p class="bold">{{ section.settings.privacy_bar_title | escape }}</p>
-          {%- endif -%}
-
-          {%- if section.settings.privacy_bar_content != blank -%}
-            <div class="prose text-xs">
-              {{- section.settings.privacy_bar_content -}}
-            </div>
-          {%- endif -%}
-        </div>
-
-        <div class="h-stack gap-2">
-          <button type="button" class="button button--sm" data-action="accept">{{ 'general.privacy_bar.accept' | t }}</button>
-          <button type="button" class="button button--sm button--subdued" data-action="decline">{{ 'general.privacy_bar.decline' | t }}</button>
-        </div>
-      </div>
-    </div>
-  </privacy-bar>
-{%- endif -%}
-
 {% schema %}
 {
   "name": "Footer",
@@ -226,7 +202,7 @@
     {
       "type": "header",
       "content": "Country/region selector",
-      "info": "To add a country/region, go to your [currency settings.](/admin/settings/payments)"
+      "info": "To add a country/region, go to your [markets settings.](/admin/settings/markets)"
     },
     {
       "type": "checkbox",
@@ -256,29 +232,6 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
-    },
-    {
-      "type": "header",
-      "content": "Customer privacy bar",
-      "info": "Privacy bar will only be visible if it fulfills the conditions of the [Shopify Customer Privacy API](https://shopify.dev/docs/themes/consent-tracking-api) or inside the theme editor to ease editing."
-    },
-    {
-      "type": "checkbox",
-      "id": "show_privacy_bar",
-      "label": "Show privacy bar",
-      "default": false
-    },
-    {
-      "type": "text",
-      "id": "privacy_bar_title",
-      "label": "Title",
-      "default": "Cookie policy"
-    },
-    {
-      "type": "richtext",
-      "id": "privacy_bar_content",
-      "label": "Content",
-      "default": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
     }
   ],
   "blocks": [
@@ -297,6 +250,13 @@
           "id": "content",
           "label": "Content",
           "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_follow_on_shop",
+          "label": "Show Follow on Shop",
+          "info": "To allow customers to follow your store on the Shop app from your storefront, Shop Pay must be enabled. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)",
+          "default": true
         }
       ]
     },
