@@ -121,10 +121,75 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "d03a240a-2f67-4c8f-9033-f242b82281f3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14464004259939__d03a240a-2f67-4c8f-9033-f242b82281f3-168449804926cd938f-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HP_INFO_Banner_WEB_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_INFO_MOB_1.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "template--14464004259939__d03a240a-2f67-4c8f-9033-f242b82281f3-168449804926cd938f-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HP_INFO_Banner_Web_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_INFO_MOB_2.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004259939__d03a240a-2f67-4c8f-9033-f242b82281f3-168449804926cd938f-0",
+        "template--14464004259939__d03a240a-2f67-4c8f-9033-f242b82281f3-168449804926cd938f-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collection"
+    "featured-collection",
+    "d03a240a-2f67-4c8f-9033-f242b82281f3"
   ]
 }
