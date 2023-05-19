@@ -210,6 +210,7 @@ Supported variables
       {%- endcapture -%}
       {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
+    
     {% comment %}
     Start info code
     {% endcomment %}
@@ -248,7 +249,7 @@ Supported variables
     <div class="brand_collection_image">
       <div class="brand_collection_one">
         <p>
-          <img src="https://cdn.shopify.com/s/files/1/0024/6759/4339/files/102737002-prescription-pills-bottle-linear-icon-thin-line-illustration-medications-contour-symbol-vector-isola-removebg-preview.png?v=1628359070" style='font-size:16px'></i>&nbsp 20 cups</p>
+          <img src="https://cdn.shopify.com/s/files/1/0024/6759/4339/files/102737002-prescription-pills-bottle-linear-icon-thin-line-illustration-medications-contour-symbol-vector-isola-removebg-preview.png?v=1628359070" style='font-size:16px'></i>&nbsp 20 cups {{ product.metafields.custom.procuct_card_left_text }}</p>
       </div>
       <div class="brand_collection_one">
         <p><img src="https://cdn.shopify.com/s/files/1/0024/6759/4339/files/102737002-prescription-pills-bottle-linear-icon-thin-line-illustration-medications-contour-symbol-vector-isola-removebg-preview.png?v=1628359070" style='font-size:16px'>&nbsp 250 gms</p>
