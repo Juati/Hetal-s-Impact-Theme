@@ -31,6 +31,35 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "17de35e0-f872-4edf-9473-660c168656b8": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "birthday",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify:\/\/shop_images\/500_box_blur.jpg",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "17de35e0-f872-4edf-9473-660c168656b8"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
