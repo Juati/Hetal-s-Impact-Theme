@@ -63,6 +63,7 @@
             "menu_item": "corporate & gifting",
             "layout": "horizontal_center",
             "submenu_style": "bold_text",
+            "image_1": "shopify:\/\/shop_images\/The_box.jpg",
             "image_heading_1": "",
             "image_link_1": "",
             "image_text_color_1": "#ffffff",
@@ -75,7 +76,7 @@
             "product": "",
             "product_card_background": "",
             "product_card_text_color": "",
-            "promo_content_layout": "grid",
+            "promo_content_layout": "collage",
             "stretch_promo": false,
             "drawer_link_image": "hide"
           }
