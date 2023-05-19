@@ -85,7 +85,7 @@
           "settings": {
             "menu_item": "sweets",
             "layout": "horizontal_center",
-            "submenu_style": "bold_heading",
+            "submenu_style": "bold_text",
             "image_1": "shopify:\/\/shop_images\/sweet.jpg",
             "image_heading_1": "",
             "image_link_1": "",
