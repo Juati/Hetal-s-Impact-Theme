@@ -109,8 +109,9 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "Instant Flavoured Coffee",
-            "layout": "horizontal",
+            "layout": "horizontal_center",
             "submenu_style": "bold_heading",
+            "image_1": "shopify:\/\/shop_images\/coffeehamper.jpg",
             "image_heading_1": "",
             "image_link_1": "",
             "image_text_color_1": "#ffffff",
