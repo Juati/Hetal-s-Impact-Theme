@@ -46,14 +46,14 @@ Supported variables
   {%- assign card_class = card_class | append: 'product-card--show-secondary-media' -%}
 {%- endif -%}
 
-<product-card handle="{{ product.handle | escape }}" {% if reveal %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
+<product-card handle="{{ product.handle | escape }}"
+  {% if reveal %}reveal-js{% endif %}
+  {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT BADGES
   --------------------------------------------------------------------------------------------------------------------
-  {%- endcomment -%}
-
-  {%- if show_badges and product.media.size > 0 -%}
+  {%- endcomment -%}{%- if show_badges and product.media.size > 0 -%}
     {%- render 'product-badges', product: product, class: 'product-card__badge-list' -%}
   {%- endif -%}
 
@@ -74,7 +74,9 @@ Supported variables
           {%- endif -%}
         {%- endcapture -%}
 
-        {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
+        {%- capture main_image_classes -%}product-card__image product-card__image--primary
+          {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %}
+          aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
         {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
 
         {%- if show_secondary_image and product.media.size > 1 -%}
@@ -89,10 +91,17 @@ Supported variables
 
           {%- if product.variants.size == 1 and product.selling_plan_groups.size == 0 -%}
             {%- form 'product', product, is: 'product-form' -%}
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input
+                type="hidden"
+                name="id"
+                value="{{ product.selected_or_first_available_variant.id }}">
 
               <div class="pointer-fine:hidden">
-                <button type="submit" is="custom-button" class="product-card__mobile-quick-buy-button" aria-label="{{ quick_add_label | escape }}">
+                <button
+                  type="submit"
+                  is="custom-button"
+                  class="product-card__mobile-quick-buy-button"
+                  aria-label="{{ quick_add_label | escape }}">
                   {%- render 'icon' with 'quick-buy-cart' -%}
                 </button>
               </div>
@@ -105,7 +114,13 @@ Supported variables
             {%- capture quick_buy_id -%}quick-buy-{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
             <div class="pointer-fine:hidden">
-              <button type="button" aria-controls="{{ quick_buy_id }}" aria-expanded="false" aria-label="{{ quick_add_label | escape }}" is="custom-button" class="product-card__mobile-quick-buy-button">
+              <button
+                type="button"
+                aria-controls="{{ quick_buy_id }}"
+                aria-expanded="false"
+                aria-label="{{ quick_add_label | escape }}"
+                is="custom-button"
+                class="product-card__mobile-quick-buy-button">
                 {%- render 'icon' with 'quick-buy-cart' -%}
               </button>
             </div>
@@ -114,8 +129,13 @@ Supported variables
               {%- render 'button', content: quick_add_label, aria_controls: quick_buy_id -%}
             </div>
 
-            <quick-buy-drawer id="{{ quick_buy_id }}" header-bordered open-from="bottom" handle="{{ product.handle }}" role="region" aria-live="polite" class="quick-buy-drawer drawer">
-              {%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
+            <quick-buy-drawer id="{{ quick_buy_id }}"
+              header-bordered
+              open-from="bottom"
+              handle="{{ product.handle }}"
+              role="region"
+              aria-live="polite"
+              class="quick-buy-drawer drawer">{%- comment -%}Quick buy content is filled on demand for performance reasons {%- endcomment -%}
             </quick-buy-drawer>
           {%- endif -%}
         </div>
@@ -135,7 +155,9 @@ Supported variables
         <div class="rating-with-text w-full">
           {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
 
-          {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
+          {%- capture rating_class -%}
+            {% if mobile_reduced %}hidden sm:flex{% endif %}
+          {%- endcapture -%}
           {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
         </div>
       {%- else -%}
@@ -146,22 +168,36 @@ Supported variables
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
-          <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
+          <span class="product-card__title">
+            <a
+              href="{{ product.url }}"
+              class="bold"
+              data-instant>{{ product.title }}</a>
+          </span>
 
           {%- if text_alignment != 'center' -%}
-            {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
+            {%- capture rating_class -%}
+              {% if mobile_reduced %}hidden sm:flex{% endif %}
+            {%- endcapture -%}
             {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
           {%- endif -%}
         </div>
       {%- else -%}
-        <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
+        <span class="product-card__title">
+          <a
+            href="{{ product.url }}"
+            class="bold"
+            data-instant>{{ product.title }}</a>
+        </span>
       {%- endif -%}
 
-      {%- render 'price-list', product: product, text_alignment: text_alignment -%}
+
     </div>
 
     {%- if show_rating and mobile_reduced or text_alignment == 'center' -%}
-      {%- capture rating_class -%}{% unless text_alignment == 'center' %}sm:hidden{% endunless %}{%- endcapture -%}
+      {%- capture rating_class -%}
+        {% unless text_alignment == 'center' %}sm:hidden{% endunless %}
+      {%- endcapture -%}
       {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
 
@@ -176,45 +212,51 @@ Supported variables
           <div class="product-card__aside">
             {%- case settings.product_color_display -%}
               {%- when 'count' -%}
-                <p class="product-card__color-count text-sm text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
-
+              <p class="product-card__color-count text-sm text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
+              {%- render 'price-list', product: product, text_alignment: text_alignment -%}
               {%- when 'swatch' -%}
-                <fieldset class="product-card__swatch-list h-stack {% if settings.color_swatch_style == 'rectangle' %}gap-2.5{% else %}gap-0.5{% endif %}" data-option-position="{{ product_option.position }}">
-                  {%- for option_value in product_option.values limit: 4 -%}
-                    {%- if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value -%}
-                      {%- assign selected = true -%}
-                    {%- else -%}
-                      {% assign selected = false %}
-                    {%- endif -%}
+              <fieldset class="product-card__swatch-list h-stack {% if settings.color_swatch_style == 'rectangle' %}gap-2.5{% else %}gap-0.5{% endif %}" data-option-position="{{ product_option.position }}">
+                {%- for option_value in product_option.values limit: 4 -%}
+                  {%- if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value -%}
+                    {%- assign selected = true -%}
+                  {%- else -%}
+                    {% assign selected = false %}
+                  {%- endif -%}
 
-                    {%- render 'swatch' with 'color', value: option_value, name: name, size: 'sm', selected: selected -%}
-                  {%- endfor -%}
+                  {%- render 'swatch' with 'color', value: option_value, name: name, size: 'sm', selected: selected -%}
+                {%- endfor -%}
 
-                  {% if product_option.values.size > 4 %}
-                    <a href="{{ product.url }}" data-instant class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
-                  {% endif %}
-                </fieldset>
+                {% if product_option.values.size > 4 %}
+                  <a
+                    href="{{ product.url }}"
+                    data-instant
+                    class="color-swatch__view-more {% if settings.color_swatch_style == 'round' %}rounded-full{% endif %} text-xxs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                {% endif %}
+              </fieldset>
 
               {%- when 'variant' -%}
-                <fieldset class="product-card__variant-list" data-option-position="{{ product_option.position }}">
-                  {%- for option_value in product_option.values limit: 4 -%}
-                    {%- assign variant_option = 'option' | append: product_option.position -%}
-                    {%- assign variant_for_value = product.variants | where: variant_option, option_value | first -%}
+              <fieldset class="product-card__variant-list" data-option-position="{{ product_option.position }}">
+                {%- for option_value in product_option.values limit: 4 -%}
+                  {%- assign variant_option = 'option' | append: product_option.position -%}
+                  {%- assign variant_for_value = product.variants | where: variant_option, option_value | first -%}
 
-                    {%- if forloop.first or variant_for_value.matched and option_value == product_option.selected_value -%}
-                      {%- assign selected = true -%}
-                    {%- else -%}
-                      {% assign selected = false %}
-                    {%- endif -%}
-
-                    {%- render 'swatch' with 'media', media: variant_for_value.featured_media, value: option_value, name: name, size: 'sm', selected: selected -%}
-                  {%- endfor -%}
-
-                  {%- if product_option.values.size > 4 -%}
-                    <a href="{{ product.url }}" data-instant class="media-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                  {%- if forloop.first or variant_for_value.matched and option_value == product_option.selected_value -%}
+                    {%- assign selected = true -%}
+                  {%- else -%}
+                    {% assign selected = false %}
                   {%- endif -%}
-                </fieldset>
-              {%- endcase -%}
+
+                  {%- render 'swatch' with 'media', media: variant_for_value.featured_media, value: option_value, name: name, size: 'sm', selected: selected -%}
+                {%- endfor -%}
+
+                {%- if product_option.values.size > 4 -%}
+                  <a
+                    href="{{ product.url }}"
+                    data-instant
+                    class="media-swatch__view-more text-xs text-subdued">+{{ product_option.values.size | minus: 4 }}</a>
+                {%- endif -%}
+              </fieldset>
+            {%- endcase -%}
           </div>
 
           {%- break -%}
