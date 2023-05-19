@@ -6,11 +6,13 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/HP_Banner_WEB_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_1.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -18,7 +20,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -26,11 +28,13 @@
         "slide-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/HP_Banner_WEB_2.png",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -38,7 +42,29 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "e793ab02-6cb4-4076-b745-a0194f02effe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HP_Banner_WEB_3.png",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_3.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -46,7 +72,8 @@
       },
       "block_order": [
         "slide-1",
-        "slide-2"
+        "slide-2",
+        "e793ab02-6cb4-4076-b745-a0194f02effe"
       ],
       "custom_css": [
         ".header__wrapper {padding-block: 5px;}"
