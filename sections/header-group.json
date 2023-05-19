@@ -197,7 +197,7 @@
         "sidebar_menu": "",
         "secondary_menu": "",
         "menu_open_trigger": "click",
-        "opening_from": "left",
+        "opening_from": "bottom",
         "layout": "logo_left_navigation_center",
         "show_social_media": true,
         "show_locale_selector": false,
@@ -205,7 +205,7 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "reduce_padding": true,
+        "reduce_padding": false,
         "background_opacity": 100,
         "background_blur_radius": 0
       }
