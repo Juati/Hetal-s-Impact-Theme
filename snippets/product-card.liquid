@@ -65,7 +65,7 @@ Supported variables
   {%- endcomment -%}
 
   {%- if product.media.size > 0 -%}
-    <div class="product-card__figure gfgfg">
+    <div class="product-card__figure">
       <a href="{{ product.url }}" data-instant>
         {%- capture sizes -%}
           {%- if stacked -%}
@@ -151,7 +151,7 @@ Supported variables
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
-  <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
+  <div class="product-card__info fdfdfdf {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
         <div class="rating-with-text w-full">
