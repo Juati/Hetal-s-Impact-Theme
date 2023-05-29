@@ -10044,3 +10044,17 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
+/*add css for product card metafield   */
+.cardtagtext{
+  background: #000;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 8px;
+    border-radius: 21px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+/*add css for product card metafield   */
