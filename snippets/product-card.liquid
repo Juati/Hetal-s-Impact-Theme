@@ -169,7 +169,7 @@ Supported variables
         {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
       {%- endif -%}
     {%- endif -%}
-
+<div>{{ product.metafields.custom.productcardicon1 }}</div>
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
