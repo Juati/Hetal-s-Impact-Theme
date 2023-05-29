@@ -10057,4 +10057,14 @@ split-lines {
     letter-spacing: 0px;
     text-transform: uppercase;
 }
+.metafieldflexcard{
+  padding: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.textmetafield{
+  
+}
 /*add css for product card metafield   */
