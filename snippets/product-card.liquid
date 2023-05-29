@@ -169,16 +169,7 @@ Supported variables
         {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
       {%- endif -%}
     {%- endif -%}
-    <div class="metafieldflexcard">
-        <div class="textmetafield">
-          <div class="iconmargin">{{ product.metafields.custom.productcardicon1 }}</div>
-          <div>{{ product.metafields.custom.productcardtext1 }}</div>
-        </div>
-        <div class="textmetafield">
-          {{ product.metafields.custom.productcardicon2 }}
-          <div>{{ product.metafields.custom.productcardtext2 }}</div>
-        </div>
-    </div>
+  
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
@@ -293,5 +284,15 @@ Supported variables
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
+      <div class="metafieldflexcard">
+        <div class="textmetafield">
+          <div class="iconmargin">{{ product.metafields.custom.productcardicon1 }}</div>
+          <div>{{ product.metafields.custom.productcardtext1 }}</div>
+        </div>
+        <div class="textmetafield">
+          {{ product.metafields.custom.productcardicon2 }}
+          <div>{{ product.metafields.custom.productcardtext2 }}</div>
+        </div>
+    </div>
   </div>
 </product-card>
