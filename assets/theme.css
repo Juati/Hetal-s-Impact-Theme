@@ -10068,5 +10068,6 @@ split-lines {
 }
 .iconmargin{
     display: flex;
+    align-items: center;
 }
 /*add css for product card metafield   */
