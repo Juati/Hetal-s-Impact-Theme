@@ -10070,7 +10070,7 @@ split-lines {
     display: flex;
     align-items: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 769px) {
   .metafieldflexcard{
     display:none;
   }
