@@ -10067,4 +10067,7 @@ split-lines {
 .textmetafield{
     display: flex;
 }
+.iconmargin{
+    display: flex;
+}
 /*add css for product card metafield   */
