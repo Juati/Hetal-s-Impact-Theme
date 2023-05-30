@@ -115,7 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                               {% if sub_link.object.image.src %}
-                              <img src="{{ sub_link.object.image.src | collection_img_url: 'small' }}" alt="{{ sub_link.object.title | escape }}" />
+                              <img width="50px" src="{{ sub_link.object.image.src | collection_img_url: 'small' }}" alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
                               
                               <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
