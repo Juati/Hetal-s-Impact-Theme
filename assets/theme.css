@@ -10085,6 +10085,7 @@ split-lines {
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
+    transition: transform 0.5s;
     transform: scale(1);
 }
 @media screen and (max-width: 790px) {
