@@ -92,6 +92,9 @@
     },
     "featured-collection": {
       "type": "featured-collection",
+      "custom_css": [
+        ".floating-controls-container {margin-inline: 100px;}"
+      ],
       "settings": {
         "collection": "",
         "products": [
