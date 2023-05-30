@@ -114,8 +114,10 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                              {%- assign linksplit = sub_link.url | split: "/" -%}
-                              <div>{{ linksplit[0] }}</div>
+                              {%- assign linksplits = sub_link.url | split: "/" -%}
+                            {% for linksplit in linksplits %}
+                              {{ linksplit }}
+                            {% endfor %}
                               <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
                             </a>
                           {%- endif -%}
