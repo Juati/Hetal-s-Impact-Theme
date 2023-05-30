@@ -10086,7 +10086,7 @@ split-lines {
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
 /*     animation: 2s cubic-bezier(.26,.54,.32,1) forwards ani-fadeIn; */
-    transform: scale(0.89,4);
+    transform: scale(0.89);
 }
 @media screen and (max-width: 790px) {
   .metafieldflexcard{
