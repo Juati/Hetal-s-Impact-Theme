@@ -115,6 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                             {% if link.object.image.src %}
+                              {{ link.object.image.src }}
                               {% endif %}
                               {%- assign linksplits = sub_link.url  | split: "/"-%}
 
