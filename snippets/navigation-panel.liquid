@@ -114,8 +114,8 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                            {% if link.object.image.src %}
-                              {{ link.object.image.src }}
+                            {% if sub_link.object.image.src %}
+                              {{ sub_link.object.image.src }}????
                               {% endif %}
                               {%- assign linksplits = sub_link.url  | split: "/"-%}
 
