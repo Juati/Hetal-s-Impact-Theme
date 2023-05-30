@@ -89,7 +89,7 @@ Supported variables
                           {%- if sub_link.links.size > 0 -%}
                             <button class="text-with-icon w-full justify-between" aria-expanded="false" data-panel="2-{% increment level_2 %}">
                               <span>{{ sub_link.title }}</span>
-                              <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
+                              <span class="circl???e-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
                             </button>
                           {%- else -%}
                             <a class="group {% if is_image_shown and is_mega_menu %}h-stack gap-4{% else %}block w-full{% endif %}" href="{{ sub_link.url }}">
@@ -115,6 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                               {% if sub_link.url  contains "collections" %}
+                                {{  sub_link.url }}
                                 <div>{{ collection.title }}</div>
                               {%  endif %}
                               <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
