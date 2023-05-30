@@ -188,7 +188,8 @@
         "b2acb441-c1e9-4098-8504-49ef9fa05b50"
       ],
       "custom_css": [
-        "a.bold.link-faded-reverse {text-transform: uppercase;}"
+        "a.bold.link-faded-reverse {text-transform: uppercase;}",
+        "summary.text-with-icon.gap-2\\.5.bold.link-faded-reverse {text-transform: uppercase;}"
       ],
       "settings": {
         "enable_sticky": true,
