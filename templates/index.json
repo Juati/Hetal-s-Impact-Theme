@@ -188,6 +188,7 @@
     },
     "449bead9-3df2-440b-b97a-6454951e2fe2": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--14464004259939__449bead9-3df2-440b-b97a-6454951e2fe2-1684498387dbb7ccee-0": {
           "type": "collection",
@@ -303,13 +304,13 @@
         "3ae830ff-161e-4847-a5e5-573309cf6882"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "About",
+        "gap": "large",
+        "text_alignment": "center",
+        "subheading": "",
         "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "content": "",
         "background": "",
         "background_gradient": "",
         "text_color": ""
