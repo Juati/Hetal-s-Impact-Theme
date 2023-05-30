@@ -115,7 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                               {%- assign linksplit = sub_link.url | split: "/" -%}
-                              <div>{{ linksplit }}</div>
+                              <div>{{ linksplit[0] }}</div>
                               <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
                             </a>
                           {%- endif -%}
