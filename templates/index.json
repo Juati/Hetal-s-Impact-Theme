@@ -93,7 +93,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".floating-controls-container {margin-inline: 100px;}"
+
       ],
       "settings": {
         "collection": "",
@@ -109,7 +109,7 @@
         "stack_products": true,
         "show_progress_bar": false,
         "products_count": 6,
-        "products_per_row_mobile": "2",
+        "products_per_row_mobile": "1",
         "products_per_row_desktop": 3,
         "subheading": "",
         "title": "Featured collection",
