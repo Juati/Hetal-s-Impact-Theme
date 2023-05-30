@@ -116,7 +116,9 @@ Supported variables
                               {%- endif -%}
                               {%- assign linksplits = sub_link.url | split: "/" -%}
                             {% for linksplit in linksplits %}
-                              {{ linksplit }}
+                              {% if linksplit  == "collections" %}
+                                <div>{{ collection.title }}</div>
+                              {%  endif %}
                             {% endfor %}
                               <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
                             </a>
