@@ -66,8 +66,7 @@ Supported variables
                 </button>
               {%- else -%}
                 <a href="{{ link.url }}" class="group block w-full">
-                <div> {{  link.url }}</div>
-                  <span><span class="reversed-link hhhhh">{{ link.title }}</span></span>
+                  <span><span class="reversed-link 111">{{ link.title }}</span></span>
                 </a>
               {%- endif -%}
             </li>
@@ -116,7 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
 
-                              <span><span class="reversed-link">{{ sub_link.title }}</span></span>
+                              <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
                             </a>
                           {%- endif -%}
                         </li>
@@ -159,7 +158,7 @@ Supported variables
                                         {%- endif -%}
                                       {%- endif -%}
 
-                                      <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+                                      <span><span class="reversed-link 3333">{{ sub_sub_link.title }}</span></span>
                                     </a>
                                   </li>
                                 {%- endfor -%}
@@ -186,7 +185,7 @@ Supported variables
           <ul class="v-stack gap-3">
             {%- for link in secondary_menu.links -%}
               <li>
-                <a href="{{ link.url }}" class="h6 group"><span><span class="reversed-link">{{ link.title }}</span></span></a>
+                <a href="{{ link.url }}" class="h6 group"><span><span class="reversed-link 444">{{ link.title }}</span></span></a>
               </li>
             {%- endfor -%}
           </ul>
