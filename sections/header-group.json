@@ -187,6 +187,9 @@
         "a40de856-28ed-4631-a120-2dc04f5cda6f",
         "b2acb441-c1e9-4098-8504-49ef9fa05b50"
       ],
+      "custom_css": [
+        "a.bold.link-faded-reverse {text-transform: uppercase;}"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
