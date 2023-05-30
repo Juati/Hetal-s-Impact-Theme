@@ -10074,7 +10074,7 @@ split-lines {
       font-size: 13px;
 
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 790px) {
   .metafieldflexcard{
     display:none;
   }
