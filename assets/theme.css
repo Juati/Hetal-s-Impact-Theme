@@ -10081,12 +10081,12 @@ split-lines {
   display:flex;
 }
 .shopify-section--multi-column .multi-column__item .rounded{
-/*   transform: scale(.9); */
+  transform: scale(.8);
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
 /*     animation: 2s cubic-bezier(.26,.54,.32,1) forwards ani-fadeIn; */
-    transform: scale(1,4);
+    transform: scale(0.9,4);
 }
 @media screen and (max-width: 790px) {
   .metafieldflexcard{
