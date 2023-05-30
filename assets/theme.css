@@ -10080,13 +10080,13 @@ split-lines {
 .disflexsubmenu{
   display:flex;
 }
-/* .shopify-section--multi-column .multi-column__item .rounded{
+.shopify-section--multi-column .multi-column__item .rounded{
   transform: scale(.95);
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
     transform: scale(1);
-} */
+}
 @media screen and (max-width: 790px) {
   .metafieldflexcard{
     display:none;
