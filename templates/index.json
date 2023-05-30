@@ -6,8 +6,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HP_Banner_WEB_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_1.png",
+            "image": "shopify:\/\/shop_images\/HP_Banner_web1.png",
+            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_1_new.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -28,7 +28,7 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HP_Banner_WEB_2.png",
+            "image": "shopify:\/\/shop_images\/HP_Banner_web2.png",
             "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_2.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
