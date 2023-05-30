@@ -10081,6 +10081,7 @@ split-lines {
   display:flex;
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
+    cursor:pointer;
     animation: 1.25s cubic-bezier(.26,.54,.32,1) forwards ani-fadeIn;
     transform: scale(1);
 }
