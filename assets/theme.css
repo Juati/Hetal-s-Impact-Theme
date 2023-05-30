@@ -10081,7 +10081,7 @@ split-lines {
   display:flex;
 }
 .shopify-section--multi-column .multi-column__item .rounded{
-  transform: scale(.9);
+/*   transform: scale(.9); */
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
