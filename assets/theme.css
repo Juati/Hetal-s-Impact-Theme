@@ -10134,4 +10134,7 @@ ul.header.links {
 img.header__logo-image {
     float: left;
 }
+form {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 /* header end */
