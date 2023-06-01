@@ -10213,4 +10213,15 @@ svg.icon.icon-search{
 height-observer{
     position: relative;
     z-index: -1;}
+div#predictive-search {
+    position: absolute;
+    z-index: 999;
+    max-width: unset;
+    width: 800px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 3px 5px #32323240;
+    border: 1px solid #9a9a9a;
+    z-index: 9999999;
+}
 /* header end */
