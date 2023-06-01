@@ -126,7 +126,7 @@ the underlying logic of the menu.
               <div class="page-width page-width--flush-small">
                 <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
                   {%- for product in search_collection.products limit: 6 -%}
-                    {%- render 'product-grid-item', product: product, no_actions: true -%}
+                    {%- render 'icon', product: product, no_actions: true -%}
                   {%- endfor -%}
                 </div>
               </div>
@@ -138,7 +138,7 @@ the underlying logic of the menu.
                 <div class="text-center predictive-results__footer">
                   <button type="button" class="btn btn--small" data-predictive-search-button>
                     <small>
-                      {{ 'general.search.view_more' | t }}
+                      {{ general.search.view_more | t }}
                     </small>
                   </button>
                 </div>
