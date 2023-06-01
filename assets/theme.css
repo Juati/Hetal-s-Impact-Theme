@@ -10137,4 +10137,8 @@ img.header__logo-image {
 form {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+.header-blocks-wrapper{
+      text-align: right;
+    margin-top: 0;
+}
 /* header end */
