@@ -10156,4 +10156,15 @@ form {
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
+.block-search input {
+    margin: 0;
+    padding: 8px 35px 7px 15px;
+    position: static;
+    max-height: 32px;
+    border: 1px solid transparent;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
 /* header end */
