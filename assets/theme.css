@@ -10210,4 +10210,7 @@ svg.icon.icon-search{
     position: absolute;
     right: 10px;
 }
+height-observer{
+    position: relative;
+    z-index: -1;}
 /* header end */
