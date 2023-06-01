@@ -10204,4 +10204,10 @@ li.flavors-link {
 .header__main-nav{
 max-width: 1076px;
     padding: 0 20px;}
+svg.icon.icon-search{
+      height: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
 /* header end */
