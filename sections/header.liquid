@@ -100,7 +100,7 @@ the underlying logic of the menu.
       <div class="header-blocks-wrapper">
         <div class="block block-search">
             <div class="block block-title"><strong>Search</strong></div>
-            <div class="block block-content">
+<!--             <div class="block block-content">
                 <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
                     <div class="field search">
                         <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
@@ -115,21 +115,16 @@ the underlying logic of the menu.
 
                         </div>
                     </div>
+                  <div class="actions">
+                          <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
+                          <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
+                          {%- render 'icon' with 'search' -%}
+                          </a>
+                     </div>
+                </form>
+              </div> -->
                   
         <div id="SearchResultsWrapper" class="site-header__search-results hide">
-<!--             {%- assign search_collection = collections[settings.search_top_collection] -%} -->
-<!--             <div id="TopSearched" class="site-header__search-results-wrapper">
-              <div class="page-width">
-                <div class="h4 site-header__search-title">{{ general.search.search_title | t }}</div>
-              </div>
-              <div class="page-width page-width--flush-small">
-                <div class="new-grid product-grid scrollable-grid--small" data-view="scrollable">
-                  {%- for product in search_collection.products limit: 6 -%}
-                    {%- render 'icon', product: product, no_actions: true -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-            </div> -->
            <form action="/collections/search-results" method="get" role="search"
                 class="site-header__search-form" data-dark="{{ dark_search_bg }}">
                 <input type="hidden" name="type" value="{{ settings.search_type }}">
@@ -146,11 +141,7 @@ the underlying logic of the menu.
                 </button>
               </form>
         </div>
-                    <div class="actions">
-                          <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
-                          <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
-                          {%- render 'icon' with 'search' -%}
-                          </a>
+                    
           
 <!--                         <button type="submit" title="Search" class="action search" disabled="">
                            <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
@@ -158,9 +149,8 @@ the underlying logic of the menu.
                             <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </button> -->
-                    </div>
-                </form>
-            </div>
+                   
+            
         </div>
           <ul class="header links">
             <li class="flavors-link">
