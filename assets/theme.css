@@ -10224,4 +10224,18 @@ div#predictive-search {
     z-index: 9999999;
   min-height: 305px;
 }
+#predictive-search-results li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#predictive-search-results a{
+    display: flex;
+    align-items: center;
+    margin: 2%;}
+#predictive-search-results h3#predictive-search-products {
+    text-align: center;
+    margin: 2% 0;
+}
 /* header end */
