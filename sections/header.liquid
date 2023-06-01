@@ -124,66 +124,29 @@ the underlying logic of the menu.
             </div>
         </div>
           <ul class="header links">
-      <li class="flavors-link">
-            <a rel="nofollow" class="showflavor" href="https://www.bakedbymelissa.com/menu" role="link" title="Flavors">
-                {% render 'flavors' %}Flavors        
-            </a>
-        </li>
-        <li class="flavors-link authorization-link" data-label="or">
-            <a title="Login" href="https://www.bakedbymelissa.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYmFrZWRieW1lbGlzc2EuY29tL3RyZWF0cy9jdXBjYWtlcy5odG1s/" rel="nofollow">
-               {% render 'login_user' %}
-                Login    </a>
-        </li>
-       <li data-block=" flavors-link minicart" class="minicart-wrapper">
-          <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
-              <span class="minicart-icon">
-                 {% render 'addcart' %}
-                  <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-                      <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
-                      <span class="counter-label">
-                      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-                      </span>
-                  </span>
-              </span>
-              Cart   
-          </a>
-              
-                  
-        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
-              <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
-                  <!-- ko template: getTemplate() -->
-                  <div class="block-title">
-                      <strong>
-                          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
-                          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
-                                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
-                      </strong>
-                  </div>
-      
-                  <div class="block-content">
-              <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
-                  <span aria-hidden="true"><i class="close"></i></span>
-              </button>
-          
+            <li class="flavors-link">
+                  <a rel="nofollow" class="showflavor" href="https://www.bakedbymelissa.com/menu" role="link" title="Flavors">
+                      {% render 'flavors' %}Flavors        
+                  </a>
+              </li>
+              <li class="flavors-link authorization-link" data-label="or">
+                  <a title="Login" href="https://www.bakedbymelissa.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYmFrZWRieW1lbGlzc2EuY29tL3RyZWF0cy9jdXBjYWtlcy5odG1s/" rel="nofollow">
+                     {% render 'login_user' %}
+                      Login    </a>
+              </li>
              
-                  <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
-                 
-          </div>
-              </div>
-        </div>
-    </div></li>
-      <li class="flavors-link authorization-link" data-label="or"> 
-        <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
-            <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
-            {%- render 'addcart' with 'cart' -%}Cart
-            <div class="header__cart-count">
-              <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
-                {{- cart.item_count -}}
-              </cart-count>
-            </div>
-          </a>
-      </li>
-    </ul>
+              <li class="flavors-link authorization-link" data-label="or"> 
+                <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
+                    <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
+                    {%- render 'addcart' with 'cart' -%}Cart
+                    <div class="header__cart-count">
+                      <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
+                        {{- cart.item_count -}}
+                      </cart-count>
+                    </div>
+                  </a>
+              </li>
+          </ul>
      
         </div>
   </div>
