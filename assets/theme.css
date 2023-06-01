@@ -10101,5 +10101,25 @@ split-lines {
 }
 /*add css for product card metafield   */
 /* header start */
-
+.header.content {
+    max-width: 1076px;
+    padding: 14px 20px 11px;
+}
+.hamburger-menu ,.block.block-title{
+display:none;}
+.header-blocks-wrapper{
+  display:flex;
+}
+ul.header.links {
+    display: flex;
+}
+.block-search .minisearch .actions {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    height: 32px;
+    width: 16px;
+    margin: auto 0;
+}
 /* header end */
