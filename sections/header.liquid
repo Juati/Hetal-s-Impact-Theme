@@ -97,32 +97,33 @@ the underlying logic of the menu.
         {% else %}
         <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
       {% endif %}
-      <div class="header-blocks-wrapper"><div class="block block-search">
-      <div class="block block-title"><strong>Search</strong></div>
-      <div class="block block-content">
-          <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
-              <div class="field search">
-                  <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
-                      <span class="mobile-only">Search</span>
-                  </div>
-                  <div class="control">
-                      <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
-                     <div id="search_autocomplete" class="search-autocomplete"></div>
-                 
-                  </div>
-              </div>
-              <div class="actions">
-                  <button type="submit" title="Search" class="action search" disabled="">
-                     <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-                      <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-                      <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                  </button>
-              </div>
-          </form>
-      </div>
-  </div>
-    <ul class="header links">
+      <div class="header-blocks-wrapper">
+        <div class="block block-search">
+            <div class="block block-title"><strong>Search</strong></div>
+            <div class="block block-content">
+                <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
+                    <div class="field search">
+                        <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
+                            <span class="mobile-only">Search</span>
+                        </div>
+                        <div class="control">
+                            <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
+                           <div id="search_autocomplete" class="search-autocomplete"></div>
+                       
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button type="submit" title="Search" class="action search" disabled="">
+                           <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
+                            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
+                            <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+          <ul class="header links">
       <li class="flavors-link">
             <a rel="nofollow" class="showflavor" href="https://www.bakedbymelissa.com/menu" role="link" title="Flavors">
                 {% render 'flavors' %}Flavors        
@@ -175,45 +176,8 @@ the underlying logic of the menu.
         </div>
     </div></li>
     </ul>
-      <div data-block="minicart" class="minicart-wrapper">
-          <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
-              <span class="minicart-icon">
-                 {% render 'addcart' %}
-                  <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-                      <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
-                      <span class="counter-label">
-                      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-                      </span>
-                  </span>
-              </span>
-              Cart   
-          </a>
-              
-                  
-        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
-              <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
-                  <!-- ko template: getTemplate() -->
-                  <div class="block-title">
-                      <strong>
-                          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
-                          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
-                                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
-                      </strong>
-                  </div>
-      
-                  <div class="block-content">
-              <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
-                  <span aria-hidden="true"><i class="close"></i></span>
-              </button>
-          
-             
-                  <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
-                 
-          </div>
-              </div>
+     
         </div>
-    </div></div>
-  </div>
   </div>
 
 <height-observer variable="header">
