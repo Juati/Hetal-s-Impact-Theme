@@ -10188,4 +10188,8 @@ border: 0;
     margin-right: 16px;
     margin-top: 8px;
 }
+li.flavors-link {
+    display: flex;
+    align-items: center;
+}
 /* header end */
