@@ -76,7 +76,9 @@ the underlying logic of the menu.
 </style>
 
 <height-observer variable="header">
-  <div class="header content"><a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
+
+  <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
+    <div class="header content"><a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
 <span class="action nav-toggle"><span>Menu</span></span>
 </a>
 <a class="logo" href="https://www.bakedbymelissa.com/" title="Baked by Melissa">
@@ -196,7 +198,6 @@ the underlying logic of the menu.
 
 
 </div></div>
-  <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
     <div class="header__wrapper">
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
