@@ -10107,4 +10107,7 @@ split-lines {
 }
 .hamburger-menu{
 display:none;}
+.header-blocks-wrapper{
+  display:flex;
+}
 /* header end */
