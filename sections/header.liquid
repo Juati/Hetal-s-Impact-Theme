@@ -75,7 +75,7 @@ the underlying logic of the menu.
   {%- endif -%}
 </style>
     <div class="header content">
-      
+      {%- capture logo_content -%}
       {%- if section.settings.logo -%}
         {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
         {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -88,6 +88,7 @@ the underlying logic of the menu.
             {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
       {%- endif -%}
+        {%- endcapture -%}
       {%- if request.page_type == 'index' -%}
         <h1 class="header__logo aaa">
           <a href="{{ routes.root_url }}">{{ logo_content }}</a>
