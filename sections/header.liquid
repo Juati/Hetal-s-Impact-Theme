@@ -107,9 +107,31 @@ the underlying logic of the menu.
                             <span class="mobile-only">Search</span>
                         </div>
                         <div class="control">
-                            <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
-                           <div id="search_autocomplete" class="search-autocomplete"></div>
-                       
+<!--                             <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
+                           <div id="search_autocomplete" class="search-autocomplete"></div> -->
+                       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+
+<predictive-search>
+  <form action="{{ routes.search_url }}" method="get" role="search">
+    <label for="Search">Search</label>
+    <input
+      id="Search"
+      type="search"
+      name="q"
+      value="{{ search.terms | escape }}"
+      role="combobox"
+      aria-expanded="false"
+      aria-owns="predictive-search-results"
+      aria-controls="predictive-search-results"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+    >
+    <input name="options[prefix]" type="hidden" value="last">
+
+    <div id="predictive-search" tabindex="-1"></div>
+  </form>
+</predictive-search>
+
                         </div>
                     </div>
                     <div class="actions">
