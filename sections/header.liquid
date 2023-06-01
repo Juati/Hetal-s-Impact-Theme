@@ -78,7 +78,6 @@ the underlying logic of the menu.
     <a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
         <span class="action nav-toggle"><span>Menu</span></span>
     </a>
-    {%- capture logo_content -%}
       {%- if section.settings.logo -%}
         {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
         {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -91,7 +90,6 @@ the underlying logic of the menu.
       {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
     {%- endif -%}
-    {%- endcapture -%}
 <div class="header-blocks-wrapper"><div class="block block-search">
     <div class="block block-title"><strong>Search</strong></div>
     <div class="block block-content">
@@ -326,7 +324,7 @@ the underlying logic of the menu.
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-      {%- capture logo_content -%}
+<!--       {%- capture logo_content -%} -->
         {%- if section.settings.logo -%}
           {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
           {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -339,7 +337,7 @@ the underlying logic of the menu.
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
         {%- endif -%}
-      {%- endcapture -%}
+<!--       {%- endcapture -%} -->
 
       {%- if request.page_type == 'index' -%}
         <h1 class="header__logo">
