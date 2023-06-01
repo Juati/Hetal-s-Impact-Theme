@@ -10222,5 +10222,6 @@ div#predictive-search {
     background: white;
     box-shadow: 0 3px 5px #32323240;
     z-index: 9999999;
+  min-height: 305px;
 }
 /* header end */
