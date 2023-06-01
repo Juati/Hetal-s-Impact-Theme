@@ -124,7 +124,7 @@ the underlying logic of the menu.
                 </form>
               </div> -->
                   
-        <div id="SearchResultsWrapper" class="site-header__search-results hide">
+<!--         <div id="SearchResultsWrapper" class="site-header__search-results hide">
            <form action="/collections/search-results" method="get" role="search"
                 class="site-header__search-form" data-dark="{{ dark_search_bg }}">
                 <input type="hidden" name="type" value="{{ settings.search_type }}">
@@ -142,7 +142,7 @@ the underlying logic of the menu.
                 </button>
                     <div id="predictive-search" tabindex="-1"></div>
               </form>
-        </div>
+        </div> -->
                     
           
 <!--                         <button type="submit" title="Search" class="action search" disabled="">
@@ -151,6 +151,27 @@ the underlying logic of the menu.
                             <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                         </button> -->
+
+          <predictive-search>
+  <form action="{{ routes.search_url }}" method="get" role="search">
+    <label for="Search">Search</label>
+    <input
+      id="Search"
+      type="search"
+      name="q"
+      value="{{ search.terms | escape }}"
+      role="combobox"
+      aria-expanded="false"
+      aria-owns="predictive-search-results"
+      aria-controls="predictive-search-results"
+      aria-haspopup="listbox"
+      aria-autocomplete="list"
+    >
+    <input name="options[prefix]" type="hidden" value="last">
+
+    <div id="predictive-search" tabindex="-1"></div>
+  </form>
+</predictive-search>
                    
             
         </div>
