@@ -75,9 +75,7 @@ the underlying logic of the menu.
   {%- endif -%}
 </style>
     <div class="header content">
-      <a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
-          <span class="action nav-toggle"><span>Menu</span></span>
-      </a>
+      
       {%- if section.settings.logo -%}
         {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
         {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
