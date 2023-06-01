@@ -10141,4 +10141,19 @@ form {
       text-align: right;
     margin-top: 0;
 }
+.search-placeholder-label {
+    cursor: text;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 35px;
+    line-height: 32px;
+    color: #65656a;
+    text-align: left;
+    font-size: 1.4rem;
+    -ms-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
 /* header end */
