@@ -140,9 +140,7 @@ the underlying logic of the menu.
     <div data-block="minicart" class="minicart-wrapper">
       <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
           <span class="minicart-icon">
-              <span aria-hidden="true">
-                  <img class="header-icon icon-cart" src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/cart-icon.svg" alt="Cart">
-              </span>
+             {% render 'addcart' %}
               <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
                   <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
                   <span class="counter-label">
