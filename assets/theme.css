@@ -10112,6 +10112,7 @@ display:none;}
 }
 ul.header.links {
     display: flex;
+  align-items:center;
 }
 .block-search .minisearch .actions {
     position: absolute;
