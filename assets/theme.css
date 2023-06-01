@@ -10113,6 +10113,7 @@ display:none;}
 ul.header.links {
     display: flex;
   align-items:center;
+  gap:1.5rem;
 }
 .block-search .minisearch .actions {
     position: absolute;
