@@ -132,7 +132,18 @@ the underlying logic of the menu.
               </div>
             </div>
 
-           
+             <div id="PredictiveWrapper" class="hide" data-image-size="{{ settings.predictive_image_size }}">
+              <div class="page-width">
+                <div id="PredictiveResults" class="predictive-result__layout"></div>
+                <div class="text-center predictive-results__footer">
+                  <button type="button" class="btn btn--small" data-predictive-search-button>
+                    <small>
+                      {{ general.search.view_more | t }}
+                    </small>
+                  </button>
+                </div>
+              </div>
+            </div>
         </div>
                     <div class="actions">
                           <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
