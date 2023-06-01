@@ -351,6 +351,8 @@
       "collections": "Collections",
       "posts": "Blog posts",
       "pages": "Pages",
+      "placeholder": "Search",
+      "submit": "Search",
       "clear": "Clear",
       "search_title": "Top searched",
       "view_more": "View more",
