@@ -116,9 +116,9 @@ the underlying logic of the menu.
                         </div>
                     </div>
                   
-<!--         <div id="SearchResultsWrapper" class="site-header__search-results hide">
-            {%- assign search_collection = collections[settings.search_top_collection] -%}
-            <div id="TopSearched" class="site-header__search-results-wrapper">
+        <div id="SearchResultsWrapper" class="site-header__search-results hide">
+<!--             {%- assign search_collection = collections[settings.search_top_collection] -%} -->
+<!--             <div id="TopSearched" class="site-header__search-results-wrapper">
               <div class="page-width">
                 <div class="h4 site-header__search-title">{{ general.search.search_title | t }}</div>
               </div>
@@ -129,8 +129,7 @@ the underlying logic of the menu.
                   {%- endfor -%}
                 </div>
               </div>
-            </div>
-        </div> -->
+            </div> -->
            <form action="/collections/search-results" method="get" role="search"
                 class="site-header__search-form" data-dark="{{ dark_search_bg }}">
                 <input type="hidden" name="type" value="{{ settings.search_type }}">
@@ -146,6 +145,7 @@ the underlying logic of the menu.
                   <span class="icon__fallback-text">{{ general.accessibility.close | t }}</span>
                 </button>
               </form>
+        </div>
                     <div class="actions">
                           <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
                           <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
