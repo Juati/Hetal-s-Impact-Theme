@@ -10122,4 +10122,13 @@ ul.header.links {
     width: 16px;
     margin: auto 0;
 }
+.block.block-search {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: calc(20rem + ((1vw - 7.68px) * 12.0536));
+    margin-top: 3px;
+    margin-right: 22px;
+    z-index: 4;
+}
 /* header end */
