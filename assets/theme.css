@@ -10176,4 +10176,13 @@ border: 0;
     padding: 0;
     position: absolute;
     width: 1px;}
+.header.additional .storelocator-link:before {
+    content: '';
+    display: inline-block;
+    border-left: 1px solid #979797;
+    height: 16px;
+    width: 2px;
+    margin-right: 16px;
+    margin-top: 8px;
+}
 /* header end */
