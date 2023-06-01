@@ -129,11 +129,7 @@ the underlying logic of the menu.
                       {% render 'flavors' %}Flavors        
                   </a>
               </li>
-              <li class="flavors-link authorization-link" data-label="or">
-                  <a title="Login" href="https://www.bakedbymelissa.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYmFrZWRieW1lbGlzc2EuY29tL3RyZWF0cy9jdXBjYWtlcy5odG1s/" rel="nofollow">
-                     {% render 'login_user' %}
-                      Login    </a>
-              </li>
+             
              <li class="flavors-link authorization-link" data-label="or">
                  {%- if shop.customer_accounts_enabled -%}
                 <a href="{{ routes.account_url }}" class="hidden tap-area sm:block">
