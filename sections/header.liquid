@@ -136,54 +136,83 @@ the underlying logic of the menu.
               </svg>
                 Login    </a>
         </li>
-    </ul>
-    <div data-block="minicart" class="minicart-wrapper">
-      <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
-          <span class="minicart-icon">
-             {% render 'addcart' %}
-              <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-                  <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
-                  <span class="counter-label">
-                  <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+       <li data-block="minicart" class="minicart-wrapper">
+          <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
+              <span class="minicart-icon">
+                 {% render 'addcart' %}
+                  <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+                      <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+                      <span class="counter-label">
+                      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                      </span>
                   </span>
               </span>
-          </span>
-          Cart    </a>
+              Cart   
+          </a>
               
                   
-  <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
+        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
               <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
                   <!-- ko template: getTemplate() -->
-  <div class="block-title">
-      <strong>
-          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
-          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
-                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
-      </strong>
-  </div>
-  
-  <div class="block-content">
-      <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
-          <span aria-hidden="true"><i class="close"></i></span>
-      </button>
-  
-      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-  
-      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-  
-      <!-- ko ifnot: getCartParam('summary_count') -->
-          <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
-          <!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
-      <!-- /ko -->
-  
-      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-  
-      <!-- ko if: getRegion('promotion').length --><!-- /ko -->
-  </div>
-  <!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
-  <!-- /ko -->
+                  <div class="block-title">
+                      <strong>
+                          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
+                          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
+                                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
+                      </strong>
+                  </div>
+      
+                  <div class="block-content">
+              <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
+                  <span aria-hidden="true"><i class="close"></i></span>
+              </button>
+          
+             
+                  <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
+                 
+          </div>
               </div>
-                      </div></div></div>
+        </div>
+    </div></li>
+    </ul>
+      <div data-block="minicart" class="minicart-wrapper">
+          <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
+              <span class="minicart-icon">
+                 {% render 'addcart' %}
+                  <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+                      <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+                      <span class="counter-label">
+                      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                      </span>
+                  </span>
+              </span>
+              Cart   
+          </a>
+              
+                  
+        <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
+              <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                  <!-- ko template: getTemplate() -->
+                  <div class="block-title">
+                      <strong>
+                          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
+                          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
+                                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
+                      </strong>
+                  </div>
+      
+                  <div class="block-content">
+              <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
+                  <span aria-hidden="true"><i class="close"></i></span>
+              </button>
+          
+             
+                  <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
+                 
+          </div>
+              </div>
+        </div>
+    </div></div>
   </div>
   </div>
 
