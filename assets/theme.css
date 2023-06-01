@@ -10192,4 +10192,7 @@ li.flavors-link {
     display: flex;
     align-items: center;
 }
+.flavors-link svg{
+  display:block;
+}
 /* header end */
