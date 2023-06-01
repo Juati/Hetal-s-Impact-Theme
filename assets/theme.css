@@ -10131,4 +10131,7 @@ ul.header.links {
     margin-right: 22px;
     z-index: 4;
 }
+img.header__logo-image {
+    float: left;
+}
 /* header end */
