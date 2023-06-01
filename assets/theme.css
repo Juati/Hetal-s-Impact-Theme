@@ -10100,3 +10100,11 @@ split-lines {
   }
 }
 /*add css for product card metafield   */
+/* header start */
+.header.content {
+    max-width: 1076px;
+    padding: 14px 20px 11px;
+}
+.hamburger-menu{
+display:none;}
+/* header end */
