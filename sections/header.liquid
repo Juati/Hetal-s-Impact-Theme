@@ -99,81 +99,18 @@ the underlying logic of the menu.
       {% endif %}
       <div class="header-blocks-wrapper">
         <div class="block block-search">
-            <div class="block block-title"><strong>Search</strong></div>
-<!--             <div class="block block-content">
-                <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
-                    <div class="field search">
-                        <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
-                            <span class="mobile-only">Search</span>
-                        </div>
-                        <div class="control">
-                            <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
-                           <div id="search_autocomplete" class="search-autocomplete"></div>
-                       
-
-
-
-                        </div>
-                    </div>
-                  <div class="actions">
-                          <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
-                          <span class="sr-only">{{ 'header.general.open_search' | t }}</span>
-                          {%- render 'icon' with 'search' -%}
-                          </a>
-                     </div>
-                </form>
-              </div> -->
-                  
-<!--         <div id="SearchResultsWrapper" class="site-header__search-results hide">
-           <form action="/collections/search-results" method="get" role="search"
-                class="site-header__search-form" data-dark="{{ dark_search_bg }}">
-                <input type="hidden" name="type" value="{{ settings.search_type }}">
-                <input type="hidden" name="options[prefix]" value="last">
-                <input type="search" name="q" value="{{ search.terms | escape | replace: '*', '' }}" placeholder="{{ general.search.placeholder | t }}" class="site-header__search-input" aria-label="{{ 'general.search.placeholder' | t }}">
-                <button type="submit" class="text-link site-header__search-btn site-header__search-btn--submit">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
-                  <span class="icon__fallback-text">{{ general.search.submit | t }}</span>
-                    
-                </button>
-              
-                <button type="button" class="text-link site-header__search-btn site-header__search-btn--cancel">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M19 17.61l27.12 27.13m0-27.13L19 44.74"/></svg>
-                  <span class="icon__fallback-text">{{ general.accessibility.close | t }}</span>
-                </button>
-                    <div id="predictive-search" tabindex="-1"></div>
-              </form>
-        </div> -->
-                    
-          
-<!--                         <button type="submit" title="Search" class="action search" disabled="">
-                           <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-                            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-                            <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                        </button> -->
-
-          <predictive-search>
-  <form action="{{ routes.search_url }}" method="get" role="search">
-   <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-                            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-                            <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-    <input
-      id="Search"
-      type="search"
-      name="q"
-      value="{{ search.terms | escape }}"
-      role="combobox"
-      aria-expanded="false"
-      aria-owns="predictive-search-results"
-      aria-controls="predictive-search-results"
-      aria-haspopup="listbox"
-      aria-autocomplete="list"
-    >
-    <input name="options[prefix]" type="hidden" value="last">
-
-    <div id="predictive-search" tabindex="-1"></div>
-  </form>
+            
+    <predictive-search>
+    <form action="{{ routes.search_url }}" method="get" role="search">
+         <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
+            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
+           <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+         </svg>
+        <input id="Search" type="search" name="q" value="{{ search.terms | escape }}" role="combobox"  aria-expanded="false"
+          aria-owns="predictive-search-results" aria-controls="predictive-search-results"aria-haspopup="listbox" aria-autocomplete="list" >
+        <input name="options[prefix]" type="hidden" value="last">
+        <div id="predictive-search" tabindex="-1"></div>
+    </form>
 </predictive-search>
                    
             
@@ -332,7 +269,7 @@ the underlying logic of the menu.
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-<!--       {%- capture logo_content -%}
+      {%- capture logo_content -%}
         {%- if section.settings.logo -%}
           {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
           {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -353,7 +290,7 @@ the underlying logic of the menu.
         </h1>
       {% else %}
         <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
-      {% endif %} -->
+      {% endif %}
 
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
