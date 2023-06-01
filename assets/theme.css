@@ -10113,4 +10113,13 @@ display:none;}
 ul.header.links {
     display: flex;
 }
+.block-search .minisearch .actions {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    height: 32px;
+    width: 16px;
+    margin: auto 0;
+}
 /* header end */
