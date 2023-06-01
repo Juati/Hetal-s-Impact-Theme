@@ -75,9 +75,9 @@ the underlying logic of the menu.
   {%- endif -%}
 </style>
     <div class="header content">
-    <a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
-        <span class="action nav-toggle"><span>Menu</span></span>
-    </a>
+      <a href="javascript:;" data-action="toggle-nav" class="hamburger-menu" aria-label="Menu" aria-expanded="false">
+          <span class="action nav-toggle"><span>Menu</span></span>
+      </a>
       {%- if section.settings.logo -%}
         {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
         {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -90,124 +90,124 @@ the underlying logic of the menu.
       {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
     {%- endif -%}
-<div class="header-blocks-wrapper"><div class="block block-search">
-    <div class="block block-title"><strong>Search</strong></div>
-    <div class="block block-content">
-        <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
-            <div class="field search">
-                <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
-                    <span class="mobile-only">Search</span>
-                </div>
-                <div class="control">
-                    <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
-                    <label class="search-placeholder-label" for="search">
+  <div class="header-blocks-wrapper"><div class="block block-search">
+      <div class="block block-title"><strong>Search</strong></div>
+      <div class="block block-content">
+          <form class="form minisearch" id="search_mini_form" action="https://www.bakedbymelissa.com/catalogsearch/result/" method="get">
+              <div class="field search">
+                  <div class="label" data-role="minisearch-label" aria-expanded="false" for="search">
+                      <span class="mobile-only">Search</span>
+                  </div>
+                  <div class="control">
+                      <input id="search" type="text" name="q" class="input-text autocomplete-search-field" maxlength="128" role="combobox" aria-label="Search entire store here" aria-haspopup="false" autocomplete="off" aria-owns="results" aria-expanded="false" aria-autocomplete="both" aria-activedescendant="" rel="nofollow">
+                      <label class="search-placeholder-label" for="search">
+                        <span>Search</span>
+                      </label>
+                      <div id="search_autocomplete" class="search-autocomplete"></div>
+                      <div class="nested">
+      <a class="action advanced" href="https://www.bakedbymelissa.com/catalogsearch/advanced/" data-action="advanced-search">
+          Advanced Search    </a>
+  </div>
+                  </div>
+              </div>
+              <div class="actions">
+                  <button type="submit" title="Search" class="action search" disabled="">
+                      <i class="header-icon icon-search" aria-hidden="true">&nbsp;</i>
                       <span>Search</span>
-                    </label>
-                    <div id="search_autocomplete" class="search-autocomplete"></div>
-                    <div class="nested">
-    <a class="action advanced" href="https://www.bakedbymelissa.com/catalogsearch/advanced/" data-action="advanced-search">
-        Advanced Search    </a>
-</div>
-                </div>
-            </div>
-            <div class="actions">
-                <button type="submit" title="Search" class="action search" disabled="">
-                    <i class="header-icon icon-search" aria-hidden="true">&nbsp;</i>
-                    <span>Search</span>
-                </button>
-            </div>
-        </form>
-    </div>
-</div>
-<ul class="header links additional">
-    <li class="flavors-link">
-        <a rel="nofollow" class="showflavor" href="https://www.bakedbymelissa.com/menu" role="link" title="Flavors">
-            <span aria-hidden="true">
-                <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/flavor-icon.svg" alt="Flavors" tabindex="-1">
-            </span>
-            Flavors        </a>
-    </li>
-    <li class="storelocator-link">
-        <a rel="nofollow" href="https://www.bakedbymelissa.com/storelocator" title="Stores">
-            <span aria-hidden="true">
-                <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/locator-icon.svg" alt="Stores" tabindex="-1">
-            </span>
-            Stores        </a>
-    </li>
-    <li class="rewards">
-        <a title="Rewards" href="https://www.bakedbymelissa.com/sweet-rewards/">
-            <span aria-hidden="true">
-                <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/loyalty_utility_icon.svg" alt="Rewards">
-            </span>
-            <span class="rewards-text">Rewards</span>
-        </a>
-    </li>
-</ul>
-<ul class="header links">
-<li class="authorization-link" data-label="or">
-    <a title="Login" href="https://www.bakedbymelissa.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYmFrZWRieW1lbGlzc2EuY29tL3RyZWF0cy9jdXBjYWtlcy5odG1s/" rel="nofollow">
-    	<span aria-hidden="true">
-    		<img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/account-icon.svg" alt="Login">
-        </span>
-        Login    </a>
-</li>
-</ul>
-<div data-block="minicart" class="minicart-wrapper">
-    <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
-        <span class="minicart-icon">
-            <span aria-hidden="true">
-                <img class="header-icon icon-cart" src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/cart-icon.svg" alt="Cart">
-            </span>
-            <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
-                <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
-                <span class="counter-label">
-                <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-                </span>
-            </span>
-        </span>
-        Cart    </a>
-            
-                
-<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
-            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
-                <!-- ko template: getTemplate() -->
-<div class="block-title">
-    <strong>
-        <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
-        <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
-                       attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
-    </strong>
-</div>
+                  </button>
+              </div>
+          </form>
+      </div>
+  </div>
+  <ul class="header links additional">
+      <li class="flavors-link">
+          <a rel="nofollow" class="showflavor" href="https://www.bakedbymelissa.com/menu" role="link" title="Flavors">
+              <span aria-hidden="true">
+                  <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/flavor-icon.svg" alt="Flavors" tabindex="-1">
+              </span>
+              Flavors        </a>
+      </li>
+      <li class="storelocator-link">
+          <a rel="nofollow" href="https://www.bakedbymelissa.com/storelocator" title="Stores">
+              <span aria-hidden="true">
+                  <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/locator-icon.svg" alt="Stores" tabindex="-1">
+              </span>
+              Stores        </a>
+      </li>
+      <li class="rewards">
+          <a title="Rewards" href="https://www.bakedbymelissa.com/sweet-rewards/">
+              <span aria-hidden="true">
+                  <img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/loyalty_utility_icon.svg" alt="Rewards">
+              </span>
+              <span class="rewards-text">Rewards</span>
+          </a>
+      </li>
+  </ul>
+  <ul class="header links">
+  <li class="authorization-link" data-label="or">
+      <a title="Login" href="https://www.bakedbymelissa.com/customer/account/login/referer/aHR0cHM6Ly93d3cuYmFrZWRieW1lbGlzc2EuY29tL3RyZWF0cy9jdXBjYWtlcy5odG1s/" rel="nofollow">
+      	<span aria-hidden="true">
+      		<img src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/account-icon.svg" alt="Login">
+          </span>
+          Login    </a>
+  </li>
+  </ul>
+  <div data-block="minicart" class="minicart-wrapper">
+      <a class="action showcart" href="https://www.bakedbymelissa.com/checkout/cart/" data-bind="scope: 'minicart_content'" rel="nofollow" title="Cart">
+          <span class="minicart-icon">
+              <span aria-hidden="true">
+                  <img class="header-icon icon-cart" src="https://www.bakedbymelissa.com/static/version1685513382/frontend/Corra/bbym/en_US/images/cart-icon.svg" alt="Cart">
+              </span>
+              <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+                  <span class="counter-number proxima-bold" tabindex="0"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+                  <span class="counter-label">
+                  <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+                  </span>
+              </span>
+          </span>
+          Cart    </a>
+              
+                  
+  <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front mage-dropdown-dialog" aria-describedby="ui-id-11" style="display: none;"><div class="block block-minicart ui-dialog-content ui-widget-content" role="dialog" aria-modal="true" aria-labelledby="myCartText" data-role="dropdownDialog" id="ui-id-11" style="display: block;">
+              <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                  <!-- ko template: getTemplate() -->
+  <div class="block-title">
+      <strong>
+          <span id="myCartText" class="text" data-bind="i18n: 'My Cart'">My Cart</span>
+          <span class="qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false },
+                         attr: { title: $t('Items in Cart') }, text: getCartParam('summary_count')" title="Items in Cart"></span>
+      </strong>
+  </div>
+  
+  <div class="block-content">
+      <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
+          <span aria-hidden="true"><i class="close"></i></span>
+      </button>
+  
+      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+  
+      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+  
+      <!-- ko ifnot: getCartParam('summary_count') -->
+          <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
+          <!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
+      <!-- /ko -->
+  
+      <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+  
+      <!-- ko if: getRegion('promotion').length --><!-- /ko -->
+  </div>
+  <!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
+  <!-- /ko -->
+              </div>
+                      </div></div></div>
+  
+  
+  </div>
+  </div>
 
-<div class="block-content">
-    <button type="button" id="btn-minicart-close" class="action close" tabindex="0" data-action="close" data-bind="attr: { title: $t('Close') }" title="Close">
-        <span aria-hidden="true"><i class="close"></i></span>
-    </button>
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <!-- ko ifnot: getCartParam('summary_count') -->
-        <strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</strong>
-        <!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
-    <!-- /ko -->
-
-    <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
-
-    <!-- ko if: getRegion('promotion').length --><!-- /ko -->
-</div>
-<!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
-<!-- /ko -->
-            </div>
-                    </div></div></div>
-
-
-</div></div>
 <height-observer variable="header">
-
   <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
-
     <div class="header__wrapper">
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
@@ -329,7 +329,7 @@ the underlying logic of the menu.
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-<!--       {%- capture logo_content -%} -->
+      {%- capture logo_content -%}
         {%- if section.settings.logo -%}
           {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
           {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -342,7 +342,7 @@ the underlying logic of the menu.
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
         {%- endif -%}
-<!--       {%- endcapture -%} -->
+      {%- endcapture -%}
 
       {%- if request.page_type == 'index' -%}
         <h1 class="header__logo">
