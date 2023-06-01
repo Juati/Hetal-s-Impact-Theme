@@ -10105,7 +10105,7 @@ split-lines {
     max-width: 1076px;
     padding: 14px 20px 11px;
 }
-.hamburger-menu{
+.hamburger-menu ,.block.block-title{
 display:none;}
 .header-blocks-wrapper{
   display:flex;
