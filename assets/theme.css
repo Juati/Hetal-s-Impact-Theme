@@ -10268,4 +10268,8 @@ display:none;}
 display: flex;
     align-items: center;
     justify-content: center;}
+.header__icon-list{
+  max-width:1160px;
+  
+}
 /* header end */
