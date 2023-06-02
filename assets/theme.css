@@ -10240,4 +10240,8 @@ div#predictive-search {
 }
 header{
 background:#fff;}
+.header__logo img{
+max-width: 182px;
+    max-height: 38px;
+}
 /* header end */
