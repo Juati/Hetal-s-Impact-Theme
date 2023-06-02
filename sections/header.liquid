@@ -116,8 +116,8 @@ the underlying logic of the menu.
         </div>
           <ul class="header links">
             <li class="flavors-link">
-                  <a rel="nofollow" class="showflavor" href="" role="link" title="Flavors">
-                      {% render 'flavors' %}Flavors        
+                  <a rel="nofollow" class="showflavor" href="{{ section.settings.flavorurl }}" role="link" title="Flavors">
+                      {% render 'flavors' %}{{ section.settings.flavortext }}        
                   </a>
               </li>
              
@@ -411,6 +411,16 @@ the underlying logic of the menu.
       "id": "logo",
       "label": "Image",
       "info": "280 x 80px .png recommended"
+    },
+    {
+      "type": "url",
+      "id": "flavorurl",
+      "label": "Link"
+    },
+      {
+      "type": "text",
+      "id": "flavortext",
+      "label": "Text"
     },
     {
       "type": "range",
