@@ -10226,13 +10226,7 @@ div#predictive-search {
       top: 40px;
     right: 0px;
 }
-#predictive-search-results li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-bottom: 1px solid;
-}
+
 #predictive-search-results a{
     display: flex;
     align-items: center;
