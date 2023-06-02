@@ -10249,4 +10249,8 @@ max-width: 182px;
 .header__wrapper.header.content {
     display: flow-root;
 }
+div#predictive-search-results {
+    border: 1px solid;
+    border-top: none;
+}
 /* header end */
