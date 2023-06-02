@@ -10223,6 +10223,8 @@ div#predictive-search {
     background: white;
     box-shadow: 0 3px 5px #32323240;
     z-index: 9999999;
+      top: 40px;
+    right: 0px;
 }
 #predictive-search-results li {
     display: flex;
