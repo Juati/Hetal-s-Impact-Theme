@@ -6049,8 +6049,9 @@ split-lines {
 
 @media screen and (min-width: 1150px) {
   .header__link-list {
-    gap: var(--spacing-4) var(--header-link-list-spacing);
+/*     gap: var(--spacing-4) var(--header-link-list-spacing); */
     display: flex;
+    gap:10px 20px;
   }
 }
 
