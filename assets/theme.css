@@ -10264,4 +10264,8 @@ display:none;}
   height-observer .header__logo{
 display:none;}
 }
+.contents{
+display: flex;
+    align-items: center;
+    justify-content: center;}
 /* header end */
