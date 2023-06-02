@@ -10261,6 +10261,13 @@ display:none;}
   .header__secondary-nav {
     display: none;
 }
+  .header__icon-list{
+  max-width:1160px;
+}
+ .header__wrapper{ 
+    display: flex;
+    justify-content: center;
+ } 
   height-observer .header__logo{
 display:none;}
 }
@@ -10268,8 +10275,6 @@ display:none;}
 display: flex;
     align-items: center;
     justify-content: center;}
-.header__icon-list{
-  max-width:1160px;
-  
-}
+
+
 /* header end */
