@@ -10102,7 +10102,7 @@ split-lines {
 }
 /*add css for product card metafield   */
 /* header start */
-/* .header.content {
+.header.content {
     max-width: 1076px;
     padding: 14px 20px 11px;
 }
@@ -10249,5 +10249,5 @@ div#predictive-search-results {
 }
 #predictive-search-results img ,h3#predictive-search-products{
 display:none;}
- */
+
 /* header end */
