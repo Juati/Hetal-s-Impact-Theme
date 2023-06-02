@@ -5953,7 +5953,7 @@ split-lines {
   gap: var(--header-part-gap);
   padding: 5px;
   color: rgb(var(--text-color));
-  background: rgb(var(--background) / var(--header-background-opacity));
+/*   background: rgb(var(--background) / var(--header-background-opacity)); */
   -webkit-backdrop-filter: blur(var(--header-background-blur-radius));
   backdrop-filter: blur(var(--header-background-blur-radius));
   border-radius: inherit;
