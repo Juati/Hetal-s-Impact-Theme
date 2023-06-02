@@ -10231,6 +10231,7 @@ div#predictive-search {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-bottom: 1px solid;
 }
 #predictive-search-results a{
     display: flex;
