@@ -10250,4 +10250,9 @@ div#predictive-search-results {
 #predictive-search-results img ,h3#predictive-search-products{
 display:none;}
 
+@media screen and (max-width: 1149px) {
+  .header__wrapper.header.content {
+    display: none;
+}
+}
 /* header end */
