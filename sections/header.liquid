@@ -118,8 +118,8 @@ the underlying logic of the menu.
             <li class="flavors-link">
                   <a rel="nofollow" class="showflavor" href="{{ section.settings.flavorurl }}" role="link" title="Flavors">
                      {% if  section.settings.flavorurl != blank %}
-                      {% render 'flavors' %}
-                       {% endif %}
+                        {% render 'flavors' %}
+                    {% endif %}
                       {{ section.settings.flavortext }}        
                   </a>
               </li>
