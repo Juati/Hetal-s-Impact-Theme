@@ -10236,10 +10236,7 @@ div#predictive-search {
     display: flex;
     align-items: center;
     margin: 2%;}
-#predictive-search-results h3#predictive-search-products {
-    text-align: center;
-    margin: 2% 0;
-}
+
 header{
 background:#fff;}
 .header__logo img{
@@ -10253,6 +10250,7 @@ div#predictive-search-results {
     border: 1px solid;
     border-top: none;
 }
-#predictive-search-results img{
+#predictive-search-results img ,h3#predictive-search-products{
 display:none;}
+
 /* header end */
