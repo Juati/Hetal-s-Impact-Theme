@@ -10259,5 +10259,7 @@ display:none;}
   .header__secondary-nav {
     display: none;
 }
+  height-observer .header__logo{
+display:none;}
 }
 /* header end */
