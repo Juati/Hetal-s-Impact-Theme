@@ -74,76 +74,6 @@ the underlying logic of the menu.
     }
   {%- endif -%}
 </style>
-    <div class="header__wrapper header content">
-      {%- capture logo_content -%}
-      {%- if section.settings.logo -%}
-        {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
-        {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
-            <span class="sr-only">{{ shop.name }}</span>
-            {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
-            
-                {%- if section.settings.transparent_logo -%}
-                  {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
-                {%- endif -%}
-            {%- else -%}
-          <span class="header__logo-text h4">{{ shop.name }}</span>
-      {%- endif -%}
-        {%- endcapture -%}
-      {%- if request.page_type == 'index' -%}
-        <h1 class="header__logo aaa">
-          <a href="{{ routes.root_url }}">{{ logo_content }}</a>
-        </h1>
-        {% else %}
-        <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
-      {% endif %}
-      <div class="header-blocks-wrapper">
-        <div class="block block-search">
-            
-    <predictive-search>
-    <form action="{{ routes.search_url }}" method="get" role="search">
-         <svg role="presentation" stroke-width="2" focusable="false" width="22" height="22" class="icon icon-search" viewBox="0 0 22 22">
-            <circle cx="11" cy="10" r="7" fill="none" stroke="currentColor"></circle>
-           <path d="m16 15 3 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-         </svg>
-        <input id="Search" type="search" name="q" value="{{ search.terms | escape }}" role="combobox"  aria-expanded="false"
-          aria-owns="predictive-search-results" aria-controls="predictive-search-results"aria-haspopup="listbox" aria-autocomplete="list" >
-        <input name="options[prefix]" type="hidden" value="last">
-        <div id="predictive-search" tabindex="-1"></div>
-    </form>
-</predictive-search>
-                   
-            
-        </div>
-          <ul class="header links">
-            <li class="flavors-link">
-                  <a rel="nofollow" class="showflavor" href="/" role="link" title="Flavors">
-                      {% render 'flavors' %}Flavors        
-                  </a>
-              </li>
-             
-             <li class="flavors-link authorization-link" data-label="or">
-                 {%- if shop.customer_accounts_enabled -%}
-                <a href="{{ routes.account_url }}" class="hidden tap-area sm:block">
-                  <span class="sr-only">{{ 'header.general.open_account' | t }}</span>
-                  {%- render 'login_user' with 'account' -%}Login
-                </a>
-              {%- endif -%}
-            </li>
-              <li class="flavors-link authorization-link" data-label="or"> 
-                <a href="{{ routes.cart_url }}" data-no-instant class="relative tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
-                    <span class="sr-only">{{ 'header.general.open_cart' | t }}</span>
-                    {%- render 'addcart' with 'cart' -%}Cart
-                    <div class="header__cart-count">
-                      <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}" aria-hidden="true">
-                        {{- cart.item_count -}}
-                      </cart-count>
-                    </div>
-                  </a>
-              </li>
-          </ul>
-     
-        </div>
-  </div>
 
 <height-observer variable="header">
   <store-header class="header" {% if section.settings.hide_on_scroll %}hide-on-scroll="100"{% endif %} {% if section.settings.enable_sticky %}sticky{% endif %}>
@@ -268,7 +198,7 @@ the underlying logic of the menu.
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-<!--       {%- capture logo_content -%}
+      {%- capture logo_content -%}
         {%- if section.settings.logo -%}
           {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
           {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
@@ -289,7 +219,7 @@ the underlying logic of the menu.
         </h1>
       {% else %}
         <a href="{{ routes.root_url }}" class="header__logo">{{ logo_content }}</a>
-      {% endif %} -->
+      {% endif %}
 
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
@@ -297,7 +227,7 @@ the underlying logic of the menu.
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
-<!--       <div class="header__secondary-nav">
+      <div class="header__secondary-nav">
         {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
             <ul class="contents">
@@ -346,7 +276,7 @@ the underlying logic of the menu.
             </div>
           </a>
         </div>
-      </div> -->
+      </div>
     </div>
   </store-header>
 </height-observer>
