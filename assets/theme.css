@@ -10244,4 +10244,7 @@ background:#fff;}
 max-width: 182px;
     max-height: 38px;
 }
+.header__wrapper.header.content {
+    display: flow-root;
+}
 /* header end */
