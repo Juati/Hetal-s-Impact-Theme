@@ -10250,12 +10250,12 @@ div#predictive-search-results {
 #predictive-search-results img ,h3#predictive-search-products{
 display:none;}
 
-@media screen and (max-width: 1149px) {
+@media screen and (max-width: 1150px) {
   .header__wrapper.header.content {
     display: none;
 }
 }
-@media screen and (min-width: 1149px) {
+@media screen and (min-width: 1150px) {
   .header__secondary-nav {
     display: none;
 }
