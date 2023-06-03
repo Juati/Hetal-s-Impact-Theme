@@ -134,6 +134,8 @@ var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
      if($eachqty <= 20){
        console.log("20000");
          qty++;
+     }else{
+       alert("You can select only 20 cupcakes!");
      }
   }else {
     if(qty >= 1) {
