@@ -12,7 +12,8 @@
       {%- for media in productimage.media  limit:1 -%}
           {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           <h2 class="product-title" value="{{ productimage.title }}" name="properties[{{ productimage.title }}]">{{ productimage.title }}</h2>
-          <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
+          <input class="product-title"  type="text" name="properties[{{ productimage.title }}]" value="{{ productimage.title }}">       
+       <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
             <div class="form-control">          
               <quantity-selector class="quantity-selector">
                 <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
