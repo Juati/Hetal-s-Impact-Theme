@@ -132,8 +132,13 @@ var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
      });
      console.log($eachqty + "jhjjhh");
      if($eachqty < 20){
-       console.log("20000");
-         qty++;
+          qty++;
+          $html = $(this).closest(".productsimage").html();
+          $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
+          $producttitle = $(this).closest(".productsimage").find(".product-title").val();
+          $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
+          $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
+          // $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
      }else{
        alert("You can select only 20 cupcakes!");
      }
@@ -145,27 +150,4 @@ var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
   qty = (isNaN(qty))?0:qty;
   $(this).parent('.qtybox').find('.quantity-input').val(qty);
 });
-
-  
-  $(".quantity-selector__button.productqtybtn").on("click",function(event){
-    event.prevenDefault(); 
-    $eachqty = 0;
-    $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
-    $eachqty += parseInt($(this).val());
-    });
-     if($eachqty >= 20){
-      alert("You can select only 20 cupcakes!");
-    }else{
-       console.log($eachqty);
-      $html = $(this).closest(".productsimage").html();
-      $bundlesummary = $(".bundle-summary").html();
-      $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
-      $producttitle = $(this).closest(".productsimage").find(".product-title").val();
-      $productimg = $(this).closest(".productsimage").find(".rounded").attr("src");
-      
-      $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
-      $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
-      // $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
-    }
-  });
 </script>
