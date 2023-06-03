@@ -4,7 +4,7 @@
   {% for productimage in collections[product.metafields.custom.productimage].products %} 
  <div>
     {% if productimage.available %}
-      {%- for media in productimage.media -%}
+      {%- for media in productimage.media  limit:1 -%}
           {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
         {{ productimage.title }}
       {%-  endfor -%}
