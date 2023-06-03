@@ -3,7 +3,10 @@
  {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min(580px, 30vw){%- endcapture -%}
   {% for productimage in collections[product.metafields.custom.productimage].products %} 
     {% if productimage.available %}
-      {{ productimage.title }}
+      {%- for media in productimage.media -%}
+          {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
+        {{ productimage.title }}
+      {%-  endfor -%}
     {% endif %}
  {% endfor %}
 </media-carousel>
@@ -32,7 +35,7 @@
             {%- else -%}
               {%- assign preload = false -%}
             {%- endif -%}
-
+{{ media }}???
             {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
 
             {%- if section.settings.enable_image_zoom and section.settings.desktop_media_layout contains 'grid' and media.media_type == 'image' -%}
