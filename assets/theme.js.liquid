@@ -2432,8 +2432,7 @@ var QuantitySelector = class extends HTMLElement {
     console.log(this.inputElement.quantity + "ffff");
     this.querySelector("button:first-of-type").addEventListener("click", () => {
       console.log(this.inputElement.quantity + "ffff");
-      this.inputElement.quantity = this.inputElement.quantity - 1, { signal: this._abortController.signal })
-  };
+      this.inputElement.quantity = this.inputElement.quantity - 1, { signal: this._abortController.signal }});
     this.querySelector("button:last-of-type").addEventListener("click", () => this.inputElement.quantity = this.inputElement.quantity + 1, { signal: this._abortController.signal });
   }
   disconnectedCallback() {
