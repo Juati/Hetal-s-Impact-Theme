@@ -130,6 +130,7 @@ $(document).ready(function(){
     $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
     console.log($productproperties);
      $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
+     $eachqty = 0;
       $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
         $eachqty += parseInt($(this).val());
         console.log($eachqty);
