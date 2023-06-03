@@ -127,13 +127,8 @@ $('.qtybox .btnqty').on('click', function(){
 var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
   console.log(qty);
   if($(this).hasClass('qtyplus')) {
-     $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
-       $eachqty += parseInt($(this).val());
-     });
-     console.log($eachqty + "jhjjhh");
-     if($eachqty <= 20){
+  
          qty++;
-     }
   }else {
     if(qty >= 1) {
     qty--;
