@@ -10332,8 +10332,6 @@ padding-top: 10px;
     text-align: left;
   }
   .productsimage {
-    display: flex;
-    align-items: center;
     background: white;
   }
   media-carousel.product-gallery__media-list3.product-gallery__media-list.full-bleed.scroll-area.md\:unbleed {
@@ -10345,7 +10343,7 @@ padding-top: 10px;
   .product media-carousels {
     grid: none;
   }
-  .product-gallery__media.appendpro1 {
+  .product-gallery__media {
     display: flex;
   }
   .productsimage {
