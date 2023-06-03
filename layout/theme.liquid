@@ -124,6 +124,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 $(document).ready(function(){
   $(".quantity-selector__button").click(function(){
     console.log("jghjghfjghfjghfgj");
+    $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
+    console.log($qtynum);
   });
 });
 </script>
