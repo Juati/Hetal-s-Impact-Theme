@@ -133,6 +133,7 @@ var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
      console.log($eachqty + "jhjjhh");
      if($eachqty < 20){
           qty++;
+       console.log(qty);
           $html = $(this).closest(".productsimage").html();
           $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
           $producttitle = $(this).closest(".productsimage").find(".product-title").val();
