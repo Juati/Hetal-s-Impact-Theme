@@ -19,6 +19,7 @@ Supported variables
 * form_id: if specified, define the form ID linked to this input
 {%- endcomment -%}
 
+{%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
 
   {%- assign button_disabled = false -%}
   {%- assign button_size = button_size | default: 'xl' -%}
