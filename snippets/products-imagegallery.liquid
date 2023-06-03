@@ -11,9 +11,9 @@
       <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
         <div class="form-control products-qty">          
           <quantity-selector class="quantity-selector">
-            <button type="button" class="quantity-selector__button" aria-label="Decrease product quantity">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+            <button type="button" class="productquantity-selector__button" aria-label="Decrease product quantity">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
             <input id="{{ productimage.title }}" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input"  name="quantity" form="{{ form_id }}" size="2" value="0" autocomplete="off">
-            <button type="button" class="quantity-selector__button" aria-label="Increase product quantity">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+            <button type="button" class="productquantity-selector__button" aria-label="Increase product quantity">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
           </quantity-selector>
         </div>
       </div>
