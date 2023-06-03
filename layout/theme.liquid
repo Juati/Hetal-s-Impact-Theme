@@ -131,7 +131,7 @@ var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
     qty--;
     }
   }
-  qty = (isNaN(qty))?1:qty;
+  qty = (isNaN(qty))?0:qty;
   $(this).parent('.qtybox').find('.quantity-input').val(qty);
 });
 
