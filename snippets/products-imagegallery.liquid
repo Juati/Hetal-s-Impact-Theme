@@ -1,5 +1,5 @@
-{% for collection in product.collections %}
-    {{ product.metafields.custom.productimage.value }}
+{% for productimage in product.metafields.custom.productimage %}
+    {{ productimage.title }}
 {%  endfor %} 
 
  <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height initial-index="{{ default_media.position | minus: 1 }}" {% if section.settings.enable_video_autoplay %}autoplay{% endif %} id="{{ product_gallery_id }}" class="product-gallery__media-list {% if section.settings.mobile_media_size == 'expanded' %}full-bleed{% else %}bleed{% endif %} scroll-area md:unbleed">
