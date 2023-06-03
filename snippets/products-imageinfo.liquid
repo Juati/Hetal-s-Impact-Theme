@@ -192,7 +192,7 @@
 
               <quantity-selector class="quantity-selector">
                 <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="1" autocomplete="off">
+                <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="0" autocomplete="off">
                 <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
               </quantity-selector>
             </div>
