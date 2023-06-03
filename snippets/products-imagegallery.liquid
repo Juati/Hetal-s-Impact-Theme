@@ -9,7 +9,7 @@
           <h2 class="product-title" value="{{ productimage.title }}" name="properties[{{ productimage.title }}]">{{ productimage.title }}</h2>
           <input disabled class="product-title"  type="text" name="properties[{{ productimage.title }}]" value="{{ productimage.title }}">       
            <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
-            <div class="form-control">          
+            <div class="form-control products-qty">          
               <quantity-selector class="quantity-selector">
                 <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
                 <input id="{{ productimage.title }}" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input"  name="quantity" form="{{ form_id }}" size="2" value="0" autocomplete="off">
