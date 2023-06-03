@@ -3,6 +3,9 @@
  {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min(580px, 30vw){%- endcapture -%}
   {% for productimage in collections[product.metafields.custom.productimage].products %} 
   <div class="productsimage">
+    <p class="line-item-property__field">
+  <input  type="text" name="properties[{{ forloop.index }}]">
+</p>
     {% if productimage.available %}
      <div class="product-gallery__media appendpro{{ forloop.index }}" data-media-type="media" >
           {%- for media in productimage.media  limit:1 -%}
