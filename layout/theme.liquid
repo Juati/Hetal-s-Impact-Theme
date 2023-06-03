@@ -125,7 +125,7 @@ $(document).ready(function(){
   $(".quantity-selector__button").click(function(){
     $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
     $producttitle = $(this).closest(".productsimage").find(".product-title").val();
-    $productimg = $(this).closest(".productsimage").find(".rounded").attr(src);
+    $productimg = $(this).closest(".productsimage").find(".rounded").attr("src");
     console.log($productimg);
     $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
     console.log($productproperties);
