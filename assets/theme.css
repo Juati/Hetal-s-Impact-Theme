@@ -10345,6 +10345,12 @@ padding-top: 10px;
   .product media-carousels {
     grid: none;
   }
+  .product-gallery__media.appendpro1 {
+    display: flex;
+  }
+  .productsimage {
+    background: white;
+  }
 }
 /* grid 3 image - product  template */
 
