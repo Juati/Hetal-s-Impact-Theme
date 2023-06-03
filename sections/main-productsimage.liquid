@@ -40,16 +40,13 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
+  <div class="product ssdsd">
+    {%- if product.media.size > 0 -%}
+      {%- render 'product-gallery', product: product -%}
+    {%- endif -%}
 
-  {%- form 'product', product, is: 'product-form', id: form_id -%}
-    <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-  
-    <div class="product">
-      {%-  render 'products-imagegallery',form_id:product_form_id -%}
-      {%- render 'products-imageinfo', product: product, update_url: true -%}
-    </div>
-   {%- endform -%}
+    {%- render 'product-info', product: product, update_url: true -%}
+  </div>
 </div>
 
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
