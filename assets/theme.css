@@ -10283,9 +10283,8 @@ display: flex;
   grid: auto-flow dense / repeat(3, minmax(0, 1fr));
 }
 .product-title{
-/*     display: flex;
-    justify-content: center;
-    background: unset; */
+  text-align: center;
+    width: 100%;
 }
 .products-qty{
     text-align: center;
