@@ -132,6 +132,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     }else{
        $html = $(this).closest(".productsimage").html();
        console.log($html);
+       $(".bundle-summary").html();
       $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
       $producttitle = $(this).closest(".productsimage").find(".product-title").val();
       $productimg = $(this).closest(".productsimage").find(".rounded").attr("src");
