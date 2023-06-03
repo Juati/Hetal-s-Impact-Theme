@@ -4,6 +4,10 @@
   {% for productimage in collections[product.metafields.custom.productimage].products %} 
  <div>
     {% if productimage.available %}
+      <p class="line-item-property__field">
+  <label for="your-name">Your name</label>
+  <input id="your-name" type="text" name="properties[Your name]">
+</p>
       {%- for media in productimage.media  limit:1 -%}
           {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           <h2 class="product-title" value="{{ productimage.title }}" name="properties[{{ productimage.title }}]">{{ productimage.title }}</h2>
