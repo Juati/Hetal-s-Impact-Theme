@@ -2,8 +2,9 @@
 <media-carousel desktop-mode="{{ section.settings.desktop_media_layout }}" adaptive-height initial-index="{{ default_media.position | minus: 1 }}" {% if section.settings.enable_video_autoplay %}autoplay{% endif %} id="{{ product_gallery_id }}" class="product-gallery__media-list3 product-gallery__media-list full-bleed scroll-area md:unbleed is-scrollable">
  {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min(580px, 30vw){%- endcapture -%}
   {% for productimage in collections[product.metafields.custom.productimage].products %} 
+  <div class="productsimage">
     {% if productimage.available %}
-     <div class="productsimage appendpro{{ forloop.index }}">
+     <div class="appendpro{{ forloop.index }}">
           {%- for media in productimage.media  limit:1 -%}
               {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           {%-  endfor -%}
@@ -19,5 +20,6 @@
           </div>
      </div>
     {% endif %}
+    </div>
  {% endfor %}
 </media-carousel>
