@@ -125,7 +125,7 @@ $(document).ready(function(){
   $(".quantity-selector__button").click(function(){
     $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
     $producttitle = $(this).closest(".productsimage").find(".product-title").val();
-    $productproperties = "properties[" + $qtynum + "]";
+    $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
     console.log($productproperties);
      $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
   });
