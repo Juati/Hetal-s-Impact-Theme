@@ -10285,6 +10285,7 @@ display: flex;
 .product-title{
     display: flex;
     justify-content: center;
+    background: unset;
 }
 /* grid 3 image - product  template */
 
