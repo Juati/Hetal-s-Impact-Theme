@@ -119,10 +119,10 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     </main>
   </body>
 </html>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js" defer></script>
 <script>
   $(".quantity-selector__button.productqtybtn").on("click",function(event){
-    // event.prevenDefault(); 
+    event.prevenDefault(); 
     $eachqty = 0;
     $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
     $eachqty += parseInt($(this).val());
