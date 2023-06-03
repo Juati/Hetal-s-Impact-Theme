@@ -10,8 +10,9 @@
      
       {%- for media in productimage.media  limit:1 -%}
           {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
+      {%-  endfor -%}
           <input  class="product-title"  type="text" name="properties[{{  productimage.title  }}]" value="{{ productimage.title }}">       
-       <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
+          <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
             <div class="form-control products-qty">          
               <quantity-selector class="quantity-selector">
                 <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
@@ -20,7 +21,6 @@
               </quantity-selector>
             </div>
           </div>
-      {%-  endfor -%}
     {% endif %}
  </div>
  {% endfor %}
