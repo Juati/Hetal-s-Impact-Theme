@@ -10287,6 +10287,9 @@ display: flex;
     justify-content: center;
     background: unset;
 }
+.products-qty{
+    text-align: center;
+}
 /* grid 3 image - product  template */
 
 
