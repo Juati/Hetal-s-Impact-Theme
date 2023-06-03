@@ -10342,6 +10342,9 @@ padding-top: 10px;
   img.rounded {
       max-width: 100px;
   }
+  .product media-carousels {
+    grid: none;
+  }
 }
 /* grid 3 image - product  template */
 
