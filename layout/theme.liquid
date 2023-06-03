@@ -121,10 +121,9 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
-
 $('.qtybox .btnqty').on('click', function(){
    $eachqty = 0;
-var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
+  var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
   console.log(qty);
   if($(this).hasClass('qtyplus')) {
      $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
