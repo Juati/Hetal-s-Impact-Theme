@@ -10330,21 +10330,18 @@ padding-top: 10px;
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
-}
-
-
-.productsimage {
+  }
+  .productsimage {
     display: flex;
     align-items: center;
     background: white;
-}
-
-media-carousel.product-gallery__media-list3.product-gallery__media-list.full-bleed.scroll-area.md\:unbleed {grid:none;
-}
-
-img.rounded {
-    max-width: 100px;
-}
+  }
+  media-carousel.product-gallery__media-list3.product-gallery__media-list.full-bleed.scroll-area.md\:unbleed {
+    grid:none;
+  }
+  img.rounded {
+      max-width: 100px;
+  }
 }
 /* grid 3 image - product  template */
 
