@@ -129,6 +129,7 @@ $(document).ready(function(){
     console.log($producttitle);
     $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
     console.log($productproperties);
+     $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
   });
 });
 </script>
