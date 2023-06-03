@@ -125,7 +125,10 @@ $(document).ready(function(){
   $(".quantity-selector__button").click(function(){
     console.log("jghjghfjghfjghfgj");
     $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
+    $producttitle = $(this).closest(".productsimage").find(".product-title").val();
     console.log($qtynum);
+    console.log($producttitle);
+    
   });
 });
 </script>
