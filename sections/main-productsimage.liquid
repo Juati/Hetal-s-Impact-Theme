@@ -41,14 +41,21 @@
 
 <div {% render 'section-properties', tight: true %}>
   <div class="product">
-    {% comment %}
-    {%- if product.media.size > 0 -%}
-      {%- render 'product-gallery', product: product -%}
-    {%- endif -%}
-    {%  endcomment %}
     
-    {%-  render 'products-imagegallery' -%}
-    {%- render 'products-imageinfo', product: product, update_url: true -%}
+    {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+    
+    {%- form 'product', product, is: 'product-form', id: form_id -%}
+      <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+      {% comment %}
+      {%- if product.media.size > 0 -%}
+        {%- render 'product-gallery', product: product -%}
+      {%- endif -%}
+      {%  endcomment %}
+      
+      {%-  render 'products-imagegallery' -%}
+      {%- render 'products-imageinfo', product: product, update_url: true -%}
+    {%- endform -%}
   </div>
 </div>
 
