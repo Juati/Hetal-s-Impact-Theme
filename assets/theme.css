@@ -10278,3 +10278,10 @@ display: flex;
 
 
 /* header end */
+/* grid 3 image - product  template */
+.product-gallery__media-list3{
+  grid: auto-flow dense / repeat(3, minmax(0, 1fr));
+}
+/* grid 3 image - product  template */
+
+
