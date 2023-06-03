@@ -135,6 +135,9 @@ $(document).ready(function(){
         $eachqty += parseInt($(this).val());
       });
         console.log($eachqty);
+    if($eachqty <= 20){
+      alert("You can select only 50 cupcakes!");
+    }
   });
 });
 </script>
