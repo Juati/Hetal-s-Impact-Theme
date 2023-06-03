@@ -127,7 +127,7 @@ $(document).ready(function(){
     $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
     $eachqty += parseInt($(this).val());
     });
-     if($eachqty <= 20){
+     if($eachqty >= 20){
       alert("You can select only 50 cupcakes!");
     }else{
       $qtynum = $(this).closest(".quantity-selector").find(".quantity-selector__input").val();
