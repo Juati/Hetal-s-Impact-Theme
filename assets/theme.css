@@ -10285,6 +10285,7 @@ display: flex;
 .product-title{
     text-align: center;
     width: 100%;
+    background: unset;
 }
 .products-qty{
     text-align: center;
