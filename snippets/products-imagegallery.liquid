@@ -12,17 +12,18 @@
               {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           {%-  endfor -%}
           <input  class="product-title"  type="text"  value="{{ productimage.title }}">       
-          <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
-            <div class="form-control products-qty">          
-              <div class="qtydiv">
-              <div class="qtybox">
-              <span class="btnqty qtyminus icon icon-minus">-</span>
-              <input type="text" id="quantity" name="quantity" value="0" min="0" class="quantity-selector quantity-input" readonly="">
-              <span class="btnqty qtyplus icon icon-plus">+</span>
+         <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
+                <div class="form-control">
+                  <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
+
+                  <quantity-selector class="quantity-selector">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
+                    <input id="{{ product_form_id }}-quantity" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input" name="quantity" form="{{ product_form_id }}" size="2" value="1" autocomplete="off">
+                    <button type="button" class="quantity-selector__button" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
+                  </quantity-selector>
+                </div>
               </div>
-              </div>
-            </div>
-          </div>
+
      </div>
     {% endif %}
     </div>
