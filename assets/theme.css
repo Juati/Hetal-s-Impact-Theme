@@ -10345,6 +10345,7 @@ padding-top: 10px;
   }
   .product-gallery__media {
     display: flex;
+    align-item :center;
   }
   .productsimage {
     background: white;
