@@ -6,7 +6,7 @@
     {% if productimage.available %}
   <p class="line-item-property__field">
   <label for="your-name{{ forloop.index }}">Your name</label>
-  <input id="your-name{{ forloop.index }}" type="text" name="properties[Your name]">
+  <input id="your-name{{ forloop.index }}" type="text" name="properties[{{ forloop.index }}]">
 </p>
      
       {%- for media in productimage.media  limit:1 -%}
