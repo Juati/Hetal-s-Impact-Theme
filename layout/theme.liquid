@@ -130,6 +130,9 @@ $(document).ready(function(){
     $productproperties = "properties[" + $qtynum + " * " + $producttitle + "]";
     console.log($productproperties);
      $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
+      $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
+         arType.push($(this).val());
+      });
   });
 });
 </script>
