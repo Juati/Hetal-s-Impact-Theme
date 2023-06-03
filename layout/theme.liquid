@@ -123,7 +123,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 <script>
 $(document).ready(function(){
   $(".quantity-selector__button.productqtybtn").click(function(e){
-    event.preventdefault()
+    event.preventdefault();
     $eachqty = 0;
     $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
     $eachqty += parseInt($(this).val());
