@@ -132,6 +132,7 @@ $(document).ready(function(){
      $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
       $.each($(".product-gallery__media-list3 .quantity-selector__input"), function() {
          $eachqty = $(this).val();
+        $eachqty = $eachqty + $eachqty ;
         console.log($eachqty);
       });
   });
