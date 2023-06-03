@@ -10327,6 +10327,8 @@ display: inline-block;
 padding-right: 15px;
 padding-top: 10px;
 }
+.header__icon-list{
+padding-right:5px} 
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
@@ -10345,7 +10347,7 @@ padding-top: 10px;
   }
   .product-gallery__media {
     display: flex;
-    align-item :center;
+    align-items: center;
   }
   .productsimage {
     background: white;
