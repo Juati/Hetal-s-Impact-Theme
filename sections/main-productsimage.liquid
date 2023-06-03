@@ -41,11 +41,12 @@
 
 <div {% render 'section-properties', tight: true %}>
   <div class="product ssdsd">
-    {%- if product.media.size > 0 -%}
-      {%- render 'product-gallery', product: product -%}
-    {%- endif -%}
-
-    {%- render 'product-info', product: product, update_url: true -%}
+    {%- form 'product', product, is: 'product-form', id: form_id -%}
+    <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  
+      {%-  render 'products-imagegallery',form_id:product_form_id -%}
+      {%- render 'product-info', product: product, update_url: true -%}
+    {%- endform -%}
   </div>
 </div>
 
