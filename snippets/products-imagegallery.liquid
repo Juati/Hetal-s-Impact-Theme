@@ -6,7 +6,7 @@
     {% if productimage.available %}
       {%- for media in productimage.media  limit:1 -%}
           {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
-          <h2 class="product-title"  name="properties[{{ productimage.title }}]">{{ productimage.title }}</h2>
+          <h2 class="product-title" value="{{ productimage.title }}" name="properties[{{ productimage.title }}]">{{ productimage.title }}</h2>
           <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
             <div class="form-control">          
               <quantity-selector class="quantity-selector">
