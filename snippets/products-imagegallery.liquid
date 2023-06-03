@@ -11,11 +11,13 @@
           <input  class="product-title"  type="text"  value="{{ productimage.title }}">       
           <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
             <div class="form-control products-qty">          
-              <quantity-selector class="quantity-selector">
-                <button type="button" class="quantity-selector__button productqtybtn" aria-label="{{ 'product.quantity.decrease_quantity' | t }}">{% render 'icon' with 'minus', width: 10, height: 2 %}</button>
-                <input id="{{ productimage.title }}" type="text" is="quantity-input" inputmode="numeric" class="quantity-selector__input"  name="quantity" form="{{ form_id }}" size="2" value="0" autocomplete="off">
-                <button type="button" class="quantity-selector__button productqtybtn" aria-label="{{ 'product.quantity.increase_quantity' | t }}">{% render 'icon' with 'plus', width: 10, height: 10 %}</button>
-              </quantity-selector>
+              <div class="qtydiv">
+              <div class="qtybox">
+              <span class="btnqty qtyminus icon icon-minus">-</span>
+              <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
+              <span class="btnqty qtyplus icon icon-plus">+</span>
+              </div>
+              </div>
             </div>
           </div>
      </div>
