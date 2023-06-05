@@ -10362,6 +10362,10 @@ padding-right:5px}
       margin-top: 15px;
     padding-top: 13px;
 }
+.bundle-summary .productsimage:first-child{
+      border-top: none;
+
+}
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
