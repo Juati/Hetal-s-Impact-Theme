@@ -10362,7 +10362,7 @@ padding-right:5px}
       margin-top: 15px;
     padding-top: 13px;
 }
-.bundle-summary .productsimage:first-child{
+.bundle-summary .productsimage:first-of-type{
       border-top: none;
 
 }
