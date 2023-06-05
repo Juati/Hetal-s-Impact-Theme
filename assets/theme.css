@@ -10391,8 +10391,11 @@ padding-right:5px}
   .productsimage {
     background: white;
   }
-  .qtybox{
-      display: flex;
+  .qtybox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
   }
 }
 /* grid 3 image - product  template */
