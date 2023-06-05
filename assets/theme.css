@@ -10334,6 +10334,9 @@ padding-top: 10px;
 }
 .header__icon-list{
 padding-right:5px} 
+.bundle-summary .productsimage .rounded{
+      width: 100px;
+}
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
