@@ -10398,7 +10398,8 @@ padding-right:5px}
     padding: 0 15px;
   }
   .bundle-summary .qtydiv {
-    width: 24%; 
+        width: 37%;
+
     display: inline-block;
   }
 }
