@@ -10280,7 +10280,6 @@ display: flex;
 /* header end */
 /* grid 3 image - product  template */
 .qtybox{
-  
     border-color: rgb(var(--text-color) / .12);
     border-radius: var(--rounded-button);
     border-width: 1px;
@@ -10311,11 +10310,11 @@ padding: 5px;
 line-height: 5px;}
 
 .qtydiv .btnqty.qtyminus{
-margin-right: 8px;
+margin: 8px;
 }
 
 .qtydiv .btnqty.qtyplus{
-margin-left: 8px;
+margin: 8px;
 }
 
 .qtydiv .quantity-input{
