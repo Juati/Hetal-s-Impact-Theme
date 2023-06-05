@@ -118,7 +118,8 @@ Supported variables
                               <img class="marginimg" width="50px" src="{{ sub_link.object.image.src | collection_img_url: 'small' }}" alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
                               
-                              <span><span class="reversed-link 222">{{ sub_link.title }}</span></span>
+                              <span><span class="reversed-link 222">{{ sub_link.title }}</span>
+                            <span>{{ sub_link.object.description }}</span></span>
                             </a>
                           {%- endif -%}
                         </li>
