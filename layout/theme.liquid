@@ -140,10 +140,9 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
        console.log("qtyqtyqty" + qty)
        if(qty == 1){
          console.log("matchhh");
-         // $html.find(".quantity-selector.quantity-input").val(1);
           $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
        }else{
-         
+         $(this).closest(".product-gallery__media").attr("data-summery-index");
        }
      }else{
        alert("You can select only 20 cupcakes!");
