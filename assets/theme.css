@@ -10085,14 +10085,14 @@ split-lines {
 .disflexsubmenu  p{
       font-size: 16px;
 }
-.shopify-section--multi-column .multi-column__item .rounded{
+/* .shopify-section--multi-column .multi-column__item .rounded{
   transform: scale(.95);
 }
 .shopify-section--multi-column .multi-column__item .rounded:hover{
     cursor:pointer;
     transition: transform 0.5s ease;
     transform: scale(1);
-}
+} */
 @media screen and (max-width: 790px) {
   .metafieldflexcard{
     display:none;
