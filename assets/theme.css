@@ -10372,7 +10372,15 @@ padding-right:5px}
     display: flex;
     align-items: center;
 }
+.imageproduct-title{
+  display:flex;
+  justify-content:center;
+}
 @media screen and (max-width: 999px) {
+  .imageproduct-title{
+        width: 100%;
+
+  }
   .navigation-promo{
       display: block;
   }
