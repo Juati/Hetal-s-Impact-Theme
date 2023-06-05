@@ -10401,11 +10401,20 @@ padding-right:5px}
     display: inline-block;
   }
   .qtydiv .btnqty.qtyminus,.qtydiv .btnqty.qtyplus{
-    margin: 10px 0px 15px;
+/*     margin: 10px 0px 15px; */
   }
 
 }
 /* grid 3 image - product  template */
+.multi-column__item{
+  position:relative;
+  opacity:1;
+}
+.multi-column__item .rounded{
+position:absolute;}
+.multi-column__item .rounded:hover {
+    opacity:0;
+}
  .hiddenimage{
   display:none;
 }
