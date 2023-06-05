@@ -10406,7 +10406,7 @@ padding-right:5px}
  .hiddenimage{
   display:none;
 }
-.multi-column__item .rounded:hover .rounded{
+.multi-column__item .rounded:hover{
   display:none;
 }
 .multi-column__item .rounded:hover .hiddenimage{
