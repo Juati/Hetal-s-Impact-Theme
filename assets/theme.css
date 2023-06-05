@@ -10425,7 +10425,7 @@ padding-right:5px}
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
-.multi-column__item .rounded:hover{
+.multi-column__item :hover .hiddenimage{
   z-index: 100000;
     opacity: 1;
 }
