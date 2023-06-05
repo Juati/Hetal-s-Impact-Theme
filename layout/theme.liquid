@@ -182,8 +182,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
            $(".product-info__buy-buttons .button").prop("disabled",false);
          }
        if(qty == 1){
-          $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
-          $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
+          // $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
+          $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"]').html("");
        }else if(qty == 0){
           $(".bundle-summary").removeClass("bundle-list");
        }else{
