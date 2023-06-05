@@ -10421,9 +10421,7 @@ position:absolute;}
 .multi-column__item .rounded:hover {
     opacity:0;
 } */
- .hiddenimage{
-  display:none;
-}
+
 .rounded.hiddenimage{
     position: absolute; 
     z-index: -1;
