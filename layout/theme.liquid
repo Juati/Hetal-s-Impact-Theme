@@ -133,7 +133,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
      console.log($eachqty + "jhjjhh");
      if($eachqty < 20){
           qty++;
-          $html = $(this).closest(".productsimage").html();
+          $html = $(this).closest(".productsimage");
           $producttitle = $(this).closest(".productsimage").find(".product-title").val();
           $productproperties = "properties[" + qty + " * " + $producttitle + "]";
           $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
