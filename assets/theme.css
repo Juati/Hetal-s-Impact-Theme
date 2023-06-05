@@ -10385,6 +10385,7 @@ padding-right:5px}
   .product-gallery__media {
     display: flex;
     align-items: center;
+    padding: 5px;
   }
   .qtybox {
     display: flex;
