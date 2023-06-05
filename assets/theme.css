@@ -10334,6 +10334,10 @@ padding-top: 10px;
 }
 .header__icon-list{
 padding-right:5px} 
+.bundle-summary {
+    max-height: 370px;
+    overflow-y: scroll;
+}
 .bundle-summary .productsimage .rounded{
       width: 100px;
 }
