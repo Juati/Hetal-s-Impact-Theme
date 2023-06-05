@@ -10,7 +10,7 @@
               {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           {%-  endfor -%}
       <span>{{ productimage.title }}</span>
-          <input readonly  class="product-title"  type="text"  value="{{ productimage.title }}"> 
+          <input readonly type="hidden" class="product-title"  type="text"  value="{{ productimage.title }}"> 
           <div class="qtydiv">
             <div class="qtybox">
               <span class="btnqty qtyminus icon icon-minus">-</span>
