@@ -10406,10 +10406,6 @@ padding-right:5px}
     width: 37%;
     display: inline-block;
   }
-  .qtydiv .btnqty.qtyminus,.qtydiv .btnqty.qtyplus{
-/*     margin: 10px 0px 15px; */
-  }
-
 }
 /* grid 3 image - product  template */
 .multi-column__item{
@@ -10439,4 +10435,7 @@ src: url("https://cdn.shopify.com/s/files/1/0024/6759/4339/files/Proxima_Nova_Fo
 .cardadtc{
   width: 100%;
   margin: 0 auto;
+}
+.imageproduct-title{
+  display:flex;
 }
