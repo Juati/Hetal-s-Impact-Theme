@@ -10308,13 +10308,10 @@ user-select: none;
 font-size: 25px;
 line-height: 5px;}
 
-.qtydiv .btnqty.qtyminus{
-margin: 8px;
+.qtydiv .btnqty.qtyminus,.qtydiv .btnqty.qtyplus{
+    margin: 10px 8px 15px;
 }
 
-.qtydiv .btnqty.qtyplus{
-margin: 8px;
-}
 
 .qtydiv .quantity-input{
 border: none;
