@@ -10377,6 +10377,7 @@ padding-right:5px}
   }
   img.rounded {
       max-width: 80px;
+      margin-right: 15px;
   }
   .product media-carousels {
     grid: none;
