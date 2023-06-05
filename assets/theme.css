@@ -10407,7 +10407,7 @@ padding-right:5px}
   display:none;
 }
 .multi-column__item .rounded:hover{
-  
+  display:none;
 }
 @font-face {
 font-family: "Proxima_Nova_Font";
