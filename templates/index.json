@@ -265,6 +265,7 @@
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/Halwai_3048f564-6aa1-4eeb-8842-15b5dcc0c836.webp",
+            "image2": "shopify:\/\/shop_images\/Halwai_on_hover_9df9db98-6e91-46eb-aa4e-7a863aca452b.webp",
             "column_size": "3",
             "title": "product 1",
             "heading_tag": "h4",
