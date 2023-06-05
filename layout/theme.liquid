@@ -129,7 +129,6 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
    $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
      $eachqty += parseInt($(this).val());
    });
-  $(".bundle-summry-title span").html($eachqty);
   $(".bundle-summary").addClass("bundle-list");
   $html = $(this).closest(".productsimage").html();
   $producttitle = $(this).closest(".productsimage").find(".product-title").val();
@@ -142,6 +141,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
        $eachqty++;
           qty++;
        console.log($summeryindex);
+  $(".bundle-summry-title span").html($eachqty);
          if($eachqty == 19){
            $(".product-info__buy-buttons .button").prop("disabled",false);
          }
@@ -159,6 +159,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     qty--;
     $eachqty--;
     }
+    $(".bundle-summry-title span").html($eachqty);
     console.log($summeryindex);
      if($eachqty == 0){
        console.log("hhhhhhhhhhhhhhhhhhhh");
