@@ -122,7 +122,46 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
       
-  $('.qtybox .btnqty').on('click', function(){
+  $('.qtybox .btnqty.qtyplus').on('click', function(){
+  $eachqty = 0;
+  var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
+  console.log(qty);
+  if($(this).hasClass('qtyplus')) {
+     $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
+       $eachqty += parseInt($(this).val());
+     });
+     console.log($eachqty + "jhjjhh");
+     if($eachqty < 20){
+          qty++;
+          $(".bundle-summary").addClass("bundle-list");
+          $html = $(this).closest(".productsimage").html();
+          $producttitle = $(this).closest(".productsimage").find(".product-title").val();
+          $productproperties = "properties[" + qty + " * " + $producttitle + "]";
+          $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
+          $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
+         if($eachqty == 19){
+           $(".product-info__buy-buttons .button").prop("disabled",false);
+         }
+       if(qty == 1){
+          $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
+          $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
+       }else if(qty == 0){
+          $(".bundle-summary").removeClass("bundle-list");
+       }else{
+         $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
+       }
+     }else{
+       alert("You can select only 20 cupcakes!");
+     }
+  }else {
+    if(qty >= 1) {
+    qty--;
+    }
+  }
+  qty = (isNaN(qty))?0:qty;
+  $(this).parent('.qtybox').find('.quantity-input').val(qty);
+});
+  $('.qtybox .btnqty.qtyminus').on('click', function(){
   $eachqty = 0;
   var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
   console.log(qty);
