@@ -156,7 +156,9 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
   }else {
     if(qty >= 1) {
     qty--;
+    $eachqty--;
     }
+       $(".bundle-summry-title span").html($eachqty);
       $(".bundle-summary").addClass("bundle-list");
       $html = $(this).closest(".productsimage").html();
       $producttitle = $(this).closest(".productsimage").find(".product-title").val();
