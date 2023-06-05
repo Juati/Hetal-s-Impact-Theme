@@ -10412,7 +10412,9 @@ padding-right:5px}
 
 }
 /* grid 3 image - product  template */
-
+.multi-column__item{
+  position:relative;
+}
 .rounded.hiddenimage{
     position: absolute; 
     z-index: -1;
