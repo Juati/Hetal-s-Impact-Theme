@@ -10397,6 +10397,10 @@ padding-right:5px}
     width: 37%;
     display: inline-block;
   }
+  .qtydiv .btnqty.qtyminus,.qtydiv .btnqty.qtyplus{
+    margin: 10px 0px 15px;
+  }
+
 }
 /* grid 3 image - product  template */
 
