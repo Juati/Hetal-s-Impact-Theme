@@ -138,13 +138,12 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
    console.log($eachqty + "jhjjhh");
   if($(this).hasClass('qtyplus')) {
      if($eachqty < 20){
-       $eachqty++;
-          qty++;
-       console.log($summeryindex);
-  $(".bundle-summry-title span").html($eachqty);
-         if($eachqty == 19){
-           $(".product-info__buy-buttons .button").prop("disabled",false);
-         }
+        $eachqty++;
+        qty++;
+        $(".bundle-summry-title span").html($eachqty);
+       if($eachqty == 19){
+         $(".product-info__buy-buttons .button").prop("disabled",false);
+       }
        if(qty == 1){
           $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
           $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
@@ -156,8 +155,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
      }
   }else {
     if(qty >= 1) {
-    qty--;
     $eachqty--;
+    qty--;
     }
     $(".bundle-summry-title span").html($eachqty);
     console.log($summeryindex);
