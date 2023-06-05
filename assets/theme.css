@@ -10279,6 +10279,12 @@ display: flex;
 
 /* header end */
 /* grid 3 image - product  template */
+.qtybox{
+  
+    border-color: rgb(var(--text-color) / .12);
+    border-radius: var(--rounded-button);
+    border-width: 1px;
+}
 .product-gallery__media-list3{
     grid: auto-flow dense / repeat(3, minmax(0, 1fr));
 }
