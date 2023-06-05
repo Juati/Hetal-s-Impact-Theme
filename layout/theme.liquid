@@ -158,11 +158,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     qty--;
     }
     console.log(qty + "----");
-       $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
-       $eachqty += parseInt($(this).val());
-     });
-     console.log($eachqty + "jhjjhh");
-     if($eachqty < 20){
+    
      $(".bundle-summary").addClass("bundle-list");
           $html = $(this).closest(".productsimage").html();
           $producttitle = $(this).closest(".productsimage").find(".product-title").val();
@@ -180,9 +176,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
        }else{
          $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
        }
-     }else{
-       alert("You can select only 20 cupcakes!");
-     }
+    
     
   }
   qty = (isNaN(qty))?0:qty;
