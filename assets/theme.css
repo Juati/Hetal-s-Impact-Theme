@@ -10331,6 +10331,8 @@ display: inline-block;
 display: flex;
 padding-right: 15px;
 padding-top: 10px;
+justify-content: center;
+
 }
 .header__icon-list{
 padding-right:5px} 
