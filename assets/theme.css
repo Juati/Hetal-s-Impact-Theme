@@ -10436,3 +10436,7 @@ src: url("https://cdn.shopify.com/s/files/1/0024/6759/4339/files/Proxima_Nova_Fo
 .product-card__info  .product-card__title .bold{
       font-size: 24px;
 }
+.cardadtc{
+  width: 90%;
+  margin: 0 auto;
+}
