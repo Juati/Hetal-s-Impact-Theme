@@ -126,11 +126,11 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
   $eachqty = 0;
   var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
   console.log(qty);
+   $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
+     $eachqty += parseInt($(this).val());
+   });
+   console.log($eachqty + "jhjjhh");
   if($(this).hasClass('qtyplus')) {
-     $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
-       $eachqty += parseInt($(this).val());
-     });
-     console.log($eachqty + "jhjjhh");
      if($eachqty < 20){
           qty++;
           $(".bundle-summary").addClass("bundle-list");
