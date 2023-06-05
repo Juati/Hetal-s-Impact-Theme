@@ -172,9 +172,9 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
         $(".bundle-summary").removeClass("bundle-list");
      }
      if(qty == 0){
-        $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"]').closest(".productsimage").html("");
+        $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"]').closest(".productsimage").html("");
      }else{
-       $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
+       $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
      }
   }
   qty = (isNaN(qty))?0:qty;
