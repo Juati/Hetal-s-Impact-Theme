@@ -10337,6 +10337,9 @@ padding-right:5px}
 .bundle-summary .productsimage .rounded{
       width: 100px;
 }
+.bundle-summary .product-gallery__media.appendpro3{
+  display:flex;
+}
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
