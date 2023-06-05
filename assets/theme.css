@@ -2906,7 +2906,7 @@ model-media .shopify-model-viewer-ui {
 }
 
 .product-card__info {
-  gap: var(--spacing-1);
+  gap: var(--spacing-3);
   padding: var(--product-card-info-padding);
   grid-template-columns: minmax(0, 1fr);
   justify-items: start;
