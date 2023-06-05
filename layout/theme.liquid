@@ -140,6 +140,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
         $productproperties = "properties[" + qty + " * " + $producttitle + "]";
         $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
         $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
+       consol.log($eachqty);
        if($eachqty == 19){
          $(".product-info__buy-buttons .button").prop("disabled",false);
        }else{
