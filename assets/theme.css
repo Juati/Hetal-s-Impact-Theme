@@ -10424,7 +10424,7 @@ position:absolute;}
  .hiddenimage{
   display:none;
 }
-.multi-column__item .rounded:hover{
+.multi-column__item .rounded:hover .rounded{
   display:none;
 }
 .multi-column__item .rounded:hover .hiddenimage{
