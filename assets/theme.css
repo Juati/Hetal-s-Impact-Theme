@@ -10406,8 +10406,11 @@ padding-right:5px}
  .hiddenimage{
   display:none;
 }
-.multi-column__item .rounded:hover{
+.multi-column__item .rounded:hover .rounded{
   display:none;
+}
+.multi-column__item .rounded:hover .hiddenimage{
+  display:block;
 }
 @font-face {
 font-family: "Proxima_Nova_Font";
