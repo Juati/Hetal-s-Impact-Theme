@@ -142,7 +142,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
          console.log("matchhh");
           $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
        }else{
-         $(this).closest(".product-gallery__media").attr("data-summery-index");
+          $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
+          console.log($summeryindex);
        }
      }else{
        alert("You can select only 20 cupcakes!");
