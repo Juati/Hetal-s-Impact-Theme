@@ -10365,6 +10365,9 @@ padding-right:5px}
 .bundle-summary .productsimage:first-child{
       border-top: none;
 }
+.bundle-list{
+      border-bottom: 1px solid #e4e4e4;
+}
 @media screen and (max-width: 999px) {
   input.product-title {
     text-align: left;
