@@ -10412,7 +10412,7 @@ padding-right:5px}
 
 }
 /* grid 3 image - product  template */
-.multi-column__item{
+/* .multi-column__item{
   position:relative;
   opacity:1;
 }
@@ -10420,7 +10420,7 @@ padding-right:5px}
 position:absolute;}
 .multi-column__item .rounded:hover {
     opacity:0;
-}
+} */
  .hiddenimage{
   display:none;
 }
