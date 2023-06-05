@@ -159,13 +159,11 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     qty--;
     }
     $(".bundle-summry-title span").html($eachqty);
-    console.log($summeryindex);
      if($eachqty == 0){
-       console.log("hhhhhhhhhhhhhhhhhhhh");
         $(".bundle-summary").removeClass("bundle-list");
      }
      if(qty == 0){
-          $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
+        $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
         $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"]').closest(".productsimage").html("");
      }else{
        $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
