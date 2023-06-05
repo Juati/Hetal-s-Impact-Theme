@@ -10372,6 +10372,12 @@ padding-right:5px}
     align-items: center;
 }
 @media screen and (max-width: 999px) {
+  .navigation-promo{
+      display: block;
+  }
+  .navigation-promo .content-over-media:last-child{
+    display:none;
+  }
   input.product-title {
     text-align: left;
   }
