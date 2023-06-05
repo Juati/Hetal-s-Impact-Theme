@@ -10372,6 +10372,10 @@ padding-right:5px}
     display: flex;
     align-items: center;
 }
+.imageproduct-title{
+  display:flex;
+  justify-content:center;
+}
 @media screen and (max-width: 999px) {
   .navigation-promo{
       display: block;
@@ -10381,6 +10385,9 @@ padding-right:5px}
   }
   input.product-title {
     text-align: left;
+  }
+  .imageproduct-title{{
+        width: 100%;
   }
   media-carousel.product-gallery__media-list3.product-gallery__media-list.full-bleed.scroll-area.md\:unbleed {
     grid:none;
@@ -10435,8 +10442,4 @@ src: url("https://cdn.shopify.com/s/files/1/0024/6759/4339/files/Proxima_Nova_Fo
 .cardadtc{
   width: 100%;
   margin: 0 auto;
-}
-.imageproduct-title{
-/*   display:flex;
-  justify-content:center; */
 }
