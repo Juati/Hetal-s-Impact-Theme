@@ -286,13 +286,13 @@ Supported variables
     {%- endif -%}
     <div>{{ product.description |truncate: 80  }}</div>
     <div class="mobileproice productprice">{{ product.price | money }}</div>
+    <div class="mobileadtcbtn"></div>
       <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }} >
         {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
           {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
           
           {%- form 'product', product, is: 'product-form', id: form_id -%}
             <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
             <buy-buttons class="buy-buttons " template="" form="">
         <button type="submit" class="button button--xl" is="custom-button">
           <div class="customatcbtn">
