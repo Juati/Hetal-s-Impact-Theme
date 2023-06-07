@@ -10437,7 +10437,7 @@ padding-right:5px}
     transition: opacity 0.3s ease-in-out;
 }
 .multi-column__item:hover .hiddenimage{
-  z-index: 100000;
+  z-index: 9;
     opacity: 1;
 }
 @font-face {
