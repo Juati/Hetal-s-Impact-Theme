@@ -288,7 +288,13 @@ Supported variables
       <div class="product-info__buy-buttons cardadtc" {{ block.shopify_attributes }} >
         {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 <!--         {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%} -->
-      <buy-buttons class="buy-buttons " template="" form="">
+    
+          {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+          
+          {%- form 'product', product, is: 'product-form', id: form_id -%}
+            <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+            <buy-buttons class="buy-buttons " template="" form="">
         <button type="submit" class="button button--xl" is="custom-button">
           <div class="customatcbtn">
           <div style="transform: translateY(0px); opacity: 1;">Add to cart  </div>
@@ -299,6 +305,7 @@ Supported variables
                 <span style="opacity: 1;"></span>
                 <span style="opacity: 1;"></span>
               </span></button></buy-buttons>
+        {%- endform -%}
       </div>
       <div class="metafieldflexcard">
         <div class="textmetafield">
