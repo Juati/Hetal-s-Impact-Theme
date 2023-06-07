@@ -10090,7 +10090,7 @@ split-lines {
   display:none;
 }
 @media screen and (max-width: 790px) {
-  .metafieldflexcard,.cardadtc,.mobileadtcbtn.addtobtn{
+  .metafieldflexcard,.cardadtc,.mobileadtcbtn.addtobtn,.price-list{
     display:none;
   }
   .mobileproice,.addtocartbutn,.mobileadtcbtn{
@@ -10104,6 +10104,7 @@ split-lines {
   .mobileadtcbtn  .button{
         padding: 5px 10px;
   }
+  
 }
 @media screen and (max-width: 600px) {
   .cardtagtext{ 
