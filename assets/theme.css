@@ -10101,6 +10101,9 @@ split-lines {
   .metafieldflexcard{
     display:none;
   }
+  .mobileproice{
+    display:block;
+  }
 }
 @media screen and (max-width: 600px) {
   .cardtagtext{ 
