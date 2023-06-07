@@ -10101,6 +10101,9 @@ split-lines {
     top: 0;
     right: 0;
   }
+  .mobileadtcbtn  .button{
+        padding: 5px 10px;
+  }
 }
 @media screen and (max-width: 600px) {
   .cardtagtext{ 
