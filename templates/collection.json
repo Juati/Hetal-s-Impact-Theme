@@ -1,1 +1,87 @@
-{"sections":{"banner":{"type":"collection-banner","disabled":true,"settings":{"full_width":true,"allow_transparent_header":false,"enable_parallax":false,"show_collection_title":true,"show_collection_description":true,"show_collection_image":true,"collection_title_size":"h0","image_size":"sm","image":"shopify:\/\/shop_images\/category-hero-beard-care1x.jpg","mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center sm:text-center","featured_product":"","featured_product_heading":"Featured product","text_color":"#ffffff","overlay_color":"#000000","overlay_opacity":0}},"main":{"type":"main-collection","settings":{"products_per_page":24,"products_per_row_mobile":"2","products_per_row_desktop":4,"filter_layout":"drawer","show_sort_by":true,"show_filters":true,"show_filter_group_name":false,"show_color_swatch":true,"show_empty_filter_values":true,"show_filter_values_count":false,"open_first_filter_group":false}}},"order":["banner","main"]}
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "collection_title_size": "h0",
+        "image_size": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "a5336041-14cb-44dd-b912-9f080e913bd6": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-0",
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1",
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/cashew_orange_d9fb247b-de9f-4011-b82c-3fd3c0121981.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": true,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "a5336041-14cb-44dd-b912-9f080e913bd6",
+    "main"
+  ]
+}
