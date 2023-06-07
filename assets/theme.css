@@ -10086,22 +10086,14 @@ split-lines {
     font-size: 13px;
     font-weight: 400;
 }
-/* .shopify-section--multi-column .multi-column__item .rounded{
-  transform: scale(.95);
-}
-.shopify-section--multi-column .multi-column__item .rounded:hover{
-    cursor:pointer;
-    transition: transform 0.5s ease;
-    transform: scale(1);
-} */
-.mobileproice{
+.mobileproice,.mobileadtcbtn{
   display:none;
 }
 @media screen and (max-width: 790px) {
   .metafieldflexcard,.cardadtc{
     display:none;
   }
-  .mobileproice,.addtocartbutn{
+  .mobileproice,.addtocartbutn,.mobileadtcbtn{
     display:block;
   }
 }
