@@ -48,83 +48,71 @@
         "overlay_opacity": 30
       }
     },
-    "654a284b-c0bc-42ec-a13d-fbd2ce23351a": {
-      "type": "image-link-blocks",
+    "bf8c977d-a5e8-4226-ae20-06a8fb9fba69": {
+      "type": "multi-column",
       "blocks": {
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-0": {
+        "template--14471092371555__bf8c977d-a5e8-4226-ae20-06a8fb9fba69-16861153205d6da5eb-0": {
           "type": "item",
           "settings": {
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-1": {
+        "a9348604-edab-486a-b080-2233a5358e55": {
           "type": "item",
           "settings": {
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-2": {
+        "551b8e8f-6880-4bdd-8460-303bcab92733": {
           "type": "item",
           "settings": {
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-3": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
             "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-0",
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-1",
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-2",
-        "template--14471092371555__654a284b-c0bc-42ec-a13d-fbd2ce23351a-1686115248d22cca22-3"
+        "template--14471092371555__bf8c977d-a5e8-4226-ae20-06a8fb9fba69-16861153205d6da5eb-0",
+        "a9348604-edab-486a-b080-2233a5358e55",
+        "551b8e8f-6880-4bdd-8460-303bcab92733"
       ],
       "settings": {
-        "full_width": false,
-        "block_size": "large",
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
         "subheading": "",
         "title": "Katli",
         "content": "",
-        "link_url": "",
-        "link_text": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "text_color": ""
       }
     }
   },
   "order": [
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
-    "654a284b-c0bc-42ec-a13d-fbd2ce23351a"
+    "bf8c977d-a5e8-4226-ae20-06a8fb9fba69"
   ]
 }
