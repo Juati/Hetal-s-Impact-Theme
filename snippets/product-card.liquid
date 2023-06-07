@@ -385,7 +385,7 @@ Supported variables
   </a>
 {%- else -%}
   <button type="{{ type | default: 'button' }}" {{ attributes }} {{ block.shopify_attributes }}>
-    {{- button_content -}}{{- product.price -}}
+    {{- button_content -}}
   </button>
 {%- endif -%}
     {%- if show_payment_button -%}
