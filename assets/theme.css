@@ -10090,7 +10090,7 @@ split-lines {
   display:none;
 }
 @media screen and (max-width: 790px) {
-  .metafieldflexcard,.cardadtc,.mobileadtcbtn.addtobtn,.price-list{
+  .metafieldflexcard,.cardadtc,.mobileadtcbtn.addtobtn{
     display:none;
   }
   .mobileproice,.addtocartbutn,.mobileadtcbtn{
