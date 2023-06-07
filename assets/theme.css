@@ -10098,7 +10098,7 @@ split-lines {
   display:none;
 }
 @media screen and (max-width: 790px) {
-  .metafieldflexcard{
+  .metafieldflexcard,.cardadtc{
     display:none;
   }
   .mobileproice{
