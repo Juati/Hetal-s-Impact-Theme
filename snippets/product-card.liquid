@@ -287,7 +287,51 @@ Supported variables
     <div>{{ product.description |truncate: 80  }}</div>
       <div class="product-info__buy-buttons cardadtc" {{ block.shopify_attributes }} >
         {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
-        {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
+        
+{%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+
+{%- form 'product', product, is: 'product-form', id: form_id -%}
+  <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+  {%- assign button_disabled = false -%}
+  {%- assign button_size = button_size | default: 'xl' -%}
+
+  {%- if product.selected_or_first_available_variant.available -%}
+    {%- if product.template_suffix contains 'pre-order' -%}
+      {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
+    {%- else -%}
+      {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+    {%- assign button_disabled = true -%}
+  {%- endif -%}
+
+  <buy-buttons class="buy-buttons {% if show_payment_button %}buy-buttons--multiple{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+    {%- render 'button', content: button_content, type: 'submit', size: button_size, disabled: button_disabled, secondary: show_payment_button, subdued: button_disabled, background: atc_button_background, text_color: atc_button_text_color -%}
+
+    {%- if show_payment_button -%}
+      {{- form | payment_button -}}
+
+      <style>
+        #shopify-section-{{ section.id }} .shopify-payment-button {
+        {%- unless product.selected_or_first_available_variant.available -%}
+          display: none;
+        {%- endunless -%}
+
+        {%- if payment_button_background != blank and payment_button_background != 'rgba(0,0,0,0)' -%}
+          --button-background: {{ payment_button_background.rgb }};
+        {%- endif -%}
+
+        {%- if payment_button_text_color != blank and payment_button_text_color != 'rgba(0,0,0,0)' -%}
+          --button-text-color: {{ payment_button_text_color.rgb }};
+        {%- endif -%}
+        }
+      </style>
+    {%- endif -%}
+  </buy-buttons>
+{%- endform -%}
+<!--         {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%} -->
       </div>
       <div class="metafieldflexcard">
         <div class="textmetafield">
