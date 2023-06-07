@@ -10101,7 +10101,7 @@ split-lines {
 }
 @media screen and (max-width: 600px) {
   .cardtagtext{ 
-    font-size: 8px;
+    font-size: 10px;
     line-height: 11px;
   }
 }
