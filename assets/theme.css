@@ -10096,6 +10096,11 @@ split-lines {
   .mobileproice,.addtocartbutn,.mobileadtcbtn{
     display:block;
   }
+  .mobileadtcbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .cardtagtext{ 
