@@ -10086,14 +10086,14 @@ split-lines {
     font-size: 13px;
     font-weight: 400;
 }
-.mobileproice,.mobileadtcbtn{
+.mobileproice,.mobileadtcbtn,.price-list{
   display:none;
 }
 @media screen and (max-width: 790px) {
   .metafieldflexcard,.cardadtc,.mobileadtcbtn.addtobtn{
     display:none;
   }
-  .mobileproice,.addtocartbutn,.mobileadtcbtn{
+  .mobileproice,.addtocartbutn,.mobileadtcbtn,.price-list{
     display:block;
   }
   .mobileadtcbtn {
