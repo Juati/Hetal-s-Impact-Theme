@@ -26,6 +26,7 @@
     "currency_code_enabled": false,
     "show_page_transition": true,
     "heading_apparition": "fade",
+    "show_quick_buy": false,
     "show_product_rating": true,
     "product_color_display": "swatch",
     "product_info_alignment": "start",
