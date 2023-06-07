@@ -10094,6 +10094,9 @@ split-lines {
     transition: transform 0.5s ease;
     transform: scale(1);
 } */
+.mobileproice{
+  display:none;
+}
 @media screen and (max-width: 790px) {
   .metafieldflexcard{
     display:none;
