@@ -10103,6 +10103,7 @@ split-lines {
   .cardtagtext{ 
     font-size: 10px;
     line-height: 11px;
+     padding: 5px 8px;
   }
 }
 /*add css for product card metafield   */
