@@ -139,7 +139,7 @@
         "full_width": false,
         "allow_transparent_header": false,
         "image_size": "lg",
-        "controls_type": "numbers",
+        "controls_type": "dots",
         "transition_type": "fade",
         "autoplay": true,
         "cycle_speed": 6,
@@ -208,11 +208,38 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "1686318877f7fff8ef": {
+      "type": "apps",
+      "blocks": {
+        "b9f2f1b2-9422-498f-9638-652b21881478": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "b9f2f1b2-9422-498f-9638-652b21881478"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
-    "6dde8908-690e-4500-be2a-a3e8f8536ec2"
+    "6dde8908-690e-4500-be2a-a3e8f8536ec2",
+    "1686318877f7fff8ef"
   ]
 }
