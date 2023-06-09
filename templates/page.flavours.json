@@ -50,7 +50,6 @@
     },
     "bf8c977d-a5e8-4226-ae20-06a8fb9fba69": {
       "type": "multi-column",
-      "disabled": true,
       "blocks": {
         "template--14471092371555__bf8c977d-a5e8-4226-ae20-06a8fb9fba69-16861153205d6da5eb-0": {
           "type": "item",
@@ -98,7 +97,7 @@
         "551b8e8f-6880-4bdd-8460-303bcab92733"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
@@ -109,131 +108,11 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "a90e640e-4988-4990-b25e-f3c766953f1a": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        },
-        "97dd4415-8910-49f3-864a-b39541baf8ae": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        },
-        "edc93d77-5cc3-41e3-9405-6ec1635216e1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0",
-        "97dd4415-8910-49f3-864a-b39541baf8ae",
-        "edc93d77-5cc3-41e3-9405-6ec1635216e1"
-      ],
-      "settings": {
-        "full_width": false,
-        "title": "KATLI",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "5c04effe-db09-4ca1-90ec-3033d1991350": {
-      "type": "text-with-icons",
-      "blocks": {
-        "42b2c9b6-8525-41df-ad4c-582cec1cd25b": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        },
-        "e680e510-05ee-405f-94a1-9df56f2b6ad3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        },
-        "2041d810-faa0-443d-9037-d18af4003887": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "mobile_icon_width": 68,
-            "icon_width": 120,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "42b2c9b6-8525-41df-ad4c-582cec1cd25b",
-        "e680e510-05ee-405f-94a1-9df56f2b6ad3",
-        "2041d810-faa0-443d-9037-d18af4003887"
-      ],
-      "settings": {
-        "full_width": false,
-        "title": "",
-        "heading_tag": "h5",
-        "text_alignment": "center",
-        "icon_spacing": "medium",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
-    "bf8c977d-a5e8-4226-ae20-06a8fb9fba69",
-    "a90e640e-4988-4990-b25e-f3c766953f1a",
-    "5c04effe-db09-4ca1-90ec-3033d1991350"
+    "bf8c977d-a5e8-4226-ae20-06a8fb9fba69"
   ]
 }
