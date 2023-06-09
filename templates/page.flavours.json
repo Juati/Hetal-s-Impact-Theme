@@ -119,7 +119,46 @@
             "icon": "picto-coupon",
             "mobile_icon_width": 68,
             "icon_width": 120,
-            "icon_background_type": "circle",
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "97dd4415-8910-49f3-864a-b39541baf8ae": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 68,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "edc93d77-5cc3-41e3-9405-6ec1635216e1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 68,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "dbcec9aa-fcf7-45ba-a523-a1b7f659ecf3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 68,
+            "icon_width": 120,
+            "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "Free shipping",
@@ -128,10 +167,13 @@
         }
       },
       "block_order": [
-        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0"
+        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0",
+        "97dd4415-8910-49f3-864a-b39541baf8ae",
+        "edc93d77-5cc3-41e3-9405-6ec1635216e1",
+        "dbcec9aa-fcf7-45ba-a523-a1b7f659ecf3"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "title": "KATLI",
         "heading_tag": "h5",
         "text_alignment": "center",
