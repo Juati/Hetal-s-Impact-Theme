@@ -151,8 +151,54 @@
             "title": "Free shipping",
             "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
           }
+        }
+      },
+      "block_order": [
+        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0",
+        "97dd4415-8910-49f3-864a-b39541baf8ae",
+        "edc93d77-5cc3-41e3-9405-6ec1635216e1"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "KATLI",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5c04effe-db09-4ca1-90ec-3033d1991350": {
+      "type": "text-with-icons",
+      "blocks": {
+        "42b2c9b6-8525-41df-ad4c-582cec1cd25b": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 68,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
         },
-        "dbcec9aa-fcf7-45ba-a523-a1b7f659ecf3": {
+        "e680e510-05ee-405f-94a1-9df56f2b6ad3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 68,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included<\/p>"
+          }
+        },
+        "2041d810-faa0-443d-9037-d18af4003887": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
@@ -167,14 +213,13 @@
         }
       },
       "block_order": [
-        "template--14471092371555__a90e640e-4988-4990-b25e-f3c766953f1a-16863216631fcec960-0",
-        "97dd4415-8910-49f3-864a-b39541baf8ae",
-        "edc93d77-5cc3-41e3-9405-6ec1635216e1",
-        "dbcec9aa-fcf7-45ba-a523-a1b7f659ecf3"
+        "42b2c9b6-8525-41df-ad4c-582cec1cd25b",
+        "e680e510-05ee-405f-94a1-9df56f2b6ad3",
+        "2041d810-faa0-443d-9037-d18af4003887"
       ],
       "settings": {
         "full_width": false,
-        "title": "KATLI",
+        "title": "",
         "heading_tag": "h5",
         "text_alignment": "center",
         "icon_spacing": "medium",
@@ -188,6 +233,7 @@
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
     "bf8c977d-a5e8-4226-ae20-06a8fb9fba69",
-    "a90e640e-4988-4990-b25e-f3c766953f1a"
+    "a90e640e-4988-4990-b25e-f3c766953f1a",
+    "5c04effe-db09-4ca1-90ec-3033d1991350"
   ]
 }
