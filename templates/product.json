@@ -110,14 +110,15 @@
             "background_gradient": ""
           }
         },
-        "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-1": {
+        "b4aa358d-7e74-4ace-aa4f-52d540ed9f33": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/AKC_2_WEB.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "Tell your story",
-            "title": "Slide 2",
+            "title": "Slide 1",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -133,7 +134,7 @@
       },
       "block_order": [
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0",
-        "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-1"
+        "b4aa358d-7e74-4ace-aa4f-52d540ed9f33"
       ],
       "settings": {
         "full_width": false,
@@ -143,7 +144,7 @@
         "transition_type": "fade",
         "autoplay": true,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
