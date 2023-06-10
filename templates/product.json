@@ -311,8 +311,31 @@
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 5,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
+      }
+    },
+    "d34487a1-b3a6-4c2e-bdb9-3f906210e3f3": {
+      "type": "pro_slider",
+      "blocks": {
+        "e4e18fd3-d5fe-4448-9efc-649dabe9bfc3": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/breakdown-og-tie-dye-new-desktop.jpg"
+          }
+        },
+        "aee43ff2-d1fb-4be7-a03f-e49564747864": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/breakdown-og-cookies-and-cream-desktop.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e4e18fd3-d5fe-4448-9efc-649dabe9bfc3",
+        "aee43ff2-d1fb-4be7-a03f-e49564747864"
+      ],
+      "settings": {
       }
     }
   },
@@ -321,6 +344,7 @@
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
     "1686318877f7fff8ef",
-    "fb7375c0-453b-434d-a771-dc2a5156f896"
+    "fb7375c0-453b-434d-a771-dc2a5156f896",
+    "d34487a1-b3a6-4c2e-bdb9-3f906210e3f3"
   ]
 }
