@@ -89,12 +89,54 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "a4d05cb3-a235-45b1-90ea-b367422f2695": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "063efd62-52b3-4746-9657-ef521d6d59a9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "e5abfa54-2b94-4bef-af3a-f668813c1427": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "template--14471092371555__bf8c977d-a5e8-4226-ae20-06a8fb9fba69-16861153205d6da5eb-0",
         "a9348604-edab-486a-b080-2233a5358e55",
-        "551b8e8f-6880-4bdd-8460-303bcab92733"
+        "551b8e8f-6880-4bdd-8460-303bcab92733",
+        "a4d05cb3-a235-45b1-90ea-b367422f2695",
+        "063efd62-52b3-4746-9657-ef521d6d59a9",
+        "e5abfa54-2b94-4bef-af3a-f668813c1427"
       ],
       "custom_css": [
         ".multi-column.scroll-area.bleed.md\\:unbleed {padding-inline: 150px;}"
@@ -112,58 +154,110 @@
         "text_color": ""
       }
     },
-    "11ec500d-4670-4fb3-a799-4bd257b33ada": {
-      "type": "featured-collection",
+    "7075e832-0fa0-47a7-bbf1-e3dbbd0852d1": {
+      "type": "multi-column",
+      "blocks": {
+        "2dd2f8fb-7718-438e-83b8-d271c58a6a78": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "610a5ee1-f0bc-433b-815b-90990637e0f9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "6966127c-f31d-4508-86dc-a36840ad02b2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "aa4185de-26ca-4fc2-af75-c6287ad78bb1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "ab883640-913d-4c97-a2a3-152c3bbab9fe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "dbea67c0-be70-4453-aa3b-58acd531e22b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.png",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "2dd2f8fb-7718-438e-83b8-d271c58a6a78",
+        "610a5ee1-f0bc-433b-815b-90990637e0f9",
+        "6966127c-f31d-4508-86dc-a36840ad02b2",
+        "aa4185de-26ca-4fc2-af75-c6287ad78bb1",
+        "ab883640-913d-4c97-a2a3-152c3bbab9fe",
+        "dbea67c0-be70-4453-aa3b-58acd531e22b"
+      ],
+      "custom_css": [
+        ".multi-column.scroll-area.bleed.md\\:unbleed {padding-inline: 150px;}"
+      ],
       "settings": {
-        "collection": "chococaramel",
-        "products": [
-
-        ],
         "full_width": false,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
         "subheading": "",
-        "title": "katli",
+        "title": "Katli",
         "content": "",
-        "link_url": "",
-        "link_text": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "0e4979b9-7722-490b-ad53-b4741b38bb0b": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "chococaramel",
-        "products": [
-
-        ],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_count": 4,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 2,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
+        "text_color": ""
       }
     }
   },
@@ -171,7 +265,6 @@
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
     "bf8c977d-a5e8-4226-ae20-06a8fb9fba69",
-    "11ec500d-4670-4fb3-a799-4bd257b33ada",
-    "0e4979b9-7722-490b-ad53-b4741b38bb0b"
+    "7075e832-0fa0-47a7-bbf1-e3dbbd0852d1"
   ]
 }
