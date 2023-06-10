@@ -10484,8 +10484,8 @@ a,ul,li,span,p,.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1,h2,h3,
 }
 /* font-family */
 .flavorespage{
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 2% auto;
 }
 .flavorespage .section-header{
 /*       background: #EBB77E;
