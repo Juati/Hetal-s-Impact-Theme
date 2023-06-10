@@ -537,6 +537,7 @@
         "template--14471092371555__5f37f432-850c-4599-a036-485b538e244a-16863895522eac89a4-2": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -564,6 +565,66 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "fedaf039-b53f-4265-af29-2fb0775e4d7f": {
+      "type": "multi-column",
+      "blocks": {
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-0",
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-1",
+        "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Liquor Flavoured Coffees",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -577,6 +638,7 @@
     "16f1e073-7076-4858-8b4c-3be536bd991c",
     "486981bb-4594-4bc5-a4b0-d852502d2ab8",
     "161bcd1f-a9c5-4813-82cb-3a0dbc658946",
-    "5f37f432-850c-4599-a036-485b538e244a"
+    "5f37f432-850c-4599-a036-485b538e244a",
+    "fedaf039-b53f-4265-af29-2fb0775e4d7f"
   ]
 }
