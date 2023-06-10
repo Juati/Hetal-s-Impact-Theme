@@ -10491,7 +10491,7 @@ a,ul,li,span,p,.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1,h2,h3,
     background: #eab87c;
     border-radius: 12px;
     color:#fff;
-  padding-bottom:10px;
+  padding-bottom:5px;
 }
 .flavorespage .section-header .h2{
   text-transform: capitalize;
