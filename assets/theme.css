@@ -10287,7 +10287,7 @@ display:none;}
 }
  .header__wrapper{ 
     display: flex;
-    justify-content: center;
+/*     justify-content: center; */
  } 
   height-observer .header__logo{
 display:none;}
