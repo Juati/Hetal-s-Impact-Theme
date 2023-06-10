@@ -8,7 +8,7 @@
     }
   </style>
 
-  <div {% render 'section-properties' %} fdfdf>
+  <div {% render 'section-properties' %} class="{% if page.handle == "flavores" %}flavorespage {%  endif %}">
     <div class="section-stack">
       {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
 
