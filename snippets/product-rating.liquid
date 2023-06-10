@@ -37,25 +37,6 @@ Supported variables
     {%- assign is_main_product = true -%}
   {%- endif -%}
 {{ rating_value}}////
-{% assign rating =rating_value%}
-
-{% assign filledStars = rating | floor %}
-{% assign hasHalfStar = rating > filledStars %}
-
-<!-- Display filled stars -->
-{% for i in (1..filledStars) %}
-  <span class="star-filled"></span>
-{% endfor %}
-
-<!-- Display half star -->
-{% if hasHalfStar %}
-  <span class="star-half"></span>
-{% endif %}
-
-<!-- Display empty stars -->
-{% for i in (filledStars | plus: 1)..5 %}
-  <span class="star-empty"></span>
-{% endfor %}
 
   <a href="{% unless is_main_product %}{{ product.url }}{% endunless %}#shopify-product-reviews" class="rating {{ class }}" title="{{ 'product.rating_count' | t: count: rating_count }}" {{ block.shopify_attributes }}>
     {%- if display_mode == 'count' -%}
