@@ -10502,6 +10502,11 @@ a,ul,li,span,p,.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1,h2,h3,
     color: #fff;
     margin: 0 24px;
     padding: 4px;
-      text-transform: capitalize;
+    text-transform: capitalize;
+
+}
+.flavorespage .prose p{
+      font-size: 14px;
+    line-height: 18px;
 
 }
