@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+ <link rel="canonical" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
@@ -62,7 +62,7 @@
    .logoblock .slick-track{
     padding: 10px 0;
   }
-.slick-slider {
+	.slick-slider {
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -102,7 +102,7 @@
   top: 0;
   display: block; }
   .slick-track:before, .slick-track:after {
-
+    content: "";
     display: table; }
   .slick-track:after {
     clear: both; }
@@ -149,15 +149,26 @@
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
- top: 50%;
+  background: transparent;
+  color: transparent;
+  top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none; }
-
- 
-
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick-icons, sans-serif";
@@ -173,20 +184,27 @@
   [dir="rtl"] .slick-prev {
     left: auto;
     right: -25px; }
- 
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
 
 .slick-next {
   right: -25px; }
   [dir="rtl"] .slick-next {
     left: -25px;
     right: auto; }
-
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
 
 / Dots /
 .slick-dotted.slick-slider {
   margin-bottom: 30px; }
 
 .slick-dots {
+  list-style: none;
   display: block;
   text-align: center;
   padding: 0;
@@ -199,27 +217,56 @@
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
- 
-      
- 
+    .slick-dots li button, .slick-dots li a {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover:before, .slick-dots li button:focus:before, .slick-dots li a:hover:before, .slick-dots li a:focus:before {
+        opacity: 1; }
+      .slick-dots li button:before, .slick-dots li a:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick-icons, sans-serif";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: #fff;
+      opacity: 0.75; }
 
 
 {% endstylesheet %}
 
 <script>
   
+<script>
     $('.productslider3').slick({
-       speed: 1500,
-        autoplaySpeed: 2000,
       arrows: true,
        dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
+      speed: 2500,
     slidesToScroll: 1,
        autoplay: true,
       prevArrow:"<button type='button' class='drag dogarrow1 slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-              nextArrow:"<button type='button' class='drag dogarrow2  slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-      
+              nextArrow:"<button type='button' class='drag dogarrow2  slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+           
   });
+</script>
 </script>
 
