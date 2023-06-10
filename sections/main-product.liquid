@@ -499,13 +499,30 @@ quick buy information in a template, that will be extracted in JS, but ensure it
       ]
     },
     {
-      "type": "pickup_availability",
-      "name": "Pickup availability",
+      "type": "addon_product",
+      "name": "Addon product",
       "limit": 1,
       "settings": [
         {
           "type": "paragraph",
           "content": "Allow your customers to see availability in retail stores by [setting up local pickup](https://help.shopify.com/en/manual/sell-in-person/shopify-pos/order-management/local-pickup-for-online-orders)."
+        }
+      ]
+    },
+    {
+      "type": "pickup_availability",
+      "name": "Pickup availability",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product",
+          "id": "addon_product1",
+          "label": "Addon product 1"
+        },
+        {
+          "type": "product",
+          "id": "addon_product2",
+          "label": "Addon product 2"
         }
       ]
     },
