@@ -179,6 +179,7 @@
         "template--14471092371555__4dc93be5-2598-4d9d-b91c-d9acdfcad58e-16863895522eac89a4-0": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -190,6 +191,7 @@
         },
         "template--14471092371555__4dc93be5-2598-4d9d-b91c-d9acdfcad58e-16863895522eac89a4-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
@@ -202,6 +204,7 @@
         },
         "template--14471092371555__4dc93be5-2598-4d9d-b91c-d9acdfcad58e-16863895522eac89a4-2": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "column_size": "3",
             "title": "Column title",
@@ -224,7 +227,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "",
+        "title": "Fudge",
         "content": "",
         "background": "",
         "background_gradient": "",
