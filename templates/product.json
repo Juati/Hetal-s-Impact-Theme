@@ -29,7 +29,7 @@
         "c8a50078-21f3-44cb-88b3-2c8bc908bb2b": {
           "type": "description",
           "settings": {
-            "collapse_content": true
+            "collapse_content": false
           }
         },
         "f7325d58-1704-4abf-9760-18f17d0c9556": {
@@ -58,11 +58,18 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": true,
+            "show_payment_button": false,
             "atc_button_background": "#bf993f",
             "atc_button_text_color": "",
             "payment_button_background": "#ffb74a",
             "payment_button_text_color": ""
+          }
+        },
+        "8c580ed5-aaef-4ed3-963c-2418d80deb60": {
+          "type": "addon_product",
+          "settings": {
+            "addon_product1": "abstract-smoothie",
+            "addon_product2": "butterscotch"
           }
         }
       },
@@ -75,7 +82,8 @@
         "f7325d58-1704-4abf-9760-18f17d0c9556",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "8c580ed5-aaef-4ed3-963c-2418d80deb60"
       ],
       "settings": {
         "full_width": true,
