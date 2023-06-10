@@ -10121,7 +10121,7 @@ split-lines {
     padding: 14px 20px 11px;
 }
 nav.header__link-list.justify-center.wrap{  
-  max-width: 1250px;
+/*   max-width: 1250px; */
 }
 
 .hamburger-menu ,.block.block-title{
