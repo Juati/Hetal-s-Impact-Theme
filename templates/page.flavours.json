@@ -322,6 +322,64 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "16f1e073-7076-4858-8b4c-3be536bd991c": {
+      "type": "multi-column",
+      "blocks": {
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-0",
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-1",
+        "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Truffle",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -331,6 +389,7 @@
     "49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7",
     "4dc93be5-2598-4d9d-b91c-d9acdfcad58e",
     "f5852e51-b7e5-4fae-9725-40fd3b131f05",
-    "11ec500d-4670-4fb3-a799-4bd257b33ada"
+    "11ec500d-4670-4fb3-a799-4bd257b33ada",
+    "16f1e073-7076-4858-8b4c-3be536bd991c"
   ]
 }
