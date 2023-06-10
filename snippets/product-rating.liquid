@@ -36,7 +36,7 @@ Supported variables
   {%- if request.page_type == 'product' and block != blank -%}
     {%- assign is_main_product = true -%}
   {%- endif -%}
-{{ 'product.rating_count' }}////
+{{ rating_count}}////
   <a href="{% unless is_main_product %}{{ product.url }}{% endunless %}#shopify-product-reviews" class="rating {{ class }}" title="{{ 'product.rating_count' | t: count: rating_count }}" {{ block.shopify_attributes }}>
     {%- if display_mode == 'count' -%}
       <span class="text-sm">{{- 'product.rating_count' | t: count: rating_count -}}</span>
