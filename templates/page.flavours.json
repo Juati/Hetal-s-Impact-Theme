@@ -112,6 +112,66 @@
         "text_color": ""
       }
     },
+    "49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7": {
+      "type": "multi-column",
+      "blocks": {
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-2": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-0",
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-1",
+        "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Nougat",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "11ec500d-4670-4fb3-a799-4bd257b33ada": {
       "type": "featured-collection",
       "settings": {
@@ -144,6 +204,7 @@
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
     "bf8c977d-a5e8-4226-ae20-06a8fb9fba69",
+    "49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7",
     "11ec500d-4670-4fb3-a799-4bd257b33ada"
   ]
 }
