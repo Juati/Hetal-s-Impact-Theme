@@ -253,68 +253,6 @@
         "review_button_text_color": "#ffffff"
       }
     },
-    "fb7375c0-453b-434d-a771-dc2a5156f896": {
-      "type": "slideshow",
-      "blocks": {
-        "template--14464004030563__fb7375c0-453b-434d-a771-dc2a5156f896-1686395177cd971c8d-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/breakdown-og-cookies-and-cream-desktop.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "template--14464004030563__fb7375c0-453b-434d-a771-dc2a5156f896-1686395177cd971c8d-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/breakdown-og-tie-dye-new-desktop.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14464004030563__fb7375c0-453b-434d-a771-dc2a5156f896-1686395177cd971c8d-0",
-        "template--14464004030563__fb7375c0-453b-434d-a771-dc2a5156f896-1686395177cd971c8d-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "allow_transparent_header": true,
-        "image_size": "auto",
-        "controls_type": "outline_arrows",
-        "transition_type": "fade_with_text",
-        "autoplay": true,
-        "cycle_speed": 5,
-        "background": "#f2f2f2",
-        "background_gradient": ""
-      }
-    },
     "d34487a1-b3a6-4c2e-bdb9-3f906210e3f3": {
       "type": "pro_slider",
       "blocks": {
@@ -344,7 +282,6 @@
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
     "1686318877f7fff8ef",
-    "fb7375c0-453b-434d-a771-dc2a5156f896",
     "d34487a1-b3a6-4c2e-bdb9-3f906210e3f3"
   ]
 }
