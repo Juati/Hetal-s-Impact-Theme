@@ -10065,6 +10065,9 @@ split-lines {
     display: flex;
     justify-content: space-evenly;
 }
+.product_des {
+    margin-bottom: 2%;
+}
 .textmetafield{
     display: flex;
 }
