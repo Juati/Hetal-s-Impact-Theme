@@ -10488,10 +10488,10 @@ a,ul,li,span,p,.heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1,h2,h3,
     margin: 0 auto;
 }
 .flavorespage .section-header{
-      background: #EBB77E;
+/*       background: #EBB77E;
     background: #eab87c;
     padding: 10px;
     border-radius: 20px;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
