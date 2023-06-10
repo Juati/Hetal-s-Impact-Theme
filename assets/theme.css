@@ -10119,18 +10119,18 @@ split-lines {
 /*add css for product card metafield   */
 /* header start */
 .header.content {
-/*     max-width: 1076px; */
-   max-width: 1250px;
+    max-width: 1076px;
+/*    max-width: 1250px; */
     padding: 14px 20px 11px;
 }
-.header__wrapper{
+/* .header__wrapper{
       max-width: 1250px;
     margin: 0 auto;
-}
-nav.header__link-list.justify-center.wrap{  
+} */
+/* nav.header__link-list.justify-center.wrap{  
   max-width: 1250px;
 }
-
+ */
 .hamburger-menu ,.block.block-title{
 display:none;}
 .header-blocks-wrapper{
