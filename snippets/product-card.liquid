@@ -285,7 +285,7 @@ Supported variables
       {%- endfor -%}
     {%- endif -%}
     <div>{{ product.description |truncate: 80  }}</div>
-<!--     <div class="mobileproice productprice">{{ product.price | money }}</div> -->
+    <div class="mobileproice productprice">{{ product.price | money }}</div>
     <div class="mobileadtcbtn {%  if template == "index" %} addtobtn {%  endif %}">
         {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
           {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
