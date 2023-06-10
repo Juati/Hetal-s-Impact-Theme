@@ -131,6 +131,7 @@
         "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-1": {
           "type": "item",
           "settings": {
+            "image": "shopify:\/\/shop_images\/MOCCA-removebg-preview_78cf62d9-28c8-41ab-b281-a69f74b80742.webp",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -166,7 +167,7 @@
         "text_alignment": "start",
         "subheading": "About",
         "title": "Nougat",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "content": "",
         "background": "",
         "background_gradient": "",
         "text_color": ""
