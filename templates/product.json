@@ -174,15 +174,36 @@
             "background_gradient": ""
           }
         },
-        "7b3fa0f7-c132-473e-847b-ce0218f0a756": {
+        "cd8469c9-a502-423d-9f23-42dbe6f30f59": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/breakdown-og-tie-dye-new-desktop.jpg",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.18.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "b4f84343-1203-4771-8483-86f3b72842cc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.30.png",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -198,7 +219,8 @@
       },
       "block_order": [
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0",
-        "7b3fa0f7-c132-473e-847b-ce0218f0a756"
+        "cd8469c9-a502-423d-9f23-42dbe6f30f59",
+        "b4f84343-1203-4771-8483-86f3b72842cc"
       ],
       "settings": {
         "full_width": true,
