@@ -136,7 +136,7 @@
           "type": "heading",
           "settings": {
             "text": "FLAVORS BREAKDOWN",
-            "heading_tag": "h1",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -146,10 +146,10 @@
         "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "content_width": "small",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
@@ -227,7 +227,7 @@
         "b4f84343-1203-4771-8483-86f3b72842cc"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "dots",
