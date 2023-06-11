@@ -30,17 +30,22 @@
             "stars_text_empty": "No reviews"
           }
         },
+        "f7325d58-1704-4abf-9760-18f17d0c9556": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our best-seller! This 25 pack of cupcakes is our go-to sampler for dessert lovers looking to try a little bit of everything. THE LATEST: our three, seasonal cupcakes plus our monthly Mini of the Month! THE GREATEST: our eight must-have original flavors including Tie-Dye, Red Velvet, Cookie Dough & more<\/p>"
+          }
+        },
+        "be7d766d-a5b1-44e2-9a65-eadfe44932de": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>FLAVORS INCLUDED<\/h6><ul><li>2 x Tie-Dye<\/li><li>2 x Cookie & Cream<\/li><li>2 x Peanut Butter & Jelly<\/li><li>2 x Cookie Dough<\/li><li>2 x Triple Chocolate Fudge<\/li><\/ul><p><\/p>"
+          }
+        },
         "c8a50078-21f3-44cb-88b3-2c8bc908bb2b": {
           "type": "description",
           "settings": {
-            "collapse_content": false
-          }
-        },
-        "f7325d58-1704-4abf-9760-18f17d0c9556": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Our best-seller! This 25 pack of cupcakes is our go-to sampler for dessert lovers looking to try a little bit of everything. THE LATEST: our three, seasonal cupcakes plus our monthly Mini of the Month! THE GREATEST: our eight must-have original flavors including Tie-Dye, Red Velvet, Cookie Dough & more<\/p>"
+            "collapse_content": true
           }
         },
         "variant_picker": {
@@ -82,8 +87,9 @@
         "badges",
         "price",
         "8b852155-1a19-4b5f-bdcc-cb156948fedd",
-        "c8a50078-21f3-44cb-88b3-2c8bc908bb2b",
         "f7325d58-1704-4abf-9760-18f17d0c9556",
+        "be7d766d-a5b1-44e2-9a65-eadfe44932de",
+        "c8a50078-21f3-44cb-88b3-2c8bc908bb2b",
         "variant_picker",
         "quantity_selector",
         "8c580ed5-aaef-4ed3-963c-2418d80deb60",
