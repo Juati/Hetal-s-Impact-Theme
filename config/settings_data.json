@@ -274,7 +274,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".section.section-blends.section-full {padding-bottom: 0px;}"
+
     ]
   }
 }
