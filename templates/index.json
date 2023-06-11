@@ -76,7 +76,8 @@
         "e793ab02-6cb4-4076-b745-a0194f02effe"
       ],
       "custom_css": [
-        ".header__wrapper {padding-block: 5px;}"
+        ".header__wrapper {padding-block: 5px;}",
+        "p.h0 {padding-top: 16px; background: black; border-radius: 27px; padding-inline: 10px;}"
       ],
       "settings": {
         "full_width": true,
