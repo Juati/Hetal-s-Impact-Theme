@@ -135,7 +135,7 @@
         "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
+            "text": "FLAVORS BREAKDOWN",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -149,7 +149,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
