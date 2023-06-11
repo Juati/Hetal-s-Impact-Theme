@@ -125,18 +125,43 @@
         "input_text_color": ""
       }
     },
+    "c11ac919-f813-4a8e-87b5-2f2f1e8353fa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52": {
       "type": "slideshow",
       "blocks": {
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AKC_2_WEB.jpg",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.02.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 1",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -144,15 +169,15 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
         },
-        "b4aa358d-7e74-4ace-aa4f-52d540ed9f33": {
+        "7b3fa0f7-c132-473e-847b-ce0218f0a756": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AKC_2_WEB.jpg",
+            "image": "shopify:\/\/shop_images\/breakdown-og-tie-dye-new-desktop.jpg",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -165,7 +190,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "background": "",
             "background_gradient": ""
           }
@@ -173,12 +198,12 @@
       },
       "block_order": [
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0",
-        "b4aa358d-7e74-4ace-aa4f-52d540ed9f33"
+        "7b3fa0f7-c132-473e-847b-ce0218f0a756"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": false,
-        "image_size": "lg",
+        "image_size": "auto",
         "controls_type": "dots",
         "transition_type": "fade",
         "autoplay": true,
@@ -278,6 +303,7 @@
   },
   "order": [
     "main",
+    "c11ac919-f813-4a8e-87b5-2f2f1e8353fa",
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
     "1686318877f7fff8ef"
