@@ -10572,31 +10572,7 @@ h3#predictive-search-products {
 }
 
 /* font-family */
-a,
-ul,
-li,
-span,
-p,
-.heading,
-.h0,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.prose :is(h1, h2, h3, h4, h5, h6),
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-label,
-::placeholder {
-  font-family: "Proxima_Nova_Font";
-}
+
 
 /* font-family */
 
