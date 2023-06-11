@@ -314,7 +314,7 @@
         "3ae830ff-161e-4847-a5e5-573309cf6882"
       ],
       "custom_css": [
-
+        ".multi-column.scroll-area.bleed.md\\:unbleed {padding-inline: 100px;}"
       ],
       "settings": {
         "full_width": false,
