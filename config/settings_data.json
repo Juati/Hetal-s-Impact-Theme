@@ -274,7 +274,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".content-over-media {grid-template: 0 minmax(0, 1fr) 0 \/ minmax(0, 1fr) minmax( 0, min( var(--container-max-width), 100% - var( --content-over-media-gap, var(--content-over-media-column-gap, var(--container-gutter)) ) * 2 ) ) minmax(0, 1fr) !important;}"
+      ".content-over-media {grid-template: 0 minmax(0, 1fr) 0 \/ minmax(0, 1fr) minmax( 0, min( var(--container-max-width), 100% - var( --content-over-media-gap, var(--content-over-media-column-gap, var(--container-gutter)) ) * 2 ) ) minmax(0, 1fr) !important;"
     ]
   }
 }
