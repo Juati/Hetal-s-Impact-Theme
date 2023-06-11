@@ -131,6 +131,7 @@
     },
     "c11ac919-f813-4a8e-87b5-2f2f1e8353fa": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1": {
           "type": "heading",
@@ -234,7 +235,7 @@
         "transition_type": "fade",
         "autoplay": true,
         "cycle_speed": 6,
-        "background": "#f2f2f2",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": ""
       }
     },
