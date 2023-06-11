@@ -93,7 +93,9 @@
     "featured-collection": {
       "type": "featured-collection",
       "custom_css": [
-        "button.button.button--xl {padding-block: 15px; padding-inline: 20px;}"
+        "button.button.button--xl {padding-block: 15px; padding-inline: 20px;}",
+        ".product-card__info {background: #d9d9d9;}",
+        "product-card.product-card.product-card--show-secondary-media.bg-custom.text-custom {background: transparent;}"
       ],
       "settings": {
         "collection": "",
