@@ -212,8 +212,8 @@
         "b2acb441-c1e9-4098-8504-49ef9fa05b50"
       ],
       "custom_css": [
-        "a.bold.link-faded-reverse {text-transform: uppercase; font-size: 12px; padding: 0 10px; display: flex; align-items: center;}",
-        "summary.text-with-icon.bold.link-faded-reverse {text-transform: uppercase; font-size: 12px; padding: 0 13px;}"
+        "a.bold.link-faded-reverse {text-transform: uppercase; font-size: 10px; padding: 0 10px; display: flex; align-items: center;}",
+        "summary.text-with-icon.bold.link-faded-reverse {text-transform: uppercase; font-size: 10px; padding: 0 13px;}"
       ],
       "settings": {
         "enable_sticky": true,
