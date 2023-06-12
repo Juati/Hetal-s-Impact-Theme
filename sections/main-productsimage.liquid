@@ -40,7 +40,6 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-{{ product.metafields.custom.custombox }}????
     {%- form 'product', product, is: 'product-form', id: form_id -%}
     <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
       <div class="product ssdsd">
