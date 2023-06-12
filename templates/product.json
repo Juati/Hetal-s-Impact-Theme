@@ -156,6 +156,7 @@
     },
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0": {
           "type": "image",
@@ -236,6 +237,21 @@
         "cycle_speed": 6,
         "background": "rgba(0,0,0,0)",
         "background_gradient": ""
+      }
+    },
+    "3a9b2424-b8f3-498e-93fc-53d554c645b6": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "lg",
+        "image": "shopify:\/\/shop_images\/cashew_orange_d9fb247b-de9f-4011-b82c-3fd3c0121981.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "6dde8908-690e-4500-be2a-a3e8f8536ec2": {
@@ -363,6 +379,7 @@
     "main",
     "c11ac919-f813-4a8e-87b5-2f2f1e8353fa",
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
+    "3a9b2424-b8f3-498e-93fc-53d554c645b6",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
     "1686318877f7fff8ef",
     "46b251da-38e4-4c8f-88ff-f2c3594a5847"
