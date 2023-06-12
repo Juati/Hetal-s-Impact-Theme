@@ -284,7 +284,7 @@ Supported variables
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
-    <div class="product_des">{{ product.metafields.custom.short_description | truncate: 80 }}</div>
+    <div class="product_des">{{ product.metafields.custom.short_description | truncate: 120 }}</div>
     <div class="mobileproice productprice">{{ product.price | money }}</div>
     <div class="mobileadtcbtn {%  if template == "index" %} addtobtn {%  endif %}">
       {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
