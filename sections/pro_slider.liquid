@@ -12,6 +12,7 @@
               </div>
            {% endfor %}
     </div>
+    <div class="product_note">{{ section.settings.Pronote }}</div>
   </div>
 </div>
 
@@ -19,7 +20,11 @@
   {
     "name": "pro_slider",
     "settings": [
-  
+      {
+        "type": "text",
+        "id": "Pronote",
+        "label": "Product Note:"
+      }
       
     ],
     "blocks": [
