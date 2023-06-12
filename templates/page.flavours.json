@@ -97,7 +97,7 @@
         "551b8e8f-6880-4bdd-8460-303bcab92733"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
         "full_width": false,
