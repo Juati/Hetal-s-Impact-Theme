@@ -886,6 +886,33 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "acecd8d6-4398-4bfb-a466-927f963b1bdb": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "katli",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
@@ -903,6 +930,7 @@
     "64efc33d-e4d5-4c27-a7a2-0fa2b3d82b6e",
     "f03ef3f8-a72a-4a90-b9c7-99b46318017a",
     "23279974-6e4d-414d-911f-fb56e064cbfb",
-    "566d3f27-ae2d-4b8b-b719-f42165aadc69"
+    "566d3f27-ae2d-4b8b-b719-f42165aadc69",
+    "acecd8d6-4398-4bfb-a466-927f963b1bdb"
   ]
 }
