@@ -296,7 +296,7 @@ Supported variables
           {% if variant_picker_block != blank %}disabled{% endif %}
           name="id"
           value="{{ product.selected_or_first_available_variant.id }}">
-        <buy-buttons
+<!--         <buy-buttons
           class="buy-buttons "
           template=""
           form="">
@@ -311,7 +311,7 @@ Supported variables
               <span style="opacity: 1;"></span>
             </span>
           </button>
-        </buy-buttons>
+        </buy-buttons> -->
       {%- endform -%}
     </div>
     <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }}>
