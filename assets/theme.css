@@ -10340,7 +10340,8 @@ h3#predictive-search-products {
   }
 
   .header__icon-list {
-    max-width: 1160px;
+/*     max-width: 1160px; */
+    max-width: 1200px;
   }
 
   .header__wrapper {
