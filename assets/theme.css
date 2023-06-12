@@ -10308,6 +10308,10 @@ div#predictive-search {
   align-items: center;
   margin: 2%;
 }
+predictive-search input:focus-visible {
+    outline: 2px solid crimson;
+    border-radius: 3px;
+}
 
 header {
   background: #fff;
