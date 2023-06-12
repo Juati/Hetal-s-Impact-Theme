@@ -161,12 +161,12 @@
         "template--14471092371555__49fd91b2-8be3-45cb-b4a8-ff75cb47d0b7-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Nougat",
@@ -225,12 +225,12 @@
         "template--14471092371555__4dc93be5-2598-4d9d-b91c-d9acdfcad58e-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Fudge",
@@ -289,12 +289,12 @@
         "template--14471092371555__f5852e51-b7e5-4fae-9725-40fd3b131f05-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Marzipan",
@@ -353,12 +353,12 @@
         "template--14471092371555__16f1e073-7076-4858-8b4c-3be536bd991c-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Truffle",
@@ -417,12 +417,12 @@
         "template--14471092371555__486981bb-4594-4bc5-a4b0-d852502d2ab8-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Winter Sweets",
