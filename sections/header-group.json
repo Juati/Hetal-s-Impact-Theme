@@ -214,7 +214,8 @@
       "custom_css": [
         "a.bold.link-faded-reverse {text-transform: uppercase; font-size: 14px; padding: 0 14px; display: flex; align-items: center;}",
         "summary.text-with-icon.bold.link-faded-reverse {text-transform: uppercase; font-size: 14px; padding: 0 14px;}",
-        ".mega-menu{border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}"
+        ".mega-menu {border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}",
+        "nav.header__link-list.justify-center.wrap {font-family: 'Fjalla One';}"
       ],
       "settings": {
         "enable_sticky": true,
