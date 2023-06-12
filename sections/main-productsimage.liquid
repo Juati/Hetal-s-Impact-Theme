@@ -44,6 +44,7 @@
     {%- form 'product', product, is: 'product-form', id: form_id -%}
     <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
       <div class="product ssdsd">
+    <input type="hidden"  class="customboxnumber" value="{{ product.metafields.custom.custombox }}">
           {%- render 'products-imagegallery',form_id:product_form_id -%}
           {%- render 'products-imageinfo', product: product, update_url: true -%}
       </div>
