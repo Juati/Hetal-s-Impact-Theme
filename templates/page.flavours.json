@@ -101,12 +101,40 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "d1262393-9615-4756-8898-f3f111748847": {
+      "type": "flavoures-card",
+      "settings": {
+        "collection": "nougat",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Katli",
+        "content": "",
+        "link_url": "",
+        "link_text": "dfs",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a",
-    "a0f0b080-b37d-4e79-b1d8-40579b8adbcb"
+    "a0f0b080-b37d-4e79-b1d8-40579b8adbcb",
+    "d1262393-9615-4756-8898-f3f111748847"
   ]
 }
