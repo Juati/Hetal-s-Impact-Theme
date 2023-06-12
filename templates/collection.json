@@ -66,7 +66,8 @@
       "type": "main-collection",
       "custom_css": [
         ".product-card__info {background: #d9d9d9; padding: 20px; border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}",
-        ".bg-custom {background: none;}"
+        ".bg-custom {background: none;}",
+        ".product-card__figure{background: rgb(var(--background));}"
       ],
       "settings": {
         "products_per_page": 24,

@@ -102,7 +102,7 @@
       "settings": {
         "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "x-large",
         "text_alignment": "center",
         "subheading": "",
         "title": "Katli",
