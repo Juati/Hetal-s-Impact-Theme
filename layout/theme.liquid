@@ -124,6 +124,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 <script>
       
   $(document).on('click','.qtybox .btnqty',function(){
+    $customboxnumber = $(".customboxnumber").val();
+    $customboxdecre = $customboxnumber - 1 ;
   $eachqty = 0;
   var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
    $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
@@ -131,7 +133,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
    });
 
   if($(this).hasClass('qtyplus')) {
-     if($eachqty < 20){
+     if($eachqty < $customboxnumber){
         $eachqty++;
         qty++;
         $(".bundle-summry-title span").html($eachqty);
@@ -142,7 +144,7 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
         $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
         $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
        console.log($eachqty);
-       if($eachqty > 19){
+       if($eachqty > $customboxdecre){
          console.log("1999");
          $(".product-info__buy-buttons .button").prop("disabled",false);
        }else{
