@@ -10321,7 +10321,7 @@ header {
 }
 
 div#predictive-search-results {
-  border: 1px solid;
+border: 1px solid #00000026;
   border-top: none;
 }
 
