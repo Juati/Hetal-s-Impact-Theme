@@ -35,7 +35,7 @@ Supported variables
     {%- assign button_disabled = true -%}
   {%- endif -%}
 
-  <buy-buttons class="buy-buttons aa {% if show_payment_button %}buy-buttons--multiple{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+  <buy-buttons class="buy-buttons  {% if show_payment_button %}buy-buttons--multiple{% endif %}" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
     {%- render 'button', content: button_content, type: 'submit', size: button_size, disabled: true, secondary: show_payment_button, subdued: button_disabled, background: atc_button_background, text_color: atc_button_text_color -%}
 
     {%- if show_payment_button -%}
