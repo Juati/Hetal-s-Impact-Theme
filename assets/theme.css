@@ -10526,6 +10526,8 @@ h3#predictive-search-products {
   .bundle-summary .qtydiv {
     width: 37%;
     display: inline-block;
+    display: flex;
+    justify-content: end;
   }
 
   .qtydiv .btnqty.qtyminus,
