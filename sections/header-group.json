@@ -213,7 +213,8 @@
       ],
       "custom_css": [
         "a.bold.link-faded-reverse {text-transform: uppercase; font-size: 10px; padding: 0 10px; display: flex; align-items: center;}",
-        "summary.text-with-icon.bold.link-faded-reverse {text-transform: uppercase; font-size: 11px; padding: 0 13px;}"
+        "summary.text-with-icon.bold.link-faded-reverse {text-transform: uppercase; font-size: 11px; padding: 0 13px;}",
+        ".product-card__info {background: #d9d9d9; padding: 20px; border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}"
       ],
       "settings": {
         "enable_sticky": true,
