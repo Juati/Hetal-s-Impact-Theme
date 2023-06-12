@@ -157,6 +157,35 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "2aca1e48-ec79-4421-8d52-ca3b22113610": {
+      "type": "flavoures-card",
+      "settings": {
+        "collection": "nougat",
+        "products": [
+          "blueberry-creckle",
+          "orange-almond-creckle",
+          "walnut-chocolate-creckle"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Katli",
+        "content": "",
+        "link_url": "",
+        "link_text": "dfs",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
@@ -165,6 +194,7 @@
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a",
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb",
     "d1262393-9615-4756-8898-f3f111748847",
-    "8a0228ec-1427-4bb2-be90-4df9885568ce"
+    "8a0228ec-1427-4bb2-be90-4df9885568ce",
+    "2aca1e48-ec79-4421-8d52-ca3b22113610"
   ]
 }
