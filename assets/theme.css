@@ -10181,7 +10181,8 @@ ul.header.links {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  width: calc(30rem + ((1vw - 7.68px) * 12.0536));
+/*   width: calc(30rem + ((1vw - 7.68px) * 12.0536)); */
+  width: calc(50rem + ((1vw - 7.68px) * 12.0536));
   margin-top: 3px;
   margin-right: 22px;
   z-index: 4;
