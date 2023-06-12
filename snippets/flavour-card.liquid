@@ -296,22 +296,7 @@ Supported variables
           {% if variant_picker_block != blank %}disabled{% endif %}
           name="id"
           value="{{ product.selected_or_first_available_variant.id }}">
-<!--         <buy-buttons
-          class="buy-buttons "
-          template=""
-          form="">
-          <button
-            type="submit"
-            class="button button--xl"
-            is="custom-button">
-            <div style="transform: translateY(0px); opacity: 1;">Add</div>
-            <span class="button__loader aaa" style="transform: translateY(-10px); opacity: 0;">
-              <span style="opacity: 1;"></span>
-              <span style="opacity: 1;"></span>
-              <span style="opacity: 1;"></span>
-            </span>
-          </button>
-        </buy-buttons> -->
+
       {%- endform -%}
     </div>
     <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }}>
@@ -326,16 +311,6 @@ Supported variables
           value="{{ product.selected_or_first_available_variant.id }}">
        
       {%- endform -%}
-    </div>
-    <div class="metafieldflexcard">
-      <div class="textmetafield">
-        <div class="iconmargin">{{ product.metafields.custom.productcardicon1 }}</div>
-        <div class="metafieldtext">{{ product.metafields.custom.productcardtext1 }}</div>
-      </div>
-      <div class="textmetafield">
-        <div class="iconmargin">{{ product.metafields.custom.productcardicon2 }}</div>
-        <div class="metafieldtext">{{ product.metafields.custom.productcardtext2 }}</div>
-      </div>
     </div>
   </div>
 </product-card>
