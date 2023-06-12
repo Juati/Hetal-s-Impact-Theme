@@ -484,7 +484,7 @@
         "template--14471092371555__161bcd1f-a9c5-4813-82cb-3a0dbc658946-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
         "full_width": true,
@@ -548,7 +548,7 @@
         "template--14471092371555__5f37f432-850c-4599-a036-485b538e244a-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
         "full_width": true,
@@ -612,7 +612,6 @@
         "template--14471092371555__fedaf039-b53f-4265-af29-2fb0775e4d7f-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}",
         ".multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center;}",
         ".multi-column__item.justify-center.snap-start {width: 30%;}"
       ],
@@ -678,7 +677,7 @@
         "template--14471092371555__64efc33d-e4d5-4c27-a7a2-0fa2b3d82b6e-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
         "full_width": true,
@@ -742,7 +741,7 @@
         "template--14471092371555__f03ef3f8-a72a-4a90-b9c7-99b46318017a-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}"
+
       ],
       "settings": {
         "full_width": true,
@@ -807,7 +806,6 @@
         "template--14471092371555__23279974-6e4d-414d-911f-fb56e064cbfb-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}",
         ".multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center;}",
         ".multi-column__item.justify-center.snap-start {width: 30%;}"
       ],
@@ -873,7 +871,6 @@
         "template--14471092371555__566d3f27-ae2d-4b8b-b719-f42165aadc69-16863895522eac89a4-2"
       ],
       "custom_css": [
-        ".multi-column__item.justify-center.snap-start {padding-inline: 60px;}",
         ".multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center;}",
         ".multi-column__item.justify-center.snap-start {width: 30%;}"
       ],
