@@ -326,6 +326,36 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "46b251da-38e4-4c8f-88ff-f2c3594a5847": {
+      "type": "pro_slider",
+      "blocks": {
+        "db7e85b4-ff83-4e7d-a5ae-cdf4181cca33": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.18.png"
+          }
+        },
+        "6b80e4ee-a0d3-4a3a-840a-6ee1f9b9aa47": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.02.png"
+          }
+        },
+        "77883d3b-b328-4581-abe0-0169ca63c2de": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.30.png"
+          }
+        }
+      },
+      "block_order": [
+        "db7e85b4-ff83-4e7d-a5ae-cdf4181cca33",
+        "6b80e4ee-a0d3-4a3a-840a-6ee1f9b9aa47",
+        "77883d3b-b328-4581-abe0-0169ca63c2de"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -333,6 +363,7 @@
     "c11ac919-f813-4a8e-87b5-2f2f1e8353fa",
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
-    "1686318877f7fff8ef"
+    "1686318877f7fff8ef",
+    "46b251da-38e4-4c8f-88ff-f2c3594a5847"
   ]
 }
