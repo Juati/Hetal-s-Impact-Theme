@@ -10105,7 +10105,7 @@ split-lines {
 @media screen and (max-width: 790px) {
 
   .metafieldflexcard,
-  .cardadtc,
+/*   .cardadtc, */
   .mobileadtcbtn.addtobtn {
     display: none;
   }
