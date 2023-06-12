@@ -10347,7 +10347,7 @@ h3#predictive-search-products {
 
   .header__wrapper {
     display: flex;
-/*     justify-content: center; */
+    justify-content: spece-arround;
   }
 
   height-observer .header__logo {
