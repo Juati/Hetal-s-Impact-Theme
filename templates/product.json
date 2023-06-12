@@ -154,91 +154,6 @@
         "text_color": ""
       }
     },
-    "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.02.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "cd8469c9-a502-423d-9f23-42dbe6f30f59": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.18.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "b4f84343-1203-4771-8483-86f3b72842cc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.30.png",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0",
-        "cd8469c9-a502-423d-9f23-42dbe6f30f59",
-        "b4f84343-1203-4771-8483-86f3b72842cc"
-      ],
-      "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade",
-        "autoplay": true,
-        "cycle_speed": 6,
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": ""
-      }
-    },
     "3a9b2424-b8f3-498e-93fc-53d554c645b6": {
       "type": "image-with-text-overlay",
       "custom_css": [
@@ -248,13 +163,13 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "md",
+        "image_size": "auto",
         "image": "{{ product.metafields.custom.information_image.value }}",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "6dde8908-690e-4500-be2a-a3e8f8536ec2": {
@@ -344,47 +259,13 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
-    },
-    "46b251da-38e4-4c8f-88ff-f2c3594a5847": {
-      "type": "pro_slider",
-      "disabled": true,
-      "blocks": {
-        "db7e85b4-ff83-4e7d-a5ae-cdf4181cca33": {
-          "type": "collection",
-          "settings": {
-            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.18.png"
-          }
-        },
-        "6b80e4ee-a0d3-4a3a-840a-6ee1f9b9aa47": {
-          "type": "collection",
-          "settings": {
-            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.02.png"
-          }
-        },
-        "77883d3b-b328-4581-abe0-0169ca63c2de": {
-          "type": "collection",
-          "settings": {
-            "logourl": "shopify:\/\/shop_images\/Screenshot_2023-06-12_at_01.50.30.png"
-          }
-        }
-      },
-      "block_order": [
-        "db7e85b4-ff83-4e7d-a5ae-cdf4181cca33",
-        "6b80e4ee-a0d3-4a3a-840a-6ee1f9b9aa47",
-        "77883d3b-b328-4581-abe0-0169ca63c2de"
-      ],
-      "settings": {
-        "Pronote": "*All of our products are made in a bakery that processes peanuts and tree nuts"
-      }
     }
   },
   "order": [
     "main",
     "c11ac919-f813-4a8e-87b5-2f2f1e8353fa",
-    "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52",
     "3a9b2424-b8f3-498e-93fc-53d554c645b6",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
-    "1686318877f7fff8ef",
-    "46b251da-38e4-4c8f-88ff-f2c3594a5847"
+    "1686318877f7fff8ef"
   ]
 }
