@@ -9,6 +9,7 @@
     },
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "blocks": {
         "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1": {
           "type": "heading",
