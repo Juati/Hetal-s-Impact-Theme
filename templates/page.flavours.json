@@ -116,7 +116,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Katli",
+        "title": "fudge",
         "content": "",
         "link_url": "",
         "link_text": "dfs",
@@ -145,7 +145,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Katli",
+        "title": "Marzipan",
         "content": "",
         "link_url": "",
         "link_text": "dfs",
@@ -163,9 +163,8 @@
       "settings": {
         "collection": "nougat",
         "products": [
-          "blueberry-creckle",
-          "orange-almond-creckle",
-          "walnut-chocolate-creckle"
+          "coffee-caramel",
+          "hazelnut-truffle"
         ],
         "full_width": true,
         "stack_products": true,
@@ -174,7 +173,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Katli",
+        "title": "Truffle",
         "content": "",
         "link_url": "",
         "link_text": "dfs",
