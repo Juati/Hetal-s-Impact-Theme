@@ -152,9 +152,9 @@ Supported variables
   {%- endcomment -%}
 
   <div class="product-card__info  {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
-    {%  if product.metafields.custom.productcardtagtext  != blank %}
+    {% if product.metafields.custom.productcardtagtext != blank %}
       <div class="cardtagtext">{{ product.metafields.custom.productcardtagtext }}</div>
-    {%  endif %}
+    {% endif %}
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
         <div class="rating-with-text w-full">
@@ -169,7 +169,7 @@ Supported variables
         {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
       {%- endif -%}
     {%- endif -%}
-  
+
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
@@ -180,7 +180,7 @@ Supported variables
               data-instant>{{ product.title }}</a>
           </span>
 
-<!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
+          <!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
 
           {% comment %}  
           {%- if text_alignment != 'center' -%}
@@ -284,52 +284,77 @@ Supported variables
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
-    <div class="product_des">{{ product.description |truncate: 80  }}</div>
+    <div class="product_des">{{ product.metafields.custom.short_description | truncate: 80 }}</div>
     <div class="mobileproice productprice">{{ product.price | money }}</div>
     <div class="mobileadtcbtn {%  if template == "index" %} addtobtn {%  endif %}">
-        {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
-          {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
-          
-          {%- form 'product', product, is: 'product-form', id: form_id -%}
-            <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-            <buy-buttons class="buy-buttons " template="" form="">
-        <button type="submit" class="button button--xl" is="custom-button">
-          <div style="transform: translateY(0px); opacity: 1;">Add</div>
-          <span class="button__loader" style="transform: translateY(-10px); opacity: 0;">
-                <span style="opacity: 1;"></span>
-                <span style="opacity: 1;"></span>
-                <span style="opacity: 1;"></span>
-              </span></button></buy-buttons>
-        {%- endform -%}
+      {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
+      {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+
+      {%- form 'product', product, is: 'product-form', id: form_id -%}
+        <input
+          type="hidden"
+          {% if variant_picker_block != blank %}disabled{% endif %}
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}">
+        <buy-buttons
+          class="buy-buttons "
+          template=""
+          form="">
+          <button
+            type="submit"
+            class="button button--xl"
+            is="custom-button">
+            <div style="transform: translateY(0px); opacity: 1;">Add</div>
+            <span class="button__loader" style="transform: translateY(-10px); opacity: 0;">
+              <span style="opacity: 1;"></span>
+              <span style="opacity: 1;"></span>
+              <span style="opacity: 1;"></span>
+            </span>
+          </button>
+        </buy-buttons>
+      {%- endform -%}
     </div>
-      <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }} >
-        {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
-          {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
-          
-          {%- form 'product', product, is: 'product-form', id: form_id -%}
-            <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-            <buy-buttons class="buy-buttons " template="" form="">
-        <button type="submit" class="button button--xl" is="custom-button">
-          <div class="customatcbtn">
-          <div style="transform: translateY(0px); opacity: 1;">Add to cart  </div>
-          <div>{{ product.price | money }}</div>
-          </div>
-          <span class="button__loader" style="transform: translateY(-10px); opacity: 0;">
-                <span style="opacity: 1;"></span>
-                <span style="opacity: 1;"></span>
-                <span style="opacity: 1;"></span>
-              </span></button></buy-buttons>
-        {%- endform -%}
+    <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }}>
+      {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
+      {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+
+      {%- form 'product', product, is: 'product-form', id: form_id -%}
+        <input
+          type="hidden"
+          {% if variant_picker_block != blank %}disabled{% endif %}
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}">
+        <buy-buttons
+          class="buy-buttons "
+          template=""
+          form="">
+          <button
+            type="submit"
+            class="button button--xl"
+            is="custom-button">
+            <div class="customatcbtn">
+              <div style="transform: translateY(0px); opacity: 1;">Add to cart
+              </div>
+              <div>{{ product.price | money }}</div>
+            </div>
+            <span class="button__loader" style="transform: translateY(-10px); opacity: 0;">
+              <span style="opacity: 1;"></span>
+              <span style="opacity: 1;"></span>
+              <span style="opacity: 1;"></span>
+            </span>
+          </button>
+        </buy-buttons>
+      {%- endform -%}
+    </div>
+    <div class="metafieldflexcard">
+      <div class="textmetafield">
+        <div class="iconmargin">{{ product.metafields.custom.productcardicon1 }}</div>
+        <div class="metafieldtext">{{ product.metafields.custom.productcardtext1 }}</div>
       </div>
-      <div class="metafieldflexcard">
-        <div class="textmetafield">
-          <div class="iconmargin">{{ product.metafields.custom.productcardicon1 }}</div>
-          <div class="metafieldtext">{{ product.metafields.custom.productcardtext1 }}</div>
-        </div>
-        <div class="textmetafield">
-          <div class="iconmargin">{{ product.metafields.custom.productcardicon2 }}</div>
-          <div class="metafieldtext">{{ product.metafields.custom.productcardtext2 }}</div>
-        </div>
+      <div class="textmetafield">
+        <div class="iconmargin">{{ product.metafields.custom.productcardicon2 }}</div>
+        <div class="metafieldtext">{{ product.metafields.custom.productcardtext2 }}</div>
+      </div>
     </div>
   </div>
 </product-card>
