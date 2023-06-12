@@ -9,7 +9,6 @@
     },
     "2d6a3c8a-b523-4528-bc4f-a65df4cef211": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "blocks": {
         "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1": {
           "type": "heading",
@@ -17,24 +16,10 @@
             "text": "Sweets Catalogue",
             "heading_tag": "h1"
           }
-        },
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "We at Hetal's Homemade believe that pleasure shared is pleasure doubled. Our array of homemade products will leave your hearts and tastebuds happy."
-          }
-        },
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Through purity and excellence, #weservejoy<\/p>"
-          }
         }
       },
       "block_order": [
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1",
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-0",
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-2"
+        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1"
       ],
       "settings": {
         "full_width": true,
