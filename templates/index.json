@@ -77,7 +77,7 @@
       ],
       "custom_css": [
         ".header__wrapper {padding-block: 5px;}",
-        "p.h0 {padding-top: 16px; background: black; border-radius: 27px; padding-inline: 10px;}"
+        "p.h0 {padding-top: 16px; background: black; border-radius: 27px; padding-inline: 10px; padding-bottom: 10px;}"
       ],
       "settings": {
         "full_width": true,
