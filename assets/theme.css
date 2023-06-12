@@ -10300,7 +10300,9 @@ div#predictive-search {
 #predictive-search-results li {
      padding: 5px 0 0px 10px;
 }
-
+#predictive-search-results li:first-child {
+    padding: 8px 0 0 10px;
+}
 #predictive-search-results a {
   display: flex;
   align-items: center;
