@@ -25,7 +25,7 @@ Supported variables
 {%- assign show_rating = show_rating | default: settings.show_product_rating, allow_false: true -%}
 {%- assign show_vendor = show_vendor | default: settings.show_vendor, allow_false: true -%}
 {%- assign show_quick_buy = show_quick_buy | default: settings.show_quick_buy, allow_false: true -%}
-{%- assign show_secondary_image = show_secondary_image | default: settings.show_secondary_image, allow_false: true -%}
+{%- assign show_secondary_image = show_secondary_image | default: settings.show_secondary_image, allow_false: false -%}
 {%- assign text_alignment = text_alignment | default: settings.product_info_alignment -%}
 
 {%- if stacked and section.settings.products_per_row_mobile == '2' -%}
