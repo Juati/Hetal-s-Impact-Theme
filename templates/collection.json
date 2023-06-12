@@ -67,7 +67,7 @@
       "custom_css": [
         ".product-card__info {background: #d9d9d9; padding: 20px; border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}",
         ".bg-custom {background: none;}",
-        ".product-card__figure{background: rgb(var(--background));}"
+        ".product-card__figure {background: rgb(var(--background)); border-top-left-radius: 0.6875rem; border-top-right-radius: 0.6875rem;}"
       ],
       "settings": {
         "products_per_page": 24,
