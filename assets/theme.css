@@ -10161,6 +10161,7 @@ ul.header.links {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-right:0;
 }
 
 .block-search .minisearch .actions {
