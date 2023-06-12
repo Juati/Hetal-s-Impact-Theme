@@ -10506,7 +10506,9 @@ h3#predictive-search-products {
     /*       max-width: 80px; */
     margin-right: 15px;
   }
-
+.productsimage .product-gallery__media .rounded {
+         max-width: 80px; 
+}
   .product media-carousels {
     grid: none;
   }
