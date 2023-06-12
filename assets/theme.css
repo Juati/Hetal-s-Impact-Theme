@@ -10591,7 +10591,7 @@ h3#predictive-search-products {
 /* font-family */
 
 h1 {
-  font-family: "Proxima_Nova_Font";
+  font-family: "Proxima_Nova_Font" !important;
 }
 
 /* font-family */
