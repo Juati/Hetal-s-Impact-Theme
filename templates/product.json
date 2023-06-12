@@ -241,6 +241,9 @@
     },
     "3a9b2424-b8f3-498e-93fc-53d554c645b6": {
       "type": "image-with-text-overlay",
+      "custom_css": [
+        "image-banner.content-over-media.content-over-media--lg.shadow-block.rounded-lg.text-custom {border-radius: 0px;}"
+      ],
       "settings": {
         "full_width": false,
         "allow_transparent_header": false,
