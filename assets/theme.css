@@ -10097,8 +10097,8 @@ split-lines {
 }
 
 .mobileproice,
-.mobileadtcbtn,
-.price-list {
+.mobileadtcbtn
+ {
   display: none;
 }
 
