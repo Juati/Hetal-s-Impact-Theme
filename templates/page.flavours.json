@@ -866,7 +866,9 @@
         "template--14471092371555__566d3f27-ae2d-4b8b-b719-f42165aadc69-16863895522eac89a4-2"
       ],
       "custom_css": [
-        "@media screen and (min-width: 700px) {.multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center;}.multi-column__item.justify-center.snap-start {width: 30%;}}"
+        "@media screen and (min-width: 700px) {.multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center; }}",
+        "@media screen and (max-width: 1000px){.multi-column__item.justify-center.snap-start {width: 30%; }}",
+        "@media screen and (max-width: 1000px){.multi-column__item.justify-center.snap-start {width: 40%; }}"
       ],
       "settings": {
         "full_width": true,
