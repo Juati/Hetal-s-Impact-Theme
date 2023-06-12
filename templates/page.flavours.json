@@ -902,6 +902,7 @@
     },
     "acecd8d6-4398-4bfb-a466-927f963b1bdb": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "katli",
         "products": [
@@ -930,21 +931,21 @@
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
       "type": "flavoures-card",
       "settings": {
-        "collection": "",
+        "collection": "katli",
         "products": [
 
         ],
         "full_width": true,
-        "stack_products": false,
+        "stack_products": true,
         "show_progress_bar": false,
         "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
+        "products_per_row_desktop": 5,
         "subheading": "",
-        "title": "Featured collection",
+        "title": "Katli",
         "content": "",
         "link_url": "",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
