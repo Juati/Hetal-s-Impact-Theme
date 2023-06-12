@@ -926,6 +926,33 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
+      "type": "flavoures-card",
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
@@ -944,6 +971,7 @@
     "f03ef3f8-a72a-4a90-b9c7-99b46318017a",
     "23279974-6e4d-414d-911f-fb56e064cbfb",
     "566d3f27-ae2d-4b8b-b719-f42165aadc69",
-    "acecd8d6-4398-4bfb-a466-927f963b1bdb"
+    "acecd8d6-4398-4bfb-a466-927f963b1bdb",
+    "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a"
   ]
 }
