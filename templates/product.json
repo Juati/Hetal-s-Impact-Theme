@@ -245,10 +245,10 @@
         "image-banner.content-over-media.content-over-media--lg.shadow-block.rounded-lg.text-custom {border-radius: 0px;}"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "lg",
+        "image_size": "md",
         "image": "shopify:\/\/shop_images\/cashew_orange_d9fb247b-de9f-4011-b82c-3fd3c0121981.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
