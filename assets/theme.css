@@ -10266,7 +10266,8 @@ li.flavors-link {
 }
 
 .header__main-nav {
-  max-width: 1160px;
+/*   max-width: 1160px; */
+  max-width: 1200px;
   /*     padding: 0 20px; */
 }
 
