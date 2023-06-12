@@ -38,7 +38,7 @@
         "f7325d58-1704-4abf-9760-18f17d0c9556": {
           "type": "text",
           "settings": {
-            "text": "<p>Our best-seller! This 25 pack of cupcakes is our go-to sampler for dessert lovers looking to try a little bit of everything. THE LATEST: our three, seasonal cupcakes plus our monthly Mini of the Month! THE GREATEST: our eight must-have original flavors including Tie-Dye, Red Velvet, Cookie Dough & more<\/p>"
+            "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
           }
         },
         "7f89dc29-7f93-431e-b0af-2c46bbaaf020": {
