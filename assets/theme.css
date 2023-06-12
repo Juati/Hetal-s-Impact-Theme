@@ -10298,7 +10298,7 @@ div#predictive-search {
 }
 
 #predictive-search-results li {
-  border-bottom: 1px solid;
+     padding: 5px 0 0px 10px;
 }
 
 #predictive-search-results a {
