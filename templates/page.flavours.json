@@ -867,8 +867,8 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 700px) {.multi-column.scroll-area.bleed.md\\:unbleed {grid: unset; display: flex; justify-content: center; }}",
-        "@media screen and (max-width: 1000px){.multi-column__item.justify-center.snap-start {width: 30%; }}",
-        "@media screen and (max-width: 1000px){.multi-column__item.justify-center.snap-start {width: 40%; }}"
+        "@media screen and (min-width: 1000px) {.multi-column__item.justify-center.snap-start {width: 30%; }}",
+        "@media screen and (max-width: 1000px) {.multi-column__item.justify-center.snap-start {width: 40%; }}"
       ],
       "settings": {
         "full_width": true,
