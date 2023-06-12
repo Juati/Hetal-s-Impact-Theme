@@ -157,6 +157,7 @@
     },
     "c6c0d3a3-bfa6-4a79-9517-ba79d1873a52": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "template--14464004030563__c6c0d3a3-bfa6-4a79-9517-ba79d1873a52-1686319847959ea9a2-0": {
           "type": "image",
