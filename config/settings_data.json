@@ -31,7 +31,7 @@
     "show_page_transition": true,
     "heading_apparition": "fade",
     "show_vendor": false,
-    "show_secondary_image": false,
+    "show_secondary_image": true,
     "show_quick_buy": false,
     "show_product_rating": false,
     "show_sold_out_badge": true,
