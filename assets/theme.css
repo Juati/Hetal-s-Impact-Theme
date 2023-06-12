@@ -10450,7 +10450,7 @@ h3#predictive-search-products {
 }
 
 .bundle-summary .qtydiv {
-  width: 24%;
+/*   width: 24%; */
   display: inline-block;
 }
 
@@ -10465,7 +10465,7 @@ h3#predictive-search-products {
 }
 
 .bundle-summary .qtydiv {
-  width: 27%;
+  width: 45%;
   display: inline-block;
   display: flex;
   align-items: center;
