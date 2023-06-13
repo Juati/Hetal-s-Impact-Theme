@@ -128,12 +128,11 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                            {{ sub_link.object }}?????
                               {% if sub_link.object.image.src %}
                                 <img
                                   class="marginimg"
                                   width="50px"
-                                  src="{{ product.metafields.custom.menu_icon | img_tag }}"
+                                  src="{{ sub_link.object.image.src | collection_img_url: 'small' }}"
                                   alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
 
