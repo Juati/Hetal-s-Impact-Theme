@@ -100,7 +100,7 @@ LIQUID
               {%- endif -%}
 
               {%- if block.settings.title != blank -%}
-                <p class="{{ block.settings.heading_tag }}" data-sequence="heading">
+                <p class="{{ block.settings.heading_tag }}" data-sequence="heading" style="background: {{ section.settings.title_background }};">
                   {%- render 'styled-text', content: block.settings.title, apparition_effect: true -%}
                 </p>
               {%- endif -%}
