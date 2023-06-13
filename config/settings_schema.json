@@ -265,6 +265,12 @@
         "default": "#f83a3a"
       },
       {
+        "type": "color",
+        "id": "product_tag_color",
+        "label": "Product Tag Color",
+        "default": "#f83a3a"
+      },
+      {
         "type": "header",
         "content": "Header"
       },
