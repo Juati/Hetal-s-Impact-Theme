@@ -37,7 +37,9 @@
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}"
+        ".product-list {width: 75%; margin: 0 auto;}",
+        ".product-list{display: flex; flex-wrap: wrap; justify-content: center;}",
+        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
       ],
       "settings": {
         "collection": "katli",
