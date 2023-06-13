@@ -38,7 +38,7 @@
       "type": "flavoures-card",
       "custom_css": [
         ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list{display: flex; flex-wrap: wrap; justify-content: center;}",
+        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
         "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
       ],
       "settings": {
@@ -69,7 +69,9 @@
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}"
+        ".product-list {width: 75%; margin: 0 auto;}",
+        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
+        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
       ],
       "settings": {
         "collection": "nougat",
@@ -99,7 +101,9 @@
     "d1262393-9615-4756-8898-f3f111748847": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}"
+        ".product-list {width: 75%; margin: 0 auto;}",
+        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
+        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
       ],
       "settings": {
         "collection": "nougat",
