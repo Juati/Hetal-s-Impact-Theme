@@ -129,7 +129,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                               {{ sub_link.object.title }}....
-                            {% assign the_collection = collection[sub_link.object.title] %}
+                            {% for collection in collections %}
                             {% assign my_metafield_collection = collection[sub_link.object.title].metafields.custom.menu_icon %}
                               {% if my_metafield_collection != blank %}
                                 <img
@@ -138,6 +138,7 @@ Supported variables
                                   src="{{ my_metafield_collection }}"
                                   alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
+                              {%  endfor %}
                               <span>
                                 <span class="reversed-link 222">{{ sub_link.title }}</span>
                                 <p>{{ sub_link.object.description | truncate: 110 }}</p>
