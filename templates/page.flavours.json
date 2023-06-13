@@ -167,7 +167,9 @@
     "2aca1e48-ec79-4421-8d52-ca3b22113610": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}"
+        ".product-list {width: 75%; margin: 0 auto;}",
+        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
+        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
       ],
       "settings": {
         "collection": "nougat",
