@@ -131,6 +131,7 @@ Supported variables
                               {{ sub_link.object.title }}....
                             {% for collection in collections %}
                             {% assign my_metafield_collection = collection[sub_link.object.title].metafields.custom.menu_icon %}
+                              {{ my_metafield_collection  }}???
                               {% if my_metafield_collection != blank %}
                                 <img
                                   class="marginimg"
