@@ -362,6 +362,67 @@
         "full_width": true,
         "spacing": "none"
       }
+    },
+    "60f34525-e9cf-4384-9ad6-5ce7455e6f9b": {
+      "type": "multi-column-hover",
+      "blocks": {
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Halwai_3048f564-6aa1-4eeb-8842-15b5dcc0c836.webp",
+            "column_size": "3",
+            "title": "PRODUCT 1",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kadhai_a58da149-64d2-4d75-b3fb-6b8f4cf9755e.webp",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Confectioner_1.webp",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-0",
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1",
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -370,6 +431,7 @@
     "d03a240a-2f67-4c8f-9033-f242b82281f3",
     "449bead9-3df2-440b-b97a-6454951e2fe2",
     "e769dc2b-368a-44b6-b529-b3bb2acd69d4",
-    "1f51fe1c-6635-411c-8063-ea842009dff7"
+    "1f51fe1c-6635-411c-8063-ea842009dff7",
+    "60f34525-e9cf-4384-9ad6-5ce7455e6f9b"
   ]
 }
