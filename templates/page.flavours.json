@@ -96,6 +96,9 @@
     },
     "d1262393-9615-4756-8898-f3f111748847": {
       "type": "flavoures-card",
+      "custom_css": [
+        ".product-list {width: 75%; margin: 0 auto;}"
+      ],
       "settings": {
         "collection": "nougat",
         "products": [
@@ -106,7 +109,7 @@
         "show_progress_bar": false,
         "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
+        "products_per_row_desktop": 3,
         "subheading": "",
         "title": "fudge",
         "content": "",
@@ -123,6 +126,9 @@
     },
     "8a0228ec-1427-4bb2-be90-4df9885568ce": {
       "type": "flavoures-card",
+      "custom_css": [
+        ".product-list {width: 75%; margin: 0 auto;}"
+      ],
       "settings": {
         "collection": "nougat",
         "products": [
@@ -135,7 +141,7 @@
         "show_progress_bar": false,
         "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
+        "products_per_row_desktop": 3,
         "subheading": "",
         "title": "Marzipan",
         "content": "",
@@ -152,6 +158,9 @@
     },
     "2aca1e48-ec79-4421-8d52-ca3b22113610": {
       "type": "flavoures-card",
+      "custom_css": [
+        ".product-list {width: 75%; margin: 0 auto;}"
+      ],
       "settings": {
         "collection": "nougat",
         "products": [
@@ -162,7 +171,7 @@
         "show_progress_bar": false,
         "products_count": 6,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 5,
+        "products_per_row_desktop": 3,
         "subheading": "",
         "title": "Truffle",
         "content": "",
