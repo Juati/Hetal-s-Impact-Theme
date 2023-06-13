@@ -24,30 +24,16 @@
     "a5336041-14cb-44dd-b912-9f080e913bd6": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Image with text overlay{{ collection.title }}",
             "heading_tag": "h1"
-          }
-        },
-        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-0",
-        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1",
-        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-2"
+        "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1"
       ],
       "settings": {
         "full_width": true,
