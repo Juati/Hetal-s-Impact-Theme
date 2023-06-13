@@ -128,10 +128,8 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                            {% assign my_metafield_collection = collections[sub_link.object.handle].metafields.custom.menu_icon %}
-                              {{ my_metafield_collection  }}???
-                              {% if my_metafield_collection != blank %}
-                                {{ my_metafield_collection | img_tag }}
+                              {% if collections[sub_link.object.handle].metafields.custom.menu_icon != blank %}
+                                {{ collections[sub_link.object.handle].metafields.custom.menu_icon | img_tag }}
 
                               {% endif %}
                               <span>
