@@ -128,9 +128,7 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                              {{ sub_link.object.handle }}....
                             {% assign my_metafield_collection = collections['chococaramel'].metafields.custom.menu_icon %}
-                              {{ my_metafield_collection  }}???
                               {% if my_metafield_collection != blank %}
                                 {{ my_metafield_collection | img_tag }}
 
