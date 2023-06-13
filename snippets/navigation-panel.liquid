@@ -130,7 +130,7 @@ Supported variables
                               {%- endif -%}
                               {% if collections[sub_link.object.handle].metafields.custom.menu_icon != blank %}
                                 {{ collections[sub_link.object.handle].metafields.custom.menu_icon }}????
-                                {{ collections[sub_link.object.handle].metafields.custom.menu_icon | img_tag }}
+                                {{ collections[sub_link.object.handle].metafields.custom.menu_icon.value | img_tag }}
 
                               {% endif %}
                               <span>
