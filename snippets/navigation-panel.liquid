@@ -130,7 +130,6 @@ Supported variables
                               {%- endif -%}
                               {{ sub_link.object.title }}....
                             {% for collection in collections %}
-                              {{ collection.title }}
                             {% assign my_metafield_collection = collection[sub_link.object.title].metafields %}
                               {{ my_metafield_collection  }}???
                               {% if my_metafield_collection != blank %}
