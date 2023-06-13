@@ -27,7 +27,7 @@
         "template--14464004423779__a5336041-14cb-44dd-b912-9f080e913bd6-16861285876ba9ad40-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay{{ collection.title }}",
+            "text": "{{ collection.title }}",
             "heading_tag": "h1"
           }
         }
