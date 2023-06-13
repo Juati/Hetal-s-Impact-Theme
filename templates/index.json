@@ -370,6 +370,7 @@
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/Halwai_3048f564-6aa1-4eeb-8842-15b5dcc0c836.webp",
+            "image2": "shopify:\/\/shop_images\/Halwai_on_hover_9df9db98-6e91-46eb-aa4e-7a863aca452b.webp",
             "column_size": "3",
             "title": "PRODUCT 1",
             "heading_tag": "h4",
@@ -383,6 +384,7 @@
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/Kadhai_a58da149-64d2-4d75-b3fb-6b8f4cf9755e.webp",
+            "image2": "shopify:\/\/shop_images\/Kadhai_on_hover_1203ec0b-e647-4052-a589-4ab59706b751.webp",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -396,6 +398,7 @@
           "type": "item",
           "settings": {
             "image": "shopify:\/\/shop_images\/Confectioner_1.webp",
+            "image2": "shopify:\/\/shop_images\/Confectioner_Hover_1.webp",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
