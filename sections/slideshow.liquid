@@ -38,7 +38,7 @@ CSS
 
   p.h0 {
   padding-top: 16px;
-  background: {{block.settings.title_background;}}
+  background: {{section.settings.title_background}};
   border-radius: 27px;
   padding-inline: 10px;
   padding-bottom: 10px;
@@ -285,7 +285,6 @@ LIQUID
       "content": "Background",
       "info": "When \"Full width\" is enabled, the background is shown while image is loading. You can override the background for each slide."
     },
-
     {
       "type": "color",
       "id": "background",
@@ -296,12 +295,6 @@ LIQUID
       "type": "color_background",
       "id": "background_gradient",
       "label": "Background gradient"
-    },
-    {
-      "type": "color",
-      "id": "title_background",
-      "label": "Title Background",
-      "default": "#F2F2F2"
     }
   ],
   "blocks": [
