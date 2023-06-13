@@ -10629,5 +10629,6 @@ h6,
 }
 
 /* font-family */
-.img.rounded2.multicolumn2{
-display:none;}
+img.rounded2.multicolumn2 {
+    display: none;
+}
