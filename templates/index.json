@@ -97,7 +97,8 @@
         "button.button.button--xl {padding-block: 15px; padding-inline: 20px;}",
         ".product-card__info {background: #d9d9d9; padding: 20px;}",
         "product-card.product-card.product-card--show-secondary-media.bg-custom.text-custom {background: transparent;}",
-        ".product-card__info {border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}"
+        ".product-card__info {border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}",
+        ".product_des {min-height: 80px;}"
       ],
       "settings": {
         "collection": "",
