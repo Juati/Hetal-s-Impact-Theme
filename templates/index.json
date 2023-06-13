@@ -87,7 +87,8 @@
         "autoplay": false,
         "cycle_speed": 6,
         "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)",
+        "title_background": "#1a1a1a"
       }
     },
     "featured-collection": {
@@ -189,7 +190,8 @@
         "autoplay": true,
         "cycle_speed": 6,
         "background": "#f2f2f2",
-        "background_gradient": ""
+        "background_gradient": "",
+        "title_background": "#F2F2F2"
       }
     },
     "449bead9-3df2-440b-b97a-6454951e2fe2": {
