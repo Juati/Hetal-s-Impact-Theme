@@ -132,7 +132,7 @@ Supported variables
                                 <img
                                   class="marginimg"
                                   width="50px"
-                                  src="{{ collection.metafields.custom.menu_icon }}"
+                                  src="{{ sub_link.object.image.src | collection_img_url: 'small' }}"
                                   alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
 
