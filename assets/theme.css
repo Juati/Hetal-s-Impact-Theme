@@ -10634,7 +10634,8 @@ h6,
 .card-price,
 span.drawer-title,
 span.reversed-link,
-button.text-with-icon.h6.text-subdued {
+button.text-with-icon.h6.text-subdued,
+span.reversed-link.hover\:show {
   font-family: Proxima-Nova-Bold-2 !important;
 }
 
