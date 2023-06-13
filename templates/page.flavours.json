@@ -37,7 +37,7 @@
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list{width: 75%; margin: 0 auto;}"
+        ".product-list {width: 75%; margin: 0 auto;}"
       ],
       "settings": {
         "collection": "katli",
@@ -66,6 +66,9 @@
     },
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb": {
       "type": "flavoures-card",
+      "custom_css": [
+        ".product-list {width: 75%; margin: 0 auto;}"
+      ],
       "settings": {
         "collection": "nougat",
         "products": [
