@@ -7,33 +7,6 @@
         "content_width": "80ch"
       }
     },
-    "2d6a3c8a-b523-4528-bc4f-a65df4cef211": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Sweets Catalogue",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "template--14471092371555__2d6a3c8a-b523-4528-bc4f-a65df4cef211-1686115012be3d3943-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify:\/\/shop_images\/cashew_orange_d9fb247b-de9f-4011-b82c-3fd3c0121981.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
       "type": "flavoures-card",
       "custom_css": [
@@ -204,7 +177,6 @@
   },
   "order": [
     "main",
-    "2d6a3c8a-b523-4528-bc4f-a65df4cef211",
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a",
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb",
     "d1262393-9615-4756-8898-f3f111748847",
