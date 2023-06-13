@@ -45,7 +45,10 @@
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": 45,
     "favicon": "shopify:\/\/shop_images\/favicon.webp",
-    "checkout_accent_color": "#f0c417",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo1.png",
+    "checkout_logo_position": "center",
+    "checkout_input_background_color_mode": "white",
+    "checkout_accent_color": "#ffb74a",
     "checkout_button_color": "#1a1a1a",
     "sections": {
       "announcement-bar": {
