@@ -10632,7 +10632,8 @@ h6,
 .h0,
 .button-title,
 .card-price,
-span.drawer-title {
+span.drawer-title,
+span.reversed-link {
   font-family: Proxima-Nova-Bold-2 !important;
 }
 
