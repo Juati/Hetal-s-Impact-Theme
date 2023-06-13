@@ -10576,6 +10576,12 @@ h3#predictive-search-products {
   src: url("https://cdn.shopify.com/s/files/1/0024/6759/4339/files/Proxima_Nova.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Proxima_Nova_Bold";
+  src: url("https://cdn.shopify.com/s/files/1/0024/6759/4339/files/Proxima_Nova_Bold.woff") format("woff");
+}
+
+
 .product-card__info .product-card__title .bold {
   font-size: 24px;
 }
@@ -10596,12 +10602,7 @@ h3#predictive-search-products {
 
 /* font-family */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
 p,
 a,
 span,
@@ -10619,7 +10620,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  font-family: Proxima_Nova_Bold !important;
 }
 
 /* font-family */
