@@ -284,7 +284,7 @@ Supported variables
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
-    <div class="product_des">{{ product.metafields.custom.short_description | truncate: 140 }}</div>
+    <div class="product_des">{{ product.metafields.custom.short_description | truncate: 120 }}</div>
     <div class="mobileproice productprice">{{ product.price | money }}</div>
     <div class="mobileadtcbtn {%  if template == "index" %} addtobtn {%  endif %}">
       {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
@@ -292,26 +292,26 @@ Supported variables
 
       {%- form 'product', product, is: 'product-form', id: form_id -%}
         <input
-          type="hidden"
+        type="hidden"
           {% if variant_picker_block != blank %}disabled{% endif %}
           name="id"
           value="{{ product.selected_or_first_available_variant.id }}">
-<!--         <buy-buttons
-          class="buy-buttons "
-          template=""
-          form="">
-          <button
-            type="submit"
-            class="button button--xl"
-            is="custom-button">
-            <div style="transform: translateY(0px); opacity: 1;">Add</div>
-            <span class="button__loader aaa" style="transform: translateY(-10px); opacity: 0;">
-              <span style="opacity: 1;"></span>
-              <span style="opacity: 1;"></span>
-              <span style="opacity: 1;"></span>
-            </span>
-          </button>
-        </buy-buttons> -->
+      <!--         <buy-buttons
+      class="buy-buttons "
+      template=""
+      form="">
+      <button
+      type="submit"
+      class="button button--xl"
+      is="custom-button">
+      <div style="transform: translateY(0px); opacity: 1;">Add</div>
+      <span class="button__loader aaa" style="transform: translateY(-10px); opacity: 0;">
+      <span style="opacity: 1;"></span>
+      <span style="opacity: 1;"></span>
+      <span style="opacity: 1;"></span>
+      </span>
+      </button>
+      </buy-buttons> -->
       {%- endform -%}
     </div>
     <div class="product-info__buy-buttons cardadtc {% if template == "index" %} addtocartbutn {% endif %}" {{ block.shopify_attributes }}>
