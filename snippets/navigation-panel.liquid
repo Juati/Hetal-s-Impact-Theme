@@ -128,7 +128,7 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                              {% if collection.metafields.custom.menu_icon !== blank %}
+                              {% if collection.metafields.custom.menu_icon != blank %}
                                 <img
                                   class="marginimg"
                                   width="50px"
