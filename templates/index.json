@@ -264,6 +264,7 @@
     },
     "e769dc2b-368a-44b6-b529-b3bb2acd69d4": {
       "type": "multi-column",
+      "disabled": true,
       "blocks": {
         "template--14464004259939__e769dc2b-368a-44b6-b529-b3bb2acd69d4-168542436564de0f86-0": {
           "type": "item",
@@ -324,43 +325,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "1f51fe1c-6635-411c-8063-ea842009dff7": {
-      "type": "media-with-text",
-      "blocks": {
-        "template--14464004259939__1f51fe1c-6635-411c-8063-ea842009dff7-16854490967817781b-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_3_resized.jpg",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "ABOUT US",
-            "content": "<p>Hetal's Homemade is a one stop destination for quality comfort food and beverages. A food boutique delivering quality and homely products. Our wide range of Flavored Coffee, Fruit punches and Granola Mix will quench all your thirst and satisfy all your cravings<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14464004259939__1f51fe1c-6635-411c-8063-ea842009dff7-16854490967817781b-0"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full_width": true,
-        "spacing": "none"
       }
     },
     "60f34525-e9cf-4384-9ad6-5ce7455e6f9b": {
@@ -426,6 +390,43 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "1f51fe1c-6635-411c-8063-ea842009dff7": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--14464004259939__1f51fe1c-6635-411c-8063-ea842009dff7-16854490967817781b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3_resized.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "ABOUT US",
+            "content": "<p>Hetal's Homemade is a one stop destination for quality comfort food and beverages. A food boutique delivering quality and homely products. Our wide range of Flavored Coffee, Fruit punches and Granola Mix will quench all your thirst and satisfy all your cravings<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004259939__1f51fe1c-6635-411c-8063-ea842009dff7-16854490967817781b-0"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full_width": true,
+        "spacing": "none"
+      }
     }
   },
   "order": [
@@ -434,7 +435,7 @@
     "d03a240a-2f67-4c8f-9033-f242b82281f3",
     "449bead9-3df2-440b-b97a-6454951e2fe2",
     "e769dc2b-368a-44b6-b529-b3bb2acd69d4",
-    "1f51fe1c-6635-411c-8063-ea842009dff7",
-    "60f34525-e9cf-4384-9ad6-5ce7455e6f9b"
+    "60f34525-e9cf-4384-9ad6-5ce7455e6f9b",
+    "1f51fe1c-6635-411c-8063-ea842009dff7"
   ]
 }
