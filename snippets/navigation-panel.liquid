@@ -129,9 +129,11 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                               {% if collections[sub_link.object.handle].metafields.custom.menu_icon != blank %}
-                                {{ collections[sub_link.object.handle].metafields.custom.menu_icon }}????
-                                {{ collections[sub_link.object.handle].metafields.custom.menu_icon.value | img_tag }}
-
+                                <img
+                                  class="marginimg"
+                                  width="50px"
+                                  src="{{ collections[sub_link.object.handle].metafields.custom.menu_icon.value }}"
+                                  alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
                               <span>
                                 <span class="reversed-link 222">{{ sub_link.title }}</span>
