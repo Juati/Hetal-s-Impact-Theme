@@ -39,7 +39,8 @@
       "custom_css": [
         ".product-list {width: 75%; margin: 0 auto;}",
         ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}"
+        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
+        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
       ],
       "settings": {
         "collection": "katli",
