@@ -10630,11 +10630,18 @@ h6,
 
 /* font-family */
 img.rounded2.multicolumn2 {
-    display: none;
+  display: none;
 }
+
 img.rounded.multicolumn:hover {
-  display:none;
+  display: none;
 }
+
 img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
-    display: block;
+  display: block;
+}
+
+.button-title,
+.card-price {
+  font-family: Proxima_Nova_Bold !important;
 }
