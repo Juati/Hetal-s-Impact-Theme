@@ -10635,7 +10635,8 @@ h6,
 span.drawer-title,
 span.reversed-link,
 button.text-with-icon.h6.text-subdued,
-span.reversed-link.hover\:show {
+span.reversed-link.hover\:show,
+.cardtagtext {
   font-family: Proxima-Nova-Bold-2 !important;
 }
 
