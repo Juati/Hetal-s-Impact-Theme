@@ -64,6 +64,14 @@ Supported variables
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
+  {% style %}
+    .product-card__info {
+      background: {{ settings.product_card_background_color }}
+      ;
+      padding: 20px;
+    }
+  {% endstyle %}
+
   {%- if product.media.size > 0 -%}
     <div class="product-card__figure">
       <a href="{{ product.url }}" data-instant>
