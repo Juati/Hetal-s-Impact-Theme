@@ -129,8 +129,8 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
                             {% for collection in product.collections %}
-                            {% assign the_collection = collections[sub_link.object.title] %}
-                            {% assign my_metafield_collection = the_collection.metafields.custom.menu_icon %}
+                            {% assign the_collection = collection[sub_link.object.title] %}
+                            {% assign my_metafield_collection = collection[sub_link.object.title].metafields.custom.menu_icon %}
                             {{ my_metafield_collection }}?
                               {% if my_metafield_collection != blank %}
                                 <img
