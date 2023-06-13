@@ -153,7 +153,7 @@ Supported variables
 
   <div class="product-card__info  {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
     {% if product.metafields.custom.productcardtagtext != blank %}
-      <div class="cardtagtext">{{ product.metafields.custom.productcardtagtext }}</div>
+      <div class="cardtagtext" style="background: {{ settings.product_tag_color }};">{{ product.metafields.custom.productcardtagtext }}</div>
     {% endif %}
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
