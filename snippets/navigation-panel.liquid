@@ -128,13 +128,13 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                            {{ sub_link.object.title }} ?????
-  {% assign my_metafield = the_collection.metafields.custom.categoria_1 %}
-                              {% if sub_link.object.image.src %}
+                            {% assign the_collection = collections[sub_link.object.title] %}
+                            {% assign my_metafield_collection = the_collection.metafields.custom.categoria_1 %}
+                              {% if my_metafield_collection != blank %}
                                 <img
                                   class="marginimg"
                                   width="50px"
-                                  src="{{ collection.metafields.custom.menu_icon }}"
+                                  src="{{ my_metafield_collection }}"
                                   alt="{{ sub_link.object.title | escape }}" />
                               {% endif %}
 
