@@ -10640,8 +10640,3 @@ img.rounded.multicolumn:hover {
 img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
   display: block;
 }
-
-.button-title,
-.card-price {
-  font-family: Proxima_Nova_Bold !important;
-}
