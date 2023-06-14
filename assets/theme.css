@@ -10640,7 +10640,8 @@ span.drawer-title,
 span.reversed-link,
 button.text-with-icon.h6.text-subdued,
 span.reversed-link.hover\:show,
-.cardtagtext {
+.cardtagtext,
+.shopify-payment-button__button {
   font-family: Proxima-Nova-Bold-2 !important;
 }
 
