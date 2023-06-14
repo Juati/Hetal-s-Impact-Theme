@@ -92,15 +92,15 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "basic",
             "show_menu_title": true
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>"
+            "title": "Contact Us",
+            "content": "<p>2, Vrundavan Apartment,Panchvati First lane, Opposite Central Mall, Ambavadi - 380006<\/p><ul><li>+91 79 2644 1252<\/li><li>connect@hetalshomemade.com<\/li><\/ul>"
           }
         }
       },
