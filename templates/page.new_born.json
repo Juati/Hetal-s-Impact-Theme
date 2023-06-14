@@ -3,10 +3,122 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "cf398bbf-87bc-4d18-94a6-4c134d7a6959": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--14473575366755__cf398bbf-87bc-4d18-94a6-4c134d7a6959-168672520301b11c04-0": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "73acdd0d-635a-47d8-9c20-3dfbe990335e": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "86deeb9f-e73b-4aaf-adc6-e510978a7041": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14473575366755__cf398bbf-87bc-4d18-94a6-4c134d7a6959-168672520301b11c04-0",
+        "73acdd0d-635a-47d8-9c20-3dfbe990335e",
+        "86deeb9f-e73b-4aaf-adc6-e510978a7041"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "c6e0cb28-4cc5-4a31-908a-9424505a60d0": {
+      "type": "contact",
+      "blocks": {
+        "db012e92-7d31-47e2-a670-68a636fa255f": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "use_long_text": false
+          }
+        }
+      },
+      "block_order": [
+        "db012e92-7d31-47e2-a670-68a636fa255f"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Contact us for bulk inquiry",
+        "content": "<p><strong>2, Vrundavan Apartment,Panchvati First lane, Opposite Central Mall, Ambavadi - 380006<\/strong><\/p><p><strong>+91 79 2644 1252<\/strong><\/p><p><strong>connect@hetalshomemade.com<\/strong><\/p>",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "cf398bbf-87bc-4d18-94a6-4c134d7a6959",
+    "c6e0cb28-4cc5-4a31-908a-9424505a60d0"
   ]
 }
