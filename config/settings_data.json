@@ -44,6 +44,8 @@
     "cart_type": "popover",
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": 45,
+    "social_facebook": "https:\/\/www.facebook.com\/weservejoy\/",
+    "social_instagram": "https:\/\/www.instagram.com\/hetalshomemade\/",
     "favicon": "shopify:\/\/shop_images\/logo_-2.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo1.png",
     "checkout_logo_position": "center",
