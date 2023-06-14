@@ -85,6 +85,18 @@
     },
     "cbe78691-2cbc-4283-b52a-b1ffb59a72ea": {
       "type": "contact",
+      "blocks": {
+        "0dc863ca-1185-4cac-b44b-a0d8b55fe40c": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "use_long_text": false
+          }
+        }
+      },
+      "block_order": [
+        "0dc863ca-1185-4cac-b44b-a0d8b55fe40c"
+      ],
       "settings": {
         "full_width": true,
         "subheading": "",
