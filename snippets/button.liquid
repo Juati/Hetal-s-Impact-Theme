@@ -79,7 +79,9 @@ Supported variables
   {% if class_attribute != blank %}class="{{ class_attribute | strip_newlines | strip }}"{% endif %}
   {% if style_attribute != blank %}style="{{ style_attribute | strip_newlines | strip }}"{% endif %}
   {% if aria_controls %}aria-controls="{{ aria_controls }}" aria-expanded="false"{% endif %}
-  {% if disabled %}{% if href %}role="link" aria-disabled="true"{% else %}disabled{% endif %}{% endif %}
+  {% if disabled %}
+    {% if href %}role="link" aria-disabled="true"{% else %}disabled{% endif %}
+  {% endif %}
   {% if name %}name="{{ name }}"{% endif %}
   {% if form %}form="{{ form }}"{% endif %}
   {% if href %}href="{{ href }}"{% endif %}
@@ -94,7 +96,10 @@ Supported variables
       {{- content -}}
     </div>
   {%- else -%}
-    {{- content -}}
+    <div class="bbbbbb">
+      {{- content -}}
+    </div>
+
   {%- endif -%}
 {%- endcapture -%}
 
@@ -103,7 +108,10 @@ Supported variables
     {{- button_content -}}
   </a>
 {%- else -%}
-  <button type="{{ type | default: 'button' }}" {{ attributes }} {{ block.shopify_attributes }}>
+  <button
+    type="{{ type | default: 'button' }}"
+    {{ attributes }}
+    {{ block.shopify_attributes }}>
     {{- button_content -}}
   </button>
 {%- endif -%}
