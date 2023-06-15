@@ -5,7 +5,7 @@
   <div class="productsimage">
    
     {% if productimage.available %}
-     <div class="product-gallery__media appendpro{{ forloop.index }}" data-media-type="media" data-summery-index="{{ forloop.index }}">
+     <div class="product_image_size product-gallery__media appendpro{{ forloop.index }}" data-media-type="media" data-summery-index="{{ forloop.index }}">
           {%- for media in productimage.media  limit:1 -%}
               {%- render 'media', media: media, sizes: sizes, preload: preload, autoplay: section.settings.enable_video_autoplay, loop: section.settings.enable_video_looping, group: 'product' -%}
           {%-  endfor -%}
