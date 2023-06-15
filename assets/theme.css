@@ -10661,3 +10661,8 @@ img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
 .product_image_size > img{
        height: 186px;  
 }
+@media screen and (max-width: 767px) {
+  .product_image_size>img {
+    height: 80px;
+}
+}
