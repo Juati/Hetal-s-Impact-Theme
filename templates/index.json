@@ -88,7 +88,7 @@
         "cycle_speed": 6,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)",
-        "title_background": "#1a1a1a"
+        "title_background": "#000000"
       }
     },
     "featured-collection": {
