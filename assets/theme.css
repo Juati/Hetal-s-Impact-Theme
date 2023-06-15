@@ -10658,3 +10658,6 @@ img.rounded.multicolumn:hover {
 img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
   display: block;
 }
+.product_image_size > img{
+       height: 186px;  
+}
