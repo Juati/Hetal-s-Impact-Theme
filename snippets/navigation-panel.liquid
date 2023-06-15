@@ -128,7 +128,14 @@ Supported variables
                                   {{- sub_link_image | image_url: width: 120 | image_tag: loading: 'lazy', sizes: '60px', widths: '120', class: 'panel-link__image rounded' -}}
                                 {%- endif -%}
                               {%- endif -%}
-                            
+                              {% if collections[sub_link.object.handle].metafields.custom.menu_icon != blank %}
+                                <img
+                                  class="marginimg"
+                                  width="50px"
+                                  height="50px"
+                                  src="{{ collections[sub_link.object.handle].metafields.custom.menu_icon.value | image_url }}"
+                                  alt="{{ sub_link.object.title | escape }}" />
+                              {% endif %}
                               <span>
                                 <span class="reversed-link 222">{{ sub_link.title }}</span>
                                 <p>{{ sub_link.object.description | truncate: 110 }}</p>
