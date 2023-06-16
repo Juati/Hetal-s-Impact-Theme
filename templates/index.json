@@ -182,7 +182,7 @@
         "template--14464004259939__d03a240a-2f67-4c8f-9033-f242b82281f3-168449804926cd938f-1"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": true,
         "image_size": "auto",
         "controls_type": "none",
@@ -191,7 +191,7 @@
         "cycle_speed": 6,
         "background": "#f2f2f2",
         "background_gradient": "",
-        "title_background": "#f2f2f2"
+        "title_background": "rgba(0,0,0,0)"
       }
     },
     "449bead9-3df2-440b-b97a-6454951e2fe2": {
