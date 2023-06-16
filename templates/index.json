@@ -102,11 +102,11 @@
         "collection": "",
         "products": [
           "akhrot-crunch",
+          "cashew-orange-1",
+          "mexican-nutty-nuggets",
+          "chocolate-orange",
           "orange-coffee",
-          "masala-milk",
-          "bornville-shake",
-          "butterscotch",
-          "chocolate-mint"
+          "thandai"
         ],
         "full_width": false,
         "stack_products": true,
@@ -119,12 +119,12 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "product_card_background": "",
+        "product_card_background": "rgba(0,0,0,0)",
         "product_card_text_color": ""
       }
     },
