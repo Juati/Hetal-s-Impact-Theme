@@ -8,34 +8,34 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/HP_WT_Banner_web1.png",
             "mobile_image": "shopify:\/\/shop_images\/HP_WT_Banner_mob1.png",
-            "content_max_width": 780,
+            "content_max_width": 400,
             "mobile_text_position": "place-self-start-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
             "title": "Now delivering",
-            "heading_tag": "h0",
+            "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
-            "overlay_color": "#000000",
+            "overlay_color": "rgba(0,0,0,0)",
             "overlay_opacity": 0,
-            "background": "",
+            "background": "rgba(0,0,0,0)",
             "background_gradient": ""
           }
         },
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HP_Banner_web2.png",
-            "mobile_image": "shopify:\/\/shop_images\/HP_banner_MOB_2.png",
+            "image": "shopify:\/\/shop_images\/HP_WT_Banner_web2_250e69fb-535f-4054-bc05-e78b6a0bc795.png",
+            "mobile_image": "shopify:\/\/shop_images\/HP_WT_banner_Mob2_2b0b75f6-a1dd-4743-97d9-b6daba34a21c.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h0",
+            "subheading": "Try 13 different flavors",
+            "title": "India's one of the first paste coffee",
+            "heading_tag": "h1",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
@@ -79,16 +79,16 @@
         ".header__wrapper {padding-block: 5px;}"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "numbers",
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)",
-        "title_background": "#000000"
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "title_background": "#074968"
       }
     },
     "featured-collection": {
