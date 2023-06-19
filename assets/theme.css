@@ -10080,6 +10080,7 @@ split-lines {
 }
 
 .metafieldtext {
+  padding-top: 3px;
   font-size: 13px;
 
 }
