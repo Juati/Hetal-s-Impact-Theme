@@ -363,7 +363,10 @@ Supported variables
         <div class="metafieldtext">{{ product.metafields.custom.productcardtext1 }}</div>
       </div>
       <div class="textmetafield">
-        <div class="iconmargin">{{ product.metafields.custom.productcardicon2 }}</div>
+        <img
+          src="{{ product.metafields.custom.product_card_icon_2 | img_url }}"
+          alt=""
+          class="icon-pdp-card">
         <div class="metafieldtext">{{ product.metafields.custom.productcardtext2 }}</div>
       </div>
     </div>
