@@ -10548,6 +10548,7 @@ h3#predictive-search-products {
     display: flex;
     align-items: center;
     padding: 5px;
+    gap: 15px;
   }
 
   .qtybox {
