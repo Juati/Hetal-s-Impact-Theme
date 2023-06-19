@@ -94,6 +94,16 @@
             "payment_button_background": "#1a1a1a",
             "payment_button_text_color": "#ffffff"
           }
+        },
+        "94a67b84-055c-46a1-b1c2-94b3f0b11880": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -110,7 +120,8 @@
         "variant_picker",
         "quantity_selector",
         "8c580ed5-aaef-4ed3-963c-2418d80deb60",
-        "buy_buttons"
+        "buy_buttons",
+        "94a67b84-055c-46a1-b1c2-94b3f0b11880"
       ],
       "custom_css": [
         "img.object-contain.rounded-sm {border-radius: 0px;}",
