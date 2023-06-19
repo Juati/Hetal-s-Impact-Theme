@@ -10104,9 +10104,9 @@ split-lines {
 
   .metafieldflexcard,
   /*   .cardadtc, */
-  .mobileadtcbtn.addtobtn {
+  /* .mobileadtcbtn.addtobtn {
     display: none;
-  }
+  } */
 
   /*   .mobileproice, */
   .addtocartbutn,
