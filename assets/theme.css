@@ -10257,6 +10257,10 @@ li.flavors-link {
   flex-direction: column;
 }
 
+a.flavour-title {
+  font-size: 10px;
+}
+
 .flavors-link svg {
   display: block;
 }
