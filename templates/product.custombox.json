@@ -61,11 +61,6 @@
             "payment_button_text_color": ""
           }
         },
-        "separator": {
-          "type": "separator",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -109,7 +104,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "separator",
         "description",
         "cf8b1774-913c-4356-80f3-587c594be0be",
         "00615872-a161-4a24-b767-4026873a3183",
