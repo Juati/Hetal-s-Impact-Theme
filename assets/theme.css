@@ -10501,6 +10501,10 @@ h3#predictive-search-products {
 
   }
 
+  img.icon-pdp-card {
+    height: 18px;
+  }
+
   .navigation-promo {
     display: block;
   }
@@ -10675,6 +10679,8 @@ img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
   }
 }
 
+
+
 img.icon-pdp-card {
-  height: 18px;
+  height: 25px;
 }
