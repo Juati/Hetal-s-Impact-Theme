@@ -13,7 +13,7 @@
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
             "subheading": "",
             "title": "Now delivering across india",
-            "heading_tag": "h2",
+            "heading_tag": "h0",
             "button_text": "SHOP NOW",
             "button_link": "shopify:\/\/collections\/katli",
             "text_color": "#ffffff",
@@ -88,7 +88,7 @@
         "cycle_speed": 6,
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
-        "title_background": "rgba(0,0,0,0)"
+        "title_background": "#1a1a1a"
       }
     },
     "featured-collection": {
