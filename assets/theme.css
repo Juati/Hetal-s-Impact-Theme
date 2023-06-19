@@ -10501,6 +10501,7 @@ h3#predictive-search-products {
 @media screen and (max-width: 999px) {
   .imageproduct-title {
     width: 100%;
+    justify-content: left;
 
   }
 
