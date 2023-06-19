@@ -10505,7 +10505,7 @@ h3#predictive-search-products {
     justify-content: left;
 
     .qtydiv {
-      padding-top: 0px;
+      padding-top: 0px !important;
     }
 
   }
