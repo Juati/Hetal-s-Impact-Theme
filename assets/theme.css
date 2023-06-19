@@ -10504,10 +10504,12 @@ h3#predictive-search-products {
     width: 100%;
     justify-content: left;
 
-    .qtydiv {
-      padding-top: 0px !important;
-    }
 
+
+  }
+
+  .qtydiv {
+    padding-top: 0px;
   }
 
   img.icon-pdp-card {
