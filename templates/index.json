@@ -31,7 +31,7 @@
             "image": "shopify:\/\/shop_images\/HP_WT_Banner_web2_250e69fb-535f-4054-bc05-e78b6a0bc795.png",
             "mobile_image": "shopify:\/\/shop_images\/HP_WT_banner_Mob2_2b0b75f6-a1dd-4743-97d9-b6daba34a21c.png",
             "content_max_width": 600,
-            "mobile_text_position": "place-self-start-center text-center",
+            "mobile_text_position": "place-self-center-end text-end",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
             "title": "India's  first paste coffee",
