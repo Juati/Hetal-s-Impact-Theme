@@ -2,6 +2,10 @@
   "sections": {
     "main": {
       "type": "main-search",
+      "custom_css": [
+        ".product-card__info {border-bottom-right-radius: 0.6875rem; border-bottom-left-radius: 0.6875rem;}",
+        ".product-card__info {padding: 20px !important;}"
+      ],
       "settings": {
         "products_per_page": 24,
         "products_per_row_mobile": "1",
