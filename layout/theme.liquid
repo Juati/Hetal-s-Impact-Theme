@@ -68,8 +68,8 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}
     {%- render 'js-variables' -%}
-<script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-    
+    <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
     <script type="module" src="{{ 'sections.js' | asset_url }}"></script>
@@ -122,68 +122,68 @@ all events, dependencies...) in the "documentation.txt" file, located in the Ass
 </html>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
-      
-  $(document).on('click','.qtybox .btnqty',function(){
-    $customboxnumber = $(".customboxnumber").val();
-    $customboxdecre = $customboxnumber - 1 ;
-  $eachqty = 0;
-  var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
-   $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
-     $eachqty += parseInt($(this).val());
-   });
 
-  if($(this).hasClass('qtyplus')) {
-     if($eachqty < $customboxnumber){
-        $eachqty++;
+  $(document).on('click', '.qtybox .btnqty', function() {
+    $customboxnumber = $(".customboxnumber").val();
+    $customboxdecre = $customboxnumber - 1;
+    $eachqty = 0;
+    var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
+    $.each($(".product-gallery__media-list3 .quantity-selector.quantity-input"), function() {
+      $eachqty += parseInt($(this).val());
+    });
+
+    if ($(this).hasClass('qtyplus')) {
+      if ($eachqty < $customboxnumber) {
+        $eachqty ++;
         qty++;
         $(".bundle-summry-title span").html($eachqty);
         $(".bundle-summary").addClass("bundle-list");
         $html = $(this).closest(".productsimage").html();
         $producttitle = $(this).closest(".productsimage").find(".product-title").val();
         $productproperties = "properties[" + qty + " * " + $producttitle + "]";
-        $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
-        $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
-       console.log($eachqty);
-       if($eachqty > $customboxdecre){
-         console.log("1999");
-         $(".product-info__buy-buttons .button").prop("disabled",false);
-       }else{
-         $(".product-info__buy-buttons .button").prop("disabled",true);
-       }
-       if(qty == 1){
-          $(".bundle-summary").append("<div class='productsimage'>"+ $html +"</div>");
-          $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
-       }else{
-         $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
-       }
-     }else{
-       alert("You can select only "+ $customboxnumber +"cupcakes!");
-     }
-  }else {
-    if(qty >= 1) {
-    $eachqty--;
-    qty--;
-    }
-    $(".product-info__buy-buttons .button").prop("disabled",true);
-    $(".bundle-summry-title span").html($eachqty);
-    $(".bundle-summary").addClass("bundle-list");
-    $html = $(this).closest(".productsimage").html();
-    $producttitle = $(this).closest(".productsimage").find(".product-title").val();
-    $productproperties = "properties[" + qty + " * " + $producttitle + "]";
-    $(this).closest(".productsimage").find(".product-title").attr('name',$productproperties);
-    $summeryindex =  $(this).closest(".product-gallery__media").attr("data-summery-index");
-     if($eachqty == 0){
+        $(this).closest(".productsimage").find(".product-title").attr('name', $productproperties);
+        $summeryindex = $(this).closest(".product-gallery__media").attr("data-summery-index");
+        console.log($eachqty);
+        if ($eachqty > $customboxdecre) {
+          console.log("1999");
+          $(".product-info__buy-buttons .button").prop("disabled", false);
+        } else {
+          $(".product-info__buy-buttons .button").prop("disabled", true);
+        }
+        if (qty == 1) {
+          $(".bundle-summary").append("<div class='productsimage'>" + $html + "</div>");
+          $('.product-gallery__media[data-summery-index="' + $summeryindex + '"] .quantity-selector').val(qty);
+        } else {
+          $('.product-gallery__media[data-summery-index="' + $summeryindex + '"] .quantity-selector').val(qty);
+        }
+      } else {
+        alert("You can select only " + $customboxnumber + "items!");
+      }
+    } else {
+      if (qty >= 1) {
+        $eachqty --;
+        qty--;
+      }
+      $(".product-info__buy-buttons .button").prop("disabled", true);
+      $(".bundle-summry-title span").html($eachqty);
+      $(".bundle-summary").addClass("bundle-list");
+      $html = $(this).closest(".productsimage").html();
+      $producttitle = $(this).closest(".productsimage").find(".product-title").val();
+      $productproperties = "properties[" + qty + " * " + $producttitle + "]";
+      $(this).closest(".productsimage").find(".product-title").attr('name', $productproperties);
+      $summeryindex = $(this).closest(".product-gallery__media").attr("data-summery-index");
+      if ($eachqty == 0) {
         $(".bundle-summary").removeClass("bundle-list");
-     }
-     if(qty == 0){
-        $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
-        $(".bundle-summary").find('.product-gallery__media[data-summery-index="'+ $summeryindex +'"]').closest(".productsimage").html("");
-     }else{
-       $('.product-gallery__media[data-summery-index="'+ $summeryindex +'"] .quantity-selector').val(qty);
-     }
-  }
-  qty = (isNaN(qty))?0:qty;
-  $(this).parent('.qtybox').find('.quantity-input').val(qty);
-});
-  
+      }
+      if (qty == 0) {
+        $('.product-gallery__media[data-summery-index="' + $summeryindex + '"] .quantity-selector').val(qty);
+        $(".bundle-summary").find('.product-gallery__media[data-summery-index="' + $summeryindex + '"]').closest(".productsimage").html("");
+      } else {
+        $('.product-gallery__media[data-summery-index="' + $summeryindex + '"] .quantity-selector').val(qty);
+      }
+    } qty = (isNaN(qty))
+      ? 0
+      : qty;
+    $(this).parent('.qtybox').find('.quantity-input').val(qty);
+  });
 </script>
