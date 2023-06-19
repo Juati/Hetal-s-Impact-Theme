@@ -10673,3 +10673,7 @@ img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
     height: 80px;
   }
 }
+
+img.icon-pdp-card {
+  height: 18px;
+}
