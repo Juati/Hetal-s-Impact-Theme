@@ -10532,9 +10532,9 @@ h3#predictive-search-products {
     grid: none;
   }
 
-  img.rounded {
+  /* img.rounded {
     margin-right: 15px;
-  }
+  } */
 
   .productsimage .product-gallery__media .rounded {
     max-width: 80px;
