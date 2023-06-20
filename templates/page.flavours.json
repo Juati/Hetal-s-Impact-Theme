@@ -11,7 +11,6 @@
       "type": "flavoures-card",
       "custom_css": [
         ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
         "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
         "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
       ],
@@ -21,7 +20,7 @@
 
         ],
         "full_width": true,
-        "stack_products": false,
+        "stack_products": true,
         "show_progress_bar": false,
         "products_count": 6,
         "products_per_row_mobile": "2",
@@ -30,7 +29,7 @@
         "title": "Katli",
         "content": "",
         "link_url": "",
-        "link_text": "dfs",
+        "link_text": "",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -44,7 +43,6 @@
       "type": "flavoures-card",
       "custom_css": [
         ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
         "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
         "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
       ],
