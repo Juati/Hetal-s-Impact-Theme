@@ -225,7 +225,7 @@
         "logo_max_width": 150,
         "logo_mobile_max_width": 145,
         "menu": "desktop-header-menu",
-        "sidebar_menu": "desktop-header-menu",
+        "sidebar_menu": "mobile-header-menu",
         "secondary_menu": "",
         "menu_open_trigger": "hover",
         "opening_from": "left",
