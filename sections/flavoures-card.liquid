@@ -50,6 +50,31 @@
   .section-stack {
     gap: 0;
   }
+
+  .product-list {
+    width: 75%;
+    margin: 0 auto;
+    column-gap: 20px;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  product-card.product-card.product-card--blends.bg-custom.text-custom {
+    width: 30%;
+  }
+  @media screen and (max-width: 620px) {
+    product-card.product-card.product-card--blends.bg-custom.text-custom {
+      width: 48%;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .product-card.product-card--blends {
+      flex-basis: 25%;
+    }
+  }
 </style>
 
 <div {% render 'section-properties' %}>
