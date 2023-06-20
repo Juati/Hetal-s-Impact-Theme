@@ -75,12 +75,12 @@ Supported variables
         {%- capture main_image_classes -%}product-card__image product-card__image--primary
           {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %}
           aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-    {%- if product.media[2] == blank -%}
-        {{- product.media[1] | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
-      {% else %}
-        {{- product.media[2] | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
-    {% endif %}
-        
+        {%- if product.media[2] == blank -%}
+          {{- product.media[1] | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {% else %}
+          {{- product.media[2] | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {% endif %}
+
       </a>
 
       {%- if show_quick_buy and product.available -%}
@@ -149,7 +149,7 @@ Supported variables
   {%- endcomment -%}
 
   <div class="product-card__info  {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
-    
+
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
         <div class="rating-with-text w-full">
@@ -304,7 +304,7 @@ Supported variables
           {% if variant_picker_block != blank %}disabled{% endif %}
           name="id"
           value="{{ product.selected_or_first_available_variant.id }}">
-       
+
       {%- endform -%}
     </div>
   </div>
@@ -319,5 +319,12 @@ Supported variables
   }
   .product-card__info {
     text-align: center;
+  }
+
+  @media screen and (min-width: 1000px) {
+
+    roduct-card.product-card.product-card--blends {
+      flex-basis: 20%;
+    }
   }
 </style>
