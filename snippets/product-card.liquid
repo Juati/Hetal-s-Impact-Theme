@@ -356,10 +356,13 @@ Supported variables
     </div>
     <div class="metafieldflexcard">
       <div class="textmetafield">
-        <img
-          src="{{ product.metafields.custom.product_card_icon_text_1 | img_url }}"
-          alt=""
-          class="icon-pdp-card">
+
+        {% if product.metafields.custom.product_card_icon_text_1 != blank %}
+          <img
+            src="{{ product.metafields.custom.product_card_icon_text_1 | img_url }}"
+            alt=""
+            class="icon-pdp-card">
+        {% endif %}
         <div class="metafieldtext">{{ product.metafields.custom.productcardtext1 }}</div>
       </div>
       <div class="textmetafield">
