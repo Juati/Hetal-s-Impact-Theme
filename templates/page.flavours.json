@@ -10,10 +10,7 @@
     "e8d71f95-3d3e-42b6-ba8b-76f5f2e1a44a": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
-        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
+
       ],
       "settings": {
         "collection": "katli",
@@ -43,10 +40,7 @@
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
-        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
+
       ],
       "settings": {
         "collection": "nougat",
@@ -76,10 +70,7 @@
     "d1262393-9615-4756-8898-f3f111748847": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
-        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
+
       ],
       "settings": {
         "collection": "nougat",
@@ -109,10 +100,7 @@
     "8a0228ec-1427-4bb2-be90-4df9885568ce": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
-        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
+
       ],
       "settings": {
         "collection": "nougat",
@@ -144,10 +132,7 @@
     "2aca1e48-ec79-4421-8d52-ca3b22113610": {
       "type": "flavoures-card",
       "custom_css": [
-        ".product-list {width: 75%; margin: 0 auto;}",
-        ".product-list {display: flex; flex-wrap: wrap; justify-content: center;}",
-        "product-card.product-card.product-card--blends.bg-custom.text-custom {width: 30%;}",
-        "@media screen and (max-width: 620px) {product-card.product-card.product-card--blends.bg-custom.text-custom {width: 48%; }}"
+
       ],
       "settings": {
         "collection": "nougat",
