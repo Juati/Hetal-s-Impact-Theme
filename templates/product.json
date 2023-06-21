@@ -103,9 +103,9 @@
           "type": "product_variations",
           "settings": {
             "option_name": "Choose Box",
-            "option_value_metafield": "{{ product.metafields.custom.variation_value.value }}",
+            "option_value_metafield": "custom.variation_value",
             "products": "{{ product.metafields.custom.variation_products.value }}",
-            "color_mode": "color"
+            "color_mode": "block"
           }
         },
         "quantity_selector": {
