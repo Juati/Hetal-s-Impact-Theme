@@ -48,15 +48,14 @@
         },
         "108d6676-52b9-408d-b0f5-b8d3dda7749f": {
           "type": "offer",
-          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_4_4x_26d6e79a-bbf5-44e7-848e-1bb68619932a.png",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.custom.product_card_icon_text_1.value }}",
             "icon_width": 52,
             "title": "",
-            "content": "<h2>Shelf Life<\/h2>",
+            "content": "<p>{{ product.metafields.custom.productcardtext1.value }}<\/p>",
             "background": "#fef95a",
             "text_color": "#1a1a1a"
           }
