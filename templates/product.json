@@ -99,6 +99,15 @@
             "size_chart_page": ""
           }
         },
+        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "Choose Box",
+            "option_value_metafield": "{{ product.metafields.custom.variation_value.value }}",
+            "products": "{{ product.metafields.custom.variation_products.value }}",
+            "color_mode": "color"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -130,18 +139,6 @@
             "payment_button_background": "#1a1a1a",
             "payment_button_text_color": "#ffffff"
           }
-        },
-        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea": {
-          "type": "product_variations",
-          "settings": {
-            "option_name": "Choose Box",
-            "option_value_metafield": "custom.variation_value",
-            "products": [
-              "bloom-box",
-              "mithaibox"
-            ],
-            "color_mode": "color"
-          }
         }
       },
       "block_order": [
@@ -157,11 +154,11 @@
         "0493b726-9207-422e-a2cc-beccae175a29",
         "c8a50078-21f3-44cb-88b3-2c8bc908bb2b",
         "variant_picker",
+        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea",
         "quantity_selector",
         "8c580ed5-aaef-4ed3-963c-2418d80deb60",
         "94a67b84-055c-46a1-b1c2-94b3f0b11880",
-        "buy_buttons",
-        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea"
+        "buy_buttons"
       ],
       "custom_css": [
         "img.object-contain.rounded-sm {border-radius: 0px;}",
