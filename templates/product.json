@@ -48,6 +48,7 @@
         },
         "108d6676-52b9-408d-b0f5-b8d3dda7749f": {
           "type": "offer",
+          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
@@ -62,6 +63,7 @@
         },
         "058c0df3-f00e-4be8-b6d4-2ab7958ddab3": {
           "type": "offer",
+          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
