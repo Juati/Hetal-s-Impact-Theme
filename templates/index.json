@@ -201,7 +201,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/sweets_final.mp4",
-            "column_size": "4",
+            "column_size": "3",
             "title": "PRODUCT 1",
             "heading_tag": "h4",
             "content": "",
@@ -214,7 +214,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
-            "column_size": "4",
+            "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
             "content": "",
@@ -227,7 +227,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Sherbat_final.mp4",
-            "column_size": "4",
+            "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
             "content": "",
@@ -238,6 +238,7 @@
         },
         "51bd0a0d-4290-4250-a13e-a39d594fbe15": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
             "column_size": "4",
