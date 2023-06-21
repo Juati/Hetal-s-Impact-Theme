@@ -181,32 +181,6 @@
         "input_text_color": ""
       }
     },
-    "c11ac919-f813-4a8e-87b5-2f2f1e8353fa": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1": {
-          "type": "heading",
-          "settings": {
-            "text": "FLAVORS BREAKDOWN",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14464004030563__c11ac919-f813-4a8e-87b5-2f2f1e8353fa-1686514669d61ee6a8-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "3a9b2424-b8f3-498e-93fc-53d554c645b6": {
       "type": "image-with-text-overlay",
       "custom_css": [
@@ -316,7 +290,6 @@
   },
   "order": [
     "main",
-    "c11ac919-f813-4a8e-87b5-2f2f1e8353fa",
     "3a9b2424-b8f3-498e-93fc-53d554c645b6",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
     "1686318877f7fff8ef"
