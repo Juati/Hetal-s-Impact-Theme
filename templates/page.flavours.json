@@ -166,11 +166,11 @@
     },
     "55850da5-d9bb-472a-8ef8-b56c83ddf299": {
       "type": "flavoures-card",
-      "disabled": true,
       "settings": {
         "collection": "",
         "products": [
-
+          "badam-thor",
+          "kesar-pista-square"
         ],
         "full_width": true,
         "stack_products": true,
@@ -179,7 +179,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "winter sweets",
+        "title": "Traditional",
         "content": "",
         "link_url": "",
         "link_text": "dfs",
