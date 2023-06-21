@@ -130,6 +130,18 @@
             "payment_button_background": "#1a1a1a",
             "payment_button_text_color": "#ffffff"
           }
+        },
+        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "Choose Box",
+            "option_value_metafield": "custom.variation_value",
+            "products": [
+              "bloom-box",
+              "mithaibox"
+            ],
+            "color_mode": "color"
+          }
         }
       },
       "block_order": [
@@ -148,7 +160,8 @@
         "quantity_selector",
         "8c580ed5-aaef-4ed3-963c-2418d80deb60",
         "94a67b84-055c-46a1-b1c2-94b3f0b11880",
-        "buy_buttons"
+        "buy_buttons",
+        "fa7af282-0e5a-4bd1-91ac-6eac8039f1ea"
       ],
       "custom_css": [
         "img.object-contain.rounded-sm {border-radius: 0px;}",
