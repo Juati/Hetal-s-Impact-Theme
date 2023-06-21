@@ -46,15 +46,25 @@
             "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
           }
         },
-        "7f89dc29-7f93-431e-b0af-2c46bbaaf020": {
-          "type": "separator",
+        "108d6676-52b9-408d-b0f5-b8d3dda7749f": {
+          "type": "offer",
           "settings": {
+            "text_alignment": "center",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/Asset_4_4x_26d6e79a-bbf5-44e7-848e-1bb68619932a.png",
+            "icon_width": 52,
+            "title": "",
+            "content": "<h2>Shelf Life<\/h2>",
+            "background": "#fef95a",
+            "text_color": "#1a1a1a"
           }
         },
-        "be7d766d-a5b1-44e2-9a65-eadfe44932de": {
+        "0493b726-9207-422e-a2cc-beccae175a29": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<h6>FLAVORS INCLUDED<\/h6><ul><li>2 x Tie-Dye<\/li><li>2 x Cookie & Cream<\/li><li>2 x Peanut Butter & Jelly<\/li><li>2 x Cookie Dough<\/li><li>2 x Triple Chocolate Fudge<\/li><\/ul><p><\/p>"
+            "text": "<p>{{ product.metafields.custom.short_description | metafield_tag }}<\/p>"
           }
         },
         "c8a50078-21f3-44cb-88b3-2c8bc908bb2b": {
@@ -114,8 +124,8 @@
         "8b852155-1a19-4b5f-bdcc-cb156948fedd",
         "6bef258e-5835-483b-95ed-d65c3cba1087",
         "f7325d58-1704-4abf-9760-18f17d0c9556",
-        "7f89dc29-7f93-431e-b0af-2c46bbaaf020",
-        "be7d766d-a5b1-44e2-9a65-eadfe44932de",
+        "108d6676-52b9-408d-b0f5-b8d3dda7749f",
+        "0493b726-9207-422e-a2cc-beccae175a29",
         "c8a50078-21f3-44cb-88b3-2c8bc908bb2b",
         "variant_picker",
         "quantity_selector",
