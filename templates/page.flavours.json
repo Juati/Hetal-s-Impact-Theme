@@ -13,9 +13,13 @@
 
       ],
       "settings": {
-        "collection": "katli",
+        "collection": "",
         "products": [
-
+          "akhrot-crunch",
+          "almond-torte",
+          "cashew-orange-1",
+          "pista-turkish",
+          "rose-almond-delicy"
         ],
         "full_width": true,
         "stack_products": true,
