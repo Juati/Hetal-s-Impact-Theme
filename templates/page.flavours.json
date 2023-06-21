@@ -158,6 +158,34 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "55850da5-d9bb-472a-8ef8-b56c83ddf299": {
+      "type": "flavoures-card",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "products": [
+
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "winter sweets",
+        "content": "",
+        "link_url": "",
+        "link_text": "dfs",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
@@ -166,6 +194,7 @@
     "a0f0b080-b37d-4e79-b1d8-40579b8adbcb",
     "d1262393-9615-4756-8898-f3f111748847",
     "8a0228ec-1427-4bb2-be90-4df9885568ce",
-    "2aca1e48-ec79-4421-8d52-ca3b22113610"
+    "2aca1e48-ec79-4421-8d52-ca3b22113610",
+    "55850da5-d9bb-472a-8ef8-b56c83ddf299"
   ]
 }
