@@ -8,6 +8,15 @@
           "settings": {
           }
         },
+        "6793a316-ebc3-4589-ad39-c40e8f7b22f3": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "Choose Box",
+            "option_value_metafield": "custom.variation_value",
+            "products": "{{ product.metafields.custom.variation_products.value }}",
+            "color_mode": "color"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -96,6 +105,7 @@
       },
       "block_order": [
         "vendor",
+        "6793a316-ebc3-4589-ad39-c40e8f7b22f3",
         "title",
         "badges",
         "price",
