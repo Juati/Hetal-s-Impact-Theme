@@ -10062,6 +10062,7 @@ split-lines {
 }
 
 .metafieldflexcard {
+  height: 35px;
   width: 100%;
   padding: 10px 0 0;
   display: flex;
