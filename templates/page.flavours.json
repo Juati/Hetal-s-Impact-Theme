@@ -139,9 +139,10 @@
 
       ],
       "settings": {
-        "collection": "nougat",
+        "collection": "",
         "products": [
-
+          "coffee-caramel",
+          "hazelnut-truffle"
         ],
         "full_width": true,
         "stack_products": true,
