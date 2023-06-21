@@ -100,7 +100,7 @@
           "settings": {
             "title": "Buy it with",
             "stack_products": true,
-            "products_count": 5,
+            "products_count": 2,
             "background": "",
             "text_color": ""
           }
