@@ -111,16 +111,6 @@
             "addon_product2": "butterscotch"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "atc_button_background": "#d9d9d9",
-            "atc_button_text_color": "",
-            "payment_button_background": "#1a1a1a",
-            "payment_button_text_color": "#ffffff"
-          }
-        },
         "94a67b84-055c-46a1-b1c2-94b3f0b11880": {
           "type": "associated_products",
           "settings": {
@@ -129,6 +119,16 @@
             "products_count": 2,
             "background": "",
             "text_color": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#d9d9d9",
+            "atc_button_text_color": "",
+            "payment_button_background": "#1a1a1a",
+            "payment_button_text_color": "#ffffff"
           }
         }
       },
@@ -147,8 +147,8 @@
         "variant_picker",
         "quantity_selector",
         "8c580ed5-aaef-4ed3-963c-2418d80deb60",
-        "buy_buttons",
-        "94a67b84-055c-46a1-b1c2-94b3f0b11880"
+        "94a67b84-055c-46a1-b1c2-94b3f0b11880",
+        "buy_buttons"
       ],
       "custom_css": [
         "img.object-contain.rounded-sm {border-radius: 0px;}",
