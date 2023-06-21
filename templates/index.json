@@ -201,7 +201,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/sweets_final.mp4",
-            "column_size": "3",
+            "column_size": "4",
             "title": "PRODUCT 1",
             "heading_tag": "h4",
             "content": "",
@@ -214,7 +214,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
-            "column_size": "3",
+            "column_size": "4",
             "title": "Column title",
             "heading_tag": "h4",
             "content": "",
@@ -227,7 +227,7 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Sherbat_final.mp4",
-            "column_size": "3",
+            "column_size": "4",
             "title": "Column title",
             "heading_tag": "h4",
             "content": "",
@@ -239,10 +239,11 @@
         "51bd0a0d-4290-4250-a13e-a39d594fbe15": {
           "type": "item",
           "settings": {
-            "column_size": "3",
+            "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
+            "column_size": "4",
             "title": "Column title",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
