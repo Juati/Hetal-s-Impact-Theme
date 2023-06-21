@@ -10682,9 +10682,7 @@ img.rounded.multicolumn:hover img.rounded2.multicolumn2 {
   display: block;
 }
 
-.product_image_size>img {
-  height: 186px;
-}
+
 
 @media screen and (max-width: 999px) {
   .product_image_size>img {
