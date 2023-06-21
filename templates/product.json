@@ -52,11 +52,11 @@
             "text_alignment": "center",
             "icon_position": "aligned",
             "icon": "none",
-            "custom_icon": "{{ product.metafields.custom.product_card_icon_text_1.value }}",
+            "custom_icon": "{{ product.metafields.custom.product_sticker.value }}",
             "icon_width": 52,
             "title": "",
-            "content": "<p>{{ product.metafields.custom.productcardtext1.value }}<\/p>",
-            "background": "#fef95a",
+            "content": "<h2>{{ product.metafields.custom.product_sticker_title.value }}<\/h2>",
+            "background": "#ffffff",
             "text_color": "#1a1a1a"
           }
         },
