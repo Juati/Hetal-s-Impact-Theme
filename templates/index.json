@@ -200,8 +200,7 @@
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Halwai_3048f564-6aa1-4eeb-8842-15b5dcc0c836.webp",
-            "image2": "shopify:\/\/shop_images\/Halwai_on_hover_9df9db98-6e91-46eb-aa4e-7a863aca452b.webp",
+            "video": "shopify:\/\/files\/videos\/sweets_final.mp4",
             "column_size": "3",
             "title": "PRODUCT 1",
             "heading_tag": "h4",
@@ -214,8 +213,7 @@
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kadhai_a58da149-64d2-4d75-b3fb-6b8f4cf9755e.webp",
-            "image2": "shopify:\/\/shop_images\/Kadhai_on_hover_1203ec0b-e647-4052-a589-4ab59706b751.webp",
+            "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
@@ -228,12 +226,23 @@
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Confectioner_1.webp",
-            "image2": "shopify:\/\/shop_images\/Confectioner_Hover_1.webp",
+            "video": "shopify:\/\/files\/videos\/Sherbat_final.mp4",
             "column_size": "3",
             "title": "Column title",
             "heading_tag": "h4",
             "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "51bd0a0d-4290-4250-a13e-a39d594fbe15": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -243,7 +252,8 @@
       "block_order": [
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-0",
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1",
-        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2"
+        "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2",
+        "51bd0a0d-4290-4250-a13e-a39d594fbe15"
       ],
       "settings": {
         "full_width": true,
@@ -251,7 +261,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Featured content",
+        "title": "Collection",
         "content": "",
         "background": "",
         "background_gradient": "",
