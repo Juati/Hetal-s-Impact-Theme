@@ -261,6 +261,65 @@
         "text_color": ""
       }
     },
+    "41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-0",
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-1",
+        "template--14464004030563__41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7-16873802619e716cf8-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "1686318877f7fff8ef": {
       "type": "apps",
       "blocks": {
@@ -292,6 +351,7 @@
     "main",
     "3a9b2424-b8f3-498e-93fc-53d554c645b6",
     "6dde8908-690e-4500-be2a-a3e8f8536ec2",
+    "41dc0e6f-27f6-46ab-8964-f96e7b4e0ed7",
     "1686318877f7fff8ef"
   ]
 }
