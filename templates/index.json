@@ -202,10 +202,10 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/sweets_final.mp4",
             "column_size": "3",
-            "title": "PRODUCT 1",
+            "title": "SWEETS",
             "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
+            "content": "<p>Indulge into a wide range of marzipans, pralines, truffles and nougat. You would have never had anything like this before <\/p>",
+            "link_url": "shopify:\/\/collections\/katli",
             "link_text": "",
             "link_style": "link"
           }
@@ -215,9 +215,9 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
             "column_size": "3",
-            "title": "Column title",
+            "title": "INSTANT FLAVOURDE COFFEE",
             "heading_tag": "h4",
-            "content": "",
+            "content": "<p>Convenience of instant coffee taste of brew coffee. Surprise your friends and family with a glass of Hetal's cold coffee.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -228,9 +228,9 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/Sherbat_final.mp4",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Sherbats",
             "heading_tag": "h4",
-            "content": "",
+            "content": "<p>We have the finest collection of sharbats prepared form  real ingredients. We still employ the traditional methods of extracting flavors from real ingredients. <\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -238,13 +238,11 @@
         },
         "51bd0a0d-4290-4250-a13e-a39d594fbe15": {
           "type": "item",
-          "disabled": true,
           "settings": {
-            "video": "shopify:\/\/files\/videos\/Coffee_final_vdo.mp4",
             "column_size": "4",
-            "title": "Column title",
+            "title": "Gifting",
             "heading_tag": "h4",
-            "content": "",
+            "content": "<p>Make your hampers. Get a chance to customise your hampers <\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -276,15 +274,16 @@
         "template--14464004259939__1f51fe1c-6635-411c-8063-ea842009dff7-16854490967817781b-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_3_resized.jpg",
-            "media_width": 50,
+            "image": "shopify:\/\/shop_images\/HETALBEN_comp_74199dc8-a9c4-4728-98e3-afa63cb35cc4.png",
+            "media_width": 30,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
+            "custom_icon": "shopify:\/\/shop_images\/logo_-2.png",
             "icon_width": 48,
             "subheading": "",
             "title": "ABOUT US",
-            "content": "<p>Hetal's Homemade is a one stop destination for quality comfort food and beverages. A food boutique delivering quality and homely products. Our wide range of Flavored Coffee, Fruit punches and Granola Mix will quench all your thirst and satisfy all your cravings<\/p>",
+            "content": "<p><strong>Hetals homemade has a 20 year old legacy of preparing unique fusion sweets from<br\/>nuts. An innovation led confectionery business, always trying different combination of<br\/>nuts, chocolate and dairy to develop unique flavors and textures.<br\/>The business started from a flat in Ahmedabad with a staff strength of 3 people<br\/>including the founder Hetalben. Mohnatahal, Badam pak and kaju katli were the only<br\/>items on the menu when it started, now there are 35-40 items on the menu. The<br\/>business flourished over the years, orders started from friends and family, later through<br\/>word of mouth it percolated into the most influential families of Ahmedabad. All through<br\/>these years what has remained constant is the quality of products and oneness with the<br\/>clients. We make our clients feel like home when they visit us.<br\/>People trust us with our sweets when they have to initiate a family bond or a<br\/>professional bond. We are extremely gratefully for the trust our clients put in us to win<br\/>trust. We aim to provide a very seamless and pleasant experience when you come to<br\/>order sweets for your special occasions.<br\/>Hetals Homemade stands by simplicity, quality, consistency, warmth and innovation<\/strong><\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
