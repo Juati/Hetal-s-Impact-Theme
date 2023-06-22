@@ -195,22 +195,22 @@ Supported variables
               data-instant>{{ product.title }}</a>
           </span>
 
+{% comment %}
+  start rating code
+{% endcomment %}
 
-
-          <!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
-
-
-          {%- if text_alignment != 'center' -%}
+          <div class="rating-with-text w-full">
+            {%- render 'vendor' with product.vendor, class: 'text-xs' -%}
+  
             {%- capture rating_class -%}
               {% if mobile_reduced %}hidden sm:flex{% endif %}
             {%- endcapture -%}
             {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
-          {%- endif -%}
+          </div>
 
-        </div>
-
-
-        {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
+          {% comment %}
+            end rating code
+          {% endcomment %}
 
 
       {%- else -%}
