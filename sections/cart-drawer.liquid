@@ -1,4 +1,7 @@
-<cart-drawer {% if request.design_mode %}handle-section-events{% endif %} class="cart-drawer drawer drawer--lg" id="cart-drawer">
+<cart-drawer
+  {% if request.design_mode %}handle-section-events{% endif %}
+  class="cart-drawer drawer drawer--lg"
+  id="cart-drawer">
   {%- if cart.item_count == 0 -%}
     <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
       {%- render 'icon' with 'close' -%}
@@ -26,7 +29,10 @@
             <cart-count class="count-bubble count-bubble--md">{{ cart.item_count }}</cart-count>
           </div>
 
-          <button type="button" is="close-button" class="drawer__close-icon">
+          <button
+            type="button"
+            is="close-button"
+            class="drawer__close-icon">
             <span class="sr-only">{{ 'general.accessibility.close' | t }}</span>
             {%- render 'icon' with 'close' -%}
           </button>
@@ -57,8 +63,17 @@
 
                   {%- if section.settings.products.count > 1 -%}
                     <div class="h-stack gap-2 hidden sm:flex">
-                      <button is="prev-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.previous' | t | escape }}" disabled>{%- render 'icon' with 'chevron-left-small', direction_aware: true -%}</button>
-                      <button is="next-button" class="circle-chevron hover:colors" aria-controls="{{ carousel_id }}" aria-label="{{ 'general.accessibility.next' | t | escape }}">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</button>
+                      <button
+                        is="prev-button"
+                        class="circle-chevron hover:colors"
+                        aria-controls="{{ carousel_id }}"
+                        aria-label="{{ 'general.accessibility.previous' | t | escape }}"
+                        disabled>{%- render 'icon' with 'chevron-left-small', direction_aware: true -%}</button>
+                      <button
+                        is="next-button"
+                        class="circle-chevron hover:colors"
+                        aria-controls="{{ carousel_id }}"
+                        aria-label="{{ 'general.accessibility.next' | t | escape }}">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</button>
                     </div>
                   {%- endif -%}
                 </div>
@@ -70,14 +85,29 @@
               {%- if product_card_background != 'rgba(0,0,0,0)' and product_card_background != blank and product_card_background != settings.dialog_background -%}
                 {%- assign horizontal_products_blends = false -%}
               {%- endif -%}
+              {% comment %}
+              custom code start
+              {% endcomment %}
+              {% if line_item contains "coffee" %}
 
-              <scroll-carousel selector=".horizontal-product" id="{{ carousel_id }}" class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
-                <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
-                  {%- for recommended_product in section.settings.products -%}
-                    {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
-                  {%- endfor -%}
-                </div>
-              </scroll-carousel>
+                HEllo
+              {% else %}
+
+
+                {% comment %}
+                custom code end
+                {% endcomment %}
+                <scroll-carousel
+                  selector=".horizontal-product"
+                  id="{{ carousel_id }}"
+                  class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
+                  <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
+                    {%- for recommended_product in section.settings.products -%}
+                      {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
+                    {%- endfor -%}
+                  </div>
+                </scroll-carousel>
+              {% endif %}
             </div>
           </div>
         {%- endif -%}
@@ -114,7 +144,10 @@
         {%- endif -%}
 
         {%- if section.settings.show_cart_note -%}
-          <button type="button" class="justify-self-start" aria-controls="cart-drawer-note">
+          <button
+            type="button"
+            class="justify-self-start"
+            aria-controls="cart-drawer-note">
             <span class="link text-sm text-subdued">
               {%- if cart.note == blank -%}
                 {{- 'cart.general.add_order_note' | t -}}
@@ -145,11 +178,17 @@
         {%- endif -%}
       </div>
 
-      <form action="{{ routes.cart_url }}" method="POST" class="buy-buttons {% if section.settings.show_checkout_button %}buy-buttons--compact{% endif %}">
+      <form
+        action="{{ routes.cart_url }}"
+        method="POST"
+        class="buy-buttons {% if section.settings.show_checkout_button %}buy-buttons--compact{% endif %}">
         {%- assign checkout_label = 'cart.general.checkout' | t -%}
 
         {%- if section.settings.show_view_cart_button or section.settings.show_checkout_button == false -%}
-          <a href="{{ routes.cart_url }}" class="button button--xl {% if section.settings.show_checkout_button %}button--secondary{% endif %}" data-no-instant>
+          <a
+            href="{{ routes.cart_url }}"
+            class="button button--xl {% if section.settings.show_checkout_button %}button--secondary{% endif %}"
+            data-no-instant>
             {{- 'cart.general.view_cart' | t -}}
           </a>
         {%- endif -%}
@@ -163,68 +202,61 @@
 </cart-drawer>
 
 {% schema %}
-{
-  "name": "Cart drawer",
-  "settings": [
-    {
-      "type": "paragraph",
-      "content": "Cart drawer won't appear to your customers if you have set the cart type to Page in the global theme settings."
-    },
-    {
-      "type": "paragraph",
-      "content": "Free shipping bar can be configured in global cart settings."
-    },
-    {
-      "type": "checkbox",
-      "id": "show_cart_note",
-      "label": "Show cart note",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_shipping_text",
-      "label": "Show shipping text",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_cart_button",
-      "label": "Show view cart button",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_checkout_button",
-      "label": "Show checkout button",
-      "default": true
-    },
-    {
-      "type": "header",
-      "content": "Product recommendations"
-    },
-    {
-      "type": "text",
-      "id": "recommendations_title",
-      "label": "Heading",
-      "default": "Trending this month"
-    },
-    {
-      "type": "product_list",
-      "id": "products",
-      "label": "Recommendations",
-      "info": "Suggest additional products to your customers.",
-      "limit": 10
-    },
-    {
-      "type": "color",
-      "id": "product_card_background",
-      "label": "Product card background"
-    },
-    {
-      "type": "color",
-      "id": "product_card_text_color",
-      "label": "Product card text"
-    }
-  ]
-}
+  {
+    "name": "Cart drawer",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Cart drawer won't appear to your customers if you have set the cart type to Page in the global theme settings."
+      },
+      {
+        "type": "paragraph",
+        "content": "Free shipping bar can be configured in global cart settings."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_cart_note",
+        "label": "Show cart note",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_shipping_text",
+        "label": "Show shipping text",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "show_view_cart_button",
+        "label": "Show view cart button",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "show_checkout_button",
+        "label": "Show checkout button",
+        "default": true
+      }, {
+        "type": "header",
+        "content": "Product recommendations"
+      }, {
+        "type": "text",
+        "id": "recommendations_title",
+        "label": "Heading",
+        "default": "Trending this month"
+      }, {
+        "type": "product_list",
+        "id": "products",
+        "label": "Recommendations",
+        "info": "Suggest additional products to your customers.",
+        "limit": 10
+      }, {
+        "type": "color",
+        "id": "product_card_background",
+        "label": "Product card background"
+      }, {
+        "type": "color",
+        "id": "product_card_text_color",
+        "label": "Product card text"
+      }
+    ]
+  }
 {% endschema %}
