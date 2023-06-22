@@ -240,10 +240,36 @@
           "type": "item",
           "settings": {
             "video": "shopify:\/\/files\/videos\/Gifting_final.mp4",
-            "column_size": "4",
+            "column_size": "3",
             "title": "Gifting",
             "heading_tag": "h4",
             "content": "<p>Make your hampers. Get a chance to customise your hampers <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "4a05d67e-b54b-4ec2-9513-c5d41e44e55e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/granola_collection_f4cbfc21-6b0a-4de6-a4ca-ac058afa0628.jpg",
+            "image2": "shopify:\/\/shop_images\/GRANOLA-removebg-preview.png",
+            "column_size": "3",
+            "title": "GRANOLA HEALTH MIX",
+            "heading_tag": "h4",
+            "content": "<p>Hetals Granola is a wholesome mixture of Oats, wheat flax, sesame seeds, rasins, almond, pistachio, black currant , cranberries and organic jaggery<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "848807c7-ab90-422d-bded-490fd9167d81": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -254,7 +280,9 @@
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-0",
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1",
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2",
-        "51bd0a0d-4290-4250-a13e-a39d594fbe15"
+        "51bd0a0d-4290-4250-a13e-a39d594fbe15",
+        "4a05d67e-b54b-4ec2-9513-c5d41e44e55e",
+        "848807c7-ab90-422d-bded-490fd9167d81"
       ],
       "settings": {
         "full_width": true,
