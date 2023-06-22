@@ -239,6 +239,7 @@
         "51bd0a0d-4290-4250-a13e-a39d594fbe15": {
           "type": "item",
           "settings": {
+            "video": "shopify:\/\/files\/videos\/Gifting_final.mp4",
             "column_size": "4",
             "title": "Gifting",
             "heading_tag": "h4",
