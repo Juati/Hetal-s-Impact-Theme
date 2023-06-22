@@ -640,7 +640,7 @@
         "id": "show_product_rating",
         "label": "Show product rating",
         "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)",
-        "default": false
+        "default": true
       },
       {
         "type": "select",
