@@ -195,8 +195,6 @@ Supported variables
               data-instant>{{ product.title }}</a>
           </span>
 
-
-
           <!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
 
           {% comment %}  
@@ -208,11 +206,6 @@ Supported variables
           {%- endif -%}
           {% endcomment %}
         </div>
-
-
-        {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
-
-
       {%- else -%}
         <span class="product-card__title">
           <a
