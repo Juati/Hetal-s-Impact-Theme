@@ -210,17 +210,7 @@ Supported variables
         </div>
 
 
-        {% if product.star_rating %}
-          <div class="star-rating">
-            {% for i in (1..5) %}
-              {% if i <= product.star_rating %}
-                <span class="star filled"></span>
-              {% else %}
-                <span class="star"></span>
-              {% endif %}
-            {% endfor %}
-          </div>
-        {% endif %}
+        {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
 
 
       {%- else -%}
