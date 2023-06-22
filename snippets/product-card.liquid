@@ -222,6 +222,10 @@ Supported variables
     </div>
 
 
+    {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
+
+
+
     {%- if show_rating and mobile_reduced or text_alignment == 'center' -%}
       {%- capture rating_class -%}
         {% unless text_alignment == 'center' %}sm:hidden{% endunless %}
