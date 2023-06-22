@@ -195,9 +195,9 @@ Supported variables
               data-instant>{{ product.title }}</a>
           </span>
 
-          //////
 
-        <!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
+
+          <!--           {%- render 'price-list', product: product, text_alignment: text_alignment -%} -->
 
           {% comment %}  
           {%- if text_alignment != 'center' -%}
@@ -208,6 +208,8 @@ Supported variables
           {%- endif -%}
           {% endcomment %}
         </div>
+
+        ////////
       {%- else -%}
         <span class="product-card__title">
           <a
