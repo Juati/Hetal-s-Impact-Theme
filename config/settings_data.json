@@ -37,6 +37,7 @@
     "show_secondary_image": true,
     "show_quick_buy": false,
     "show_product_rating": true,
+    "product_rating_mode": "count",
     "show_sold_out_badge": true,
     "show_discount": true,
     "product_color_display": "variant",
