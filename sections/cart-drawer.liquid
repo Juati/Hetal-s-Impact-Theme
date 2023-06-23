@@ -47,11 +47,11 @@
         <div class="cart-drawer__line-items">
           {%- for line_item in cart.items -%}
             {%- render 'line-item', line_item: line_item, show_desktop_quantity: true -%}
-                        {% assign line_item =  line_item.product.title %}
+            {% assign line_item = line_item.product.title %}
           {%- endfor -%}
-    {{ line_item }}hello_world
-        </div>
 
+        </div>
+        {{ line_item }}hello_world
         {%- if section.settings.products.count > 0 -%}
           <div class="cart-drawer__recommendations">
             <div class="v-stack gap-2.5 sm:gap-4">
