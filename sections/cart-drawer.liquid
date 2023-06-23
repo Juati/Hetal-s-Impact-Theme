@@ -52,6 +52,7 @@
             {% assign line_item = {{ line_item.product.title | default: line_item.title }} %}
           {%- endfor -%}
         </div>
+        ////////////////
         {{ line_item }}
         {%- if section.settings.products.count > 0 -%}
           <div class="cart-drawer__recommendations">
