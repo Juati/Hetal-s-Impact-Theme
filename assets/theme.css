@@ -10494,6 +10494,7 @@ h3#predictive-search-products {
   display: flex;
   justify-content: center;
   font-family: 'Proxima-Nova-Bold-2' !important;
+  align-items: center;
 }
 
 .bundle-summary .imageproduct-title {
