@@ -283,7 +283,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-
+      ".product-info__image img {border-radius: 20px;}"
     ]
   }
 }
