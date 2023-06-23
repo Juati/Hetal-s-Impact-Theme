@@ -42,21 +42,24 @@
           {%- render 'free-shipping-bar' -%}
         {%- endif -%}
       </div>
-      {% assign line_item = "" %}
+      {% assign line_item = false %}
       <div class="v-stack gap-6 sm:gap-8">
         <div class="cart-drawer__line-items">
           {%- for line_item in cart.items -%}
             {%- render 'line-item', line_item: line_item, show_desktop_quantity: true -%}
+            {% if line_item.product.title contains "Coffee" %}
 
+              {% assign line_item = true %}
 
-            {% assign line_item = line_item.product.title %}
+            {% endif %}
 
           {%- endfor -%}
+
 
         </div>
         {{ line_item }}
 
-        {% if line_item contains "Coffee" %}
+        {% if line_item == true %}
 
           <div>We have done</div>
 
