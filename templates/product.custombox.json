@@ -24,6 +24,12 @@
             "heading_tag": "h2"
           }
         },
+        "ae0a5132-d94f-4945-a418-7ea9eb1a058f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share some content to your customers about your products.<\/p>"
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {
@@ -108,6 +114,7 @@
         "vendor",
         "6793a316-ebc3-4589-ad39-c40e8f7b22f3",
         "title",
+        "ae0a5132-d94f-4945-a418-7ea9eb1a058f",
         "badges",
         "price",
         "rating",
