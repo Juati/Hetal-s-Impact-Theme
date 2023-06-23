@@ -54,7 +54,13 @@
           {%- endfor -%}
 
         </div>
-        {{ line_item }}hello_world
+
+        {% if line_item contains "coffee" %}
+
+          we have done it
+
+        {% endif %}
+
         {%- if section.settings.products.count > 0 -%}
           <div class="cart-drawer__recommendations">
             <div class="v-stack gap-2.5 sm:gap-4">
