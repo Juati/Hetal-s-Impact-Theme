@@ -9,6 +9,14 @@
           "settings": {
           }
         },
+        "67f17cae-2c59-4623-97cb-bf8892c5060e": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.box_image.value }}",
+            "alignment": "start",
+            "max_width": 150
+          }
+        },
         "6793a316-ebc3-4589-ad39-c40e8f7b22f3": {
           "type": "product_variations",
           "settings": {
@@ -112,6 +120,7 @@
       },
       "block_order": [
         "vendor",
+        "67f17cae-2c59-4623-97cb-bf8892c5060e",
         "6793a316-ebc3-4589-ad39-c40e8f7b22f3",
         "title",
         "ae0a5132-d94f-4945-a418-7ea9eb1a058f",
