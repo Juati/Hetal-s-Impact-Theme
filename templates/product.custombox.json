@@ -32,10 +32,10 @@
             "heading_tag": "h2"
           }
         },
-        "ae0a5132-d94f-4945-a418-7ea9eb1a058f": {
-          "type": "text",
+        "description": {
+          "type": "description",
           "settings": {
-            "text": "<p>Share some content to your customers about your products.<\/p>"
+            "collapse_content": false
           }
         },
         "badges": {
@@ -85,12 +85,6 @@
             "payment_button_text_color": ""
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": true
-          }
-        },
         "cf8b1774-913c-4356-80f3-587c594be0be": {
           "type": "collapsible_text",
           "disabled": true,
@@ -123,7 +117,7 @@
         "67f17cae-2c59-4623-97cb-bf8892c5060e",
         "6793a316-ebc3-4589-ad39-c40e8f7b22f3",
         "title",
-        "ae0a5132-d94f-4945-a418-7ea9eb1a058f",
+        "description",
         "badges",
         "price",
         "rating",
@@ -131,7 +125,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "cf8b1774-913c-4356-80f3-587c594be0be",
         "00615872-a161-4a24-b767-4026873a3183",
         "2f724f50-282c-45fd-b625-76fb0773f93c",
