@@ -48,14 +48,15 @@
         },
         "108d6676-52b9-408d-b0f5-b8d3dda7749f": {
           "type": "offer",
+          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
             "icon": "none",
-            "custom_icon": "{{ product.metafields.custom.product_sticker.value }}",
+            "custom_icon": "shopify:\/\/shop_images\/sugarfree4x.png",
             "icon_width": 52,
             "title": "",
-            "content": "<h2>{{ product.metafields.custom.product_sticker_title.value }}<\/h2>",
+            "content": "<h2>Shelf Life<\/h2>",
             "background": "#ffffff",
             "text_color": "#1a1a1a"
           }
