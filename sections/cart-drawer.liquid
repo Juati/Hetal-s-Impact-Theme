@@ -101,16 +101,34 @@
                 {%- assign horizontal_products_blends = false -%}
               {%- endif -%}
 
-              <scroll-carousel
-                selector=".horizontal-product"
-                id="{{ carousel_id }}"
-                class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
-                <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
-                  {%- for recommended_product in section.settings.products -%}
-                    {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
-                  {%- endfor -%}
-                </div>
-              </scroll-carousel>
+
+              {% if line_item == true %}
+
+                <scroll-carousel
+                  selector=".horizontal-product"
+                  id="{{ carousel_id }}"
+                  class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
+                  <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
+                    {%- for recommended_product in section.settings.products_coffee -%}
+                      {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
+                    {%- endfor -%}
+                  </div>
+                </scroll-carousel>
+
+              {% else %}
+
+
+                <scroll-carousel
+                  selector=".horizontal-product"
+                  id="{{ carousel_id }}"
+                  class="horizontal-product-list-carousel {% unless horizontal_products_blends %}separate{% endunless %} scroll-area bleed">
+                  <div class="horizontal-product-list {% if horizontal_products_blends %}divide-x{% else %}separate{% endif %}">
+                    {%- for recommended_product in section.settings.products -%}
+                      {%- render 'horizontal-product', product: recommended_product, show_add_to_cart: true, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color -%}
+                    {%- endfor -%}
+                  </div>
+                </scroll-carousel>
+              {% endif %}
             </div>
           </div>
         {%- endif -%}
@@ -250,6 +268,12 @@
         "id": "products",
         "label": "Recommendations",
         "info": "Suggest additional products to your customers.",
+        "limit": 10
+      }, {
+        "type": "product_list",
+        "id": "products_coffee",
+        "label": "Coffee Recommendations",
+        "info": "Suggest additional Coffee products to your customers.",
         "limit": 10
       }, {
         "type": "color",
