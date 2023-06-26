@@ -252,8 +252,8 @@
         "4a05d67e-b54b-4ec2-9513-c5d41e44e55e": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/granola_collection_f4cbfc21-6b0a-4de6-a4ca-ac058afa0628.jpg",
-            "image2": "shopify:\/\/shop_images\/GRANOLA-removebg-preview.png",
+            "image": "shopify:\/\/shop_images\/granola_collection.png",
+            "image2": "shopify:\/\/shop_images\/granola_collection_2.png",
             "column_size": "3",
             "title": "GRANOLA HEALTH MIX",
             "heading_tag": "h4",
