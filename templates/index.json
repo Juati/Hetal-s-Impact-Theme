@@ -262,6 +262,20 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "5d733e96-3ded-469b-889b-12329d2ba462": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beverage_mix.png",
+            "image2": "shopify:\/\/shop_images\/beverage_mix.png",
+            "column_size": "3",
+            "title": "Instant Beverage Mix",
+            "heading_tag": "h4",
+            "content": "<p>Not a fan of coffee ! no worries we got you covered.  Try our traditional Indian beverage premix.  Make your self a  badam pista dudh or  a chilled glass of Thandai <\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -269,7 +283,8 @@
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-1",
         "template--14464004259939__60f34525-e9cf-4384-9ad6-5ce7455e6f9b-1686648466afc8fda1-2",
         "51bd0a0d-4290-4250-a13e-a39d594fbe15",
-        "4a05d67e-b54b-4ec2-9513-c5d41e44e55e"
+        "4a05d67e-b54b-4ec2-9513-c5d41e44e55e",
+        "5d733e96-3ded-469b-889b-12329d2ba462"
       ],
       "settings": {
         "full_width": true,
