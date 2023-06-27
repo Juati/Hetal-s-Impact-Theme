@@ -52,10 +52,10 @@
             "text_alignment": "center",
             "icon_position": "aligned",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/MAP_4_d9446b18-1ec7-4109-9e12-830f095dd886.png",
+            "custom_icon": "{{ product.metafields.custom.product_sticker.value }}",
             "icon_width": 84,
             "title": "",
-            "content": "<h6>Best before 25 days from opening <\/h6>",
+            "content": "<h6>{{ product.metafields.custom.product_sticker_title.value }}<\/h6>",
             "background": "#1c495a",
             "text_color": "#ffffff"
           }
@@ -65,11 +65,11 @@
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
-            "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/shelf.png",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.custom.product_sticker_2.value }}",
             "icon_width": 68,
             "title": "",
-            "content": "<h6>Consume in 7 days after opening <\/h6>",
+            "content": "<h6>{{ product.metafields.custom.product_sticker_title_2.value }}<\/h6>",
             "background": "#1c495a",
             "text_color": "#ffffff"
           }
