@@ -48,32 +48,30 @@
         },
         "108d6676-52b9-408d-b0f5-b8d3dda7749f": {
           "type": "offer",
-          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
             "icon": "none",
-            "custom_icon": "shopify:\/\/shop_images\/sugarfree4x.png",
-            "icon_width": 52,
+            "custom_icon": "shopify:\/\/shop_images\/MAP_4_d9446b18-1ec7-4109-9e12-830f095dd886.png",
+            "icon_width": 84,
             "title": "",
-            "content": "<h2>Shelf Life<\/h2>",
-            "background": "#ffffff",
-            "text_color": "#1a1a1a"
+            "content": "<h6>Best before 25 days from opening <\/h6>",
+            "background": "#1c495a",
+            "text_color": "#ffffff"
           }
         },
         "058c0df3-f00e-4be8-b6d4-2ab7958ddab3": {
           "type": "offer",
-          "disabled": true,
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
             "icon": "picto-coupon",
-            "custom_icon": "shopify:\/\/shop_images\/Asset_4_4x_26d6e79a-bbf5-44e7-848e-1bb68619932a.png",
-            "icon_width": 52,
+            "custom_icon": "shopify:\/\/shop_images\/shelf.png",
+            "icon_width": 68,
             "title": "",
-            "content": "<h2>Shelf Life<\/h2>",
-            "background": "#fef95a",
-            "text_color": "#1a1a1a"
+            "content": "<h6>Consume in 7 days after opening <\/h6>",
+            "background": "#1c495a",
+            "text_color": "#ffffff"
           }
         },
         "0493b726-9207-422e-a2cc-beccae175a29": {
