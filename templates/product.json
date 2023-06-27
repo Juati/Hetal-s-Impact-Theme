@@ -70,7 +70,7 @@
             "icon_width": 68,
             "title": "",
             "content": "<h6>{{ product.metafields.custom.product_sticker_title_2.value }}<\/h6>",
-            "background": "#1c495a",
+            "background": "rgba(0,0,0,0)",
             "text_color": "#ffffff"
           }
         },
