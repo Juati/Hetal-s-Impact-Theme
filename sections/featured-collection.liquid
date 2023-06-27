@@ -38,30 +38,6 @@
       --product-list-carousel-item-width: calc(var(--container-inner-width) / {{ section.settings.products_per_row_desktop }} -(var(--product-list-column-gap) / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}));
     }
   }
-
-  /* Desktop view */
-  @media(min-width: 768px) {
-    .featured-collection-items {
-      display: flex;
-      flex-wrap: wrap;
-      /* Additional styles for the stacked layout */
-    }
-  }
-
-  /* Mobile view */
-  @media(max-width: 767px) {
-    .featured-collection-items {
-      display: flex;
-      overflow-x: auto;
-      /* Additional styles for the carousel layout */
-    }
-
-    .featured-collection-items > * {
-      flex: 0 0 auto;
-      margin-right: 10px; /* Adjust the spacing between items */
-      /* Additional styles for individual items */
-    }
-  }
 </style>
 
 <div {% render 'section-properties' %}>
