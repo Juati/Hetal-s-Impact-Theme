@@ -12,14 +12,15 @@
         "template--14473575432291__12c04720-106b-4b54-be0a-c0de3230fe7e-1686724137c32a9cc1-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wedding.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "WEDDING",
+            "content": "<p>Indulge in love's sweetest moments with our exquisite wedding sweets gift collection. Handcrafted with passion and perfection, our delectable confections are the perfect way to celebrate your special day.Elevate your wedding favors and delight your loved ones with our thoughtfully designed, beautifully packaged confections, creating memories that will last a lifetime. Discover the art of gifting sweetness and make your wedding a truly unforgettable experience.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -33,6 +34,7 @@
         "fd6e7dab-ea94-4531-b80c-89901619afef": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/WEDDING1.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -54,6 +56,7 @@
         "2fe70cc2-607e-4cef-9a24-d90b4900d8a7": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Guide_3_new.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
