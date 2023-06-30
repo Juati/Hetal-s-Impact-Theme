@@ -12,14 +12,15 @@
         "template--14473575366755__cf398bbf-87bc-4d18-94a6-4c134d7a6959-168672520301b11c04-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/newborn.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "title": "NEW BORN",
+            "content": "<p>Welcome the newest bundle of joy with our delightful collection of sweet gifts for newborns. Celebrate the precious arrival with a touch of sweetness that will warm hearts and bring smiles to all.With each bite, family and friends will savor the love and happiness that surrounds the newborn. Choose our thoughtfully curated sweet treats to create unforgettable memories and shower the little one and their loved ones with sweetness and joy.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -33,6 +34,7 @@
         "73acdd0d-635a-47d8-9c20-3dfbe990335e": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/NEWBORN1.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -40,7 +42,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "content": "<p>Welcome bundles of joy with heartwarming sweetness from our curated collection of new-born gifts. Celebrate the arrival of precious little ones with our handcrafted confections, tenderly made to bring smiles to their tiny faces. <\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -54,6 +56,7 @@
         "86deeb9f-e73b-4aaf-adc6-e510978a7041": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Guide_3_new.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
