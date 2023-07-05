@@ -8,6 +8,33 @@
     },
     "047bee10-e98b-4772-9920-04198a91fd32": {
       "type": "media-with-text",
+      "blocks": {
+        "60b24f0c-8388-4022-858f-11071aa8b91a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/corporate.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Indulge your clients and colleagues with our exquisite collection of handcrafted sweets, crafted with love and attention to detail. Elevate your corporate gifting with our delectable treats that are sure to leave a lasting impression.Indulge your clients and colleagues with our exquisite collection of handcrafted sweets, crafted with love and attention to detail. Elevate your corporate gifting with our delectable treats that are sure to leave a lasting impression.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "60b24f0c-8388-4022-858f-11071aa8b91a"
+      ],
       "settings": {
         "full_width": false,
         "spacing": "small"
