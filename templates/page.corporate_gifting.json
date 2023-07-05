@@ -30,10 +30,56 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "c8044e48-2c1d-4463-bc0a-74f578a71c3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CORPORATE1.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Unlock the power of sweetness in your corporate relationships with our thoughtfully curated assortment of sweets. From decadent chocolates to delicate confections, our exquisite treats are the perfect gesture to express gratitude and foster lasting connections.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "c5b777c7-ea7b-4357-8eaa-64b2589f4016": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Guide_3_new.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "60b24f0c-8388-4022-858f-11071aa8b91a"
+        "60b24f0c-8388-4022-858f-11071aa8b91a",
+        "c8044e48-2c1d-4463-bc0a-74f578a71c3a",
+        "c5b777c7-ea7b-4357-8eaa-64b2589f4016"
       ],
       "settings": {
         "full_width": false,
